@@ -1,0 +1,6 @@
+nand2
+
+nand2
+	n1svt_CDNS_5
+	p1svt_CDNS_6
+

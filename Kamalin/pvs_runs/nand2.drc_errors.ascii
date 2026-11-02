@@ -1,0 +1,1458 @@
+nand2 2000
+offgrid_check
+0 0 2 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+Grid violation
+ortho_45_check
+0 0 2 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+Orthogonal and 45 degree violation
+acute_check
+0 0 2 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+Acute angle  violation
+NBL.W.1
+0 0 2 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+NBL.W.1: Minimum Nburied Width >= 0.8 um
+NBL.SP.1
+0 0 2 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+NBL.SP.1: Minimum Nburied to Nburied spacing >= 2.0 um
+NBL.SE.1
+0 0 2 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+NBL.SE.1: Minimum Nburied to non-related Nwell spacing >= 2.2 um
+NBL.SE.2
+0 0 2 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+NBL.SE.2: Minimum Nburied to Oxide spacing >= 1.2 um
+NW.W.1
+0 0 2 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+NW.W.1: Minimum NWell Width >= 0.146 um
+NW.SP.1
+0 0 2 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+NW.SP.1: Minimum Nwell spacing >= 0.162 um
+NW.SE.1
+0 0 2 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+NW.SE.1: Minimum Nwell spacing to Active  >= 0.16 um
+NW.SE.2
+0 0 2 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+NW.SE.2: Minimum Nwell spacing to 1.8V Active Area >= 0.24 um
+NW.E.1
+0 0 2 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+NW.E.1: Minimum Nwell enclosure of Active Area >= 0.021 um
+NW.E.2
+0 0 2 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+NW.E.2: Minimum Nwell enclosure of 1.8V Active Area >= 0.034 um
+NW.E.3
+0 0 2 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+NW.E.3: Minimum Nwell enclosure of straddled NBL >= 0.24 um
+NW.E.4
+0 0 2 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+NW.E.4: Minimum Nwell extension into straddled NBL >= 0.24 um
+NW.A.1
+0 0 2 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+NW.A.1: Minimum Nwell area >= 0.03 um
+NW.EA.1
+0 0 2 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+NW.EA.1: Minimum Nwell enclosed area >= 0.18 um
+NWR.E.1
+0 0 2 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+NWR.E.1: Minimum Active enclosure of Nwell(in resistor) >= 0.021 um
+NWR.SP.1
+0 0 2 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+NWR.SP.1: Minimum Nwell resistor spacing to Nwell  >= 0.3 um
+OXIDE.W.1
+0 0 2 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+OXIDE.W.1: Minimum Active width in the Y direction in steps of 0.048 >= 0.062 um
+OXIDE.W.2
+0 0 2 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+OXIDE.W.2: Minimum Active width in the X direction >= 0.068 um
+OXIDE.SP.1
+0 0 2 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+OXIDE.SP.1: Minimum Active space in the Y direction in steps of 0.048 >= 0.13 um
+OXIDE.SP.2
+0 0 2 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+OXIDE.SP.2: Minimum Active space in the X direction >= 0.018 um
+OXIDE.C.1
+0 0 2 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+OXIDE.C.1: Active must be covered by N+ Implant or P+ Implant
+CUTACTIVE.W.1
+0 0 2 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+CUTACTIVE.W.1: Minimum CutActive width in the Y direction in steps of 0.048 >= 0.082 um
+CUTACTIVE.W.2
+0 0 2 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+CUTACTIVE.W.2: Allowed CutActive width values in the X direction (0.018 0.020 0.024 0.028 0.030) um
+CUTACTIVE.SP.1
+0 0 2 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+CUTACTIVE.SP.1: Minimum CutActive space >= 0.068 um
+CUTACTIVE.SE.1
+0 0 2 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+CUTACTIVE.SE.1: Minimum CutActive to Active space >= 0.068 um
+CUTACTIVE.E.1
+0 0 2 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+CUTACTIVE.E.1: Minimum CutActive extension beyond Active >= 0.01 um
+FB48.W.1
+0 0 2 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+FB48.W.1: Minimum FinArea width in the Y direction in steps of 0.048 >= 0.062 um
+FB48.W.2
+0 0 2 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+FB48.W.2: Minimum FinArea width in the X direction >= 0.096 um
+FB48.SP.1
+0 0 2 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+FB48.SP.1: Minimum FinArea space in the Y direction in steps of 0.48 >= 0.034 um
+FB48.E.2
+0 0 2 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+FB48.E.2: Minimum FinArea Overlap (Active not CutActive) in the X direction >= 0.017 um
+FB48.E.1
+0 0 2 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+FB48.E.1: Minimum FinArea Overlap Active in the Y direction in steps of 0.048 >= 0.048 um
+OXIDETHK.W.1
+0 0 2 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+OXIDETHK.W.1: Minimum Thick Active Area width in the Y direction >= 0.124 um
+OXIDETHK.W.2
+0 0 2 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+OXIDETHK.W.2: Minimum Thick Active Area width in the X direction >= 0.158 um
+OXIDETHK.SP.1
+0 0 2 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+OXIDETHK.SP.1: Minimum Thick Active Area space in the Y direction >= 0.068 um
+OXIDETHK.SP.2
+0 0 2 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+OXIDETHK.SP.2: Minimum Thick Active Area space in the X direction >= 0.064 um
+OXIDETHK.SE.1
+0 0 2 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+OXIDETHK.SE.1: Minimum Thick Active Area space to Active Area in the Y direction >= 0.099 um
+OXIDETHK.SE.2
+0 0 2 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+OXIDETHK.SE.2: Minimum Thick Active Area space to Active Area in the X direction >= 0.109 um
+OXIDETHK.E.1
+0 0 2 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+OXIDETHK.E.1: Minimum Thick Active Area to Active Area enclosure in the Y direction >= 0.031 um
+OXIDETHK.E.2
+0 0 2 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+OXIDETHK.E.2: Minimum Thick Active Area to Active Area enclosure in the X direction >= 0.045 um
+SIPROT.W.1
+0 0 2 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+SIPROT.W.1: Minimum Salicide Block width >= 0.042 um
+SIPROT.SP.1
+0 0 2 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+SIPROT.SP.1: Minimum Salicide Block space >= 0.044 um
+SIPROT.SE.1
+0 0 2 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+SIPROT.SE.1: Minimum Salicide Block to Contact spacing >= 0.009 um
+SIPROT.SE.2
+0 0 2 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+SIPROT.SE.2: Minimum Salicide Block to unrelated Active Area spacing >= 0.12 um
+SIPROT.SE.3
+0 0 2 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+SIPROT.SE.3: Minimum Salicide Block to Poly space >= 0.022 um
+SIPROT.E.1
+0 0 2 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+SIPROT.E.1 : Minimum Salicide block to Active area enclosure >=0.012
+SIPROT.E.2
+0 0 2 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+SIPROT.E.1 : Minimum Active area to to Salicide block >=0.012
+SIPROT.E.3
+0 0 2 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+SIPROT.E.3 : Minimum Salicide block to Poly >=0.012
+SIPROT.A.1
+0 0 2 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+SIPROT.A.1: Minimum Salicide Block area >= 0.0042 um
+NSVT.W.1
+0 0 2 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+NSVT.W.1: Minimum Nsvt width >= 0.052 um
+NSVT.SP.1
+0 0 2 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+NSVT.SP.1: Minimum Nsvt space >= 0.024 um
+NSVT.SE.1
+0 0 2 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+NSVT.SE.1: Minimum Nsvt to PActive space >= 0.045 um
+NSVT.A.1
+0 0 2 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+NSVT.A.1: Minimum area for Nsvt >= 0.017 um
+NSVT.E.1
+0 0 2 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+NSVT.E.1: Minimum Nsvt to Poly enclosure >=(0.045,0.065)
+NSVT.E.2
+0 0 2 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+NSVT.E.2: Minimum Nsvt to Active enclosure >=(0.045,0.065)
+NSVT.X.1
+0 0 2 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+NSVT.X.1: Nsvt is NOT allowed over Ptype Implant
+NHVT.W.1
+0 0 2 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+NHVT.W.1: Minimum Nhvt width >= 0.052
+NHVT.SP.1
+0 0 2 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+NHVT.SP.1: Minimum Nhvt spacing >= 0.024
+NHVT.SE.1
+0 0 2 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+NHVT.SE.1: Minimum Nhvt to PActive space >= 0.045 um
+NHVT.A.1
+0 0 2 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+NHVT.A.1: Minimum Nhvt area >= 0.03 um
+NHVT.E.1
+0 0 2 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+NHVT.E.1: Minimum Nhvt to Poly enclosure >=(0.045,0.065)
+NHVT.E.2
+0 0 2 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+NHVT.E.2: Minimum Nhvt to Active enclosure >=(0.045,0.065)
+NHVT.X.1
+0 0 2 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+NHVT.X.1: Nhvt is NOT allowed on Ptype Implant
+NLVT.W.1
+0 0 2 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+NLVT.W.1: Minimum Nlvt width >= 0.052
+NLVT.SP.1
+0 0 2 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+NLVT.SP.1: Minimum Nhvt spacing >= 0.024
+NLVT.SE.1
+0 0 2 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+NLVT.SE.1: Minimum Nlvt to PActive space >= 0.045 um
+NLVT.A.1
+0 0 2 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+NLVT.A.1: Minimum Nlvt area >= 0.03 um
+NLVT.E.1
+0 0 2 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+NLVT.E.1: Minimum Nlvt to Poly enclosure >=(0.045,0.065)
+NLVT.E.2
+0 0 2 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+NLVT.E.2: Minimum Nlvt to Active enclosure >=(0.045,0.065)
+NLVT.X.1
+0 0 2 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+NLVT.X.1: Nlvt is NOT allowed on Ptype Implant
+PSVT.W.1
+0 0 2 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+PSVT.W.1: Minimum Psvt width >= 0.052
+PSVT.SP.1
+0 0 2 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+PSVT.SP.1: Minimum Psvt spacing >= 0.024
+PSVT.SE.1
+0 0 2 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+PSVT.SE.1: Minimum Psvt to NActive space >= 0.045 um
+PSVT.A.1
+0 0 2 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+PSVT.A.1: Minimum Psvt area >= 0.017 um
+PSVT.E.1
+0 0 2 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+PSVT.E.1: Minimum Psvt to Poly enclosure >=(0.045,0.065)
+PSVT.E.2
+0 0 2 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+PSVT.E.2: Minimum Psvt to Active enclosure >=(0.045,0.065)
+PSVT.X.1
+0 0 2 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+PSVT.X.1: Psvt is NOT allowed on Ntype Implant
+PHVT.W.1
+0 0 2 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+PHVT.W.1: Minimum Phvt width >= 0.052
+PHVT.SP.1
+0 0 2 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+PHVT.SP.1: Minimum Phvt spacing >= 0.024
+PHVT.SE.1
+0 0 2 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+PHVT.SE.1: Minimum Phvt to NActive space >= 0.045 um
+PHVT.A.1
+0 0 2 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+PHVT.A.1: Minimum Phvt area >= 0.03 um
+PHVT.E.1
+0 0 2 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+PHVT.E.1: Minimum Phvt to Poly enclosure >=(0.045,0.065)
+PHVT.E.2
+0 0 2 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+PHVT.E.2: Minimum Phvt to Active enclosure >=(0.045,0.065)
+PHVT.X.1
+0 0 2 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+PHVT.X.1: Phvt is NOT allowed on Ntype Implant
+PLVT.W.1
+0 0 2 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+PLVT.W.1: Minimum Plvt width >= 0.052
+PLVT.SP.1
+0 0 2 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+PLVT.SP.1: Minimum Plvt spacing >= 0.024
+PLVT.SE.1
+0 0 2 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+PLVT.SE.1: Minimum Plvt to NActive space >= 0.045 um
+PLVT.A.1
+0 0 2 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+PLVT.A.1: Minimum Plvt area >= 0.03 um
+PLVT.E.1
+0 0 2 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+PLVT.E.1: Minimum Plvt to Poly enclosure >=(0.045,0.065)
+PLVT.E.2
+0 0 2 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+PLVT.E.2: Minimum Plvt to Active enclosure >=(0.045,0.065)
+PLVT.X.1
+0 0 2 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+PLVT.X.1: Plvt is NOT allowed on Ntype Implant
+POLY.P.1
+0 0 2 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+POLY.P.1: Poly vertical pitches are restricted to (86, 90, 94, 102, 104)nm
+POLY.W.1
+0 0 2 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+POLY.W.1: Minimum Poly width in the Y direction >= 0.08 um
+POLY.W.2
+0 0 2 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+POLY.W.2: Minimum Poly width in the X direction >= 0.018 um
+POLY.W.3
+0 0 2 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+POLY.W.3: Maximum Poly width <= 0.24 um
+POLY.W.4
+0 0 2 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+POLY.W.4: Maximum Poly length <= 10.0 um
+POLY.SP.1
+0 0 2 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+POLY.SP.1: Minimum Poly space >= 0.068 um
+POLY.SP.2
+0 0 2 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+POLY.SP.2: Minimum Poly space with width >=0.08 is >= 0.12 um
+POLY.SP.3
+0 0 2 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+POLY.SP.3: Minimum Poly space with width >=0.16 is >= 0.20 um
+POLY.C.1
+0 0 2 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+POLY.C.1: POLY on Active must be covered by N+ Implant or P+ Implant
+POLY.E.1
+0 0 2 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+POLY.E.1: Minimum gate extension beyond Active Area >= 0.048 um
+CUTPOLY.W.1
+0 0 2 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+CUTPOLY.W.1: Minimum CutPoly width in the X direction >= 0.06 um
+CUTPOLY.W.2
+0 0 2 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+CUTPOLY.W.2: Allowed CutPoly width values in the Y direction (0.06 0.07 0.1 0.12) um
+CUTPOLY.SP.1
+0 0 2 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+CUTPOLY.SP.1: Minimum CutPoly space >= 0.09 um
+CUTPOLY.SE.1
+0 0 2 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+CUTPOLY.SE.1: Minimum CutPoly to Active space >= 0.02 um
+CUTPOLY.SE.2
+0 0 2 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+CUTPOLY.SE.2: Minimum CutPoly to LiPo space >= 0.019 um
+CUTPOLY.E.1
+0 0 2 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+CUTPOLY.E.1: Minimum CutPoly extension beyond Poly >= 0.034 um
+LIPO.W.1
+0 0 2 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+LIPO.W.1: Allowed width values for LIPO (0.03, 0.04, 0.05)
+LIPO.W.2
+0 0 2 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+LIPO.W.2: Maximum LIPO length <= 5.0 um
+LIPO.SP.1
+0 0 2 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+LIPO.SP.1: Minimum LIPO space >= 0.034 um
+LIPO.SE.1
+0 0 2 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+LIPO.SE.1: Minimum LIPO to Poly space >= 0.03 um
+LIPO.SE.2
+0 0 2 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+LIPO.SE.2: Minimum LIPO to LIACT space >= 0.013 um
+LIPO.SE.3
+0 0 2 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+LIPO.SE.3: Minimum LIPO to Active space >= 0.045 um
+LIPO.E.1
+0 0 2 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+LIPO.E.1: Minimum LIPO into Poly overlap >= 0.016 um
+LIPO.E.2
+0 0 2 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+LIPO.E.2: Minimum Poly to LIPO extension >= 0.01 um
+LIACT.W.1
+0 0 2 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+LIACT.W.1: Allowed width values for LIACT (0.03, 0.04, 0.05)
+LIACT.W.2
+0 0 2 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+LIACT.W.2: Minimum length of LIACT(for width value 0.03) >= 0.062 um
+LIACT.W.3
+0 0 2 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+LIACT.W.3: Minimum length of LIACT(for width value 0.04) >= 0.068 um
+LIACT.W.4
+0 0 2 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+LIACT.W.4: Minimum length of LIACT(for width value 0.05) >= 0.082 um
+LIACT.W.5
+0 0 2 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+LIPO.W.2: Maximum LIACT length <= 5.0 um
+LIACT.SP.1
+0 0 2 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+LIACT.SP.1: Minimum LIACT space >= 0.046 um
+LIACT.SE.1
+0 0 2 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+LIACT.SE.1: Minimum LiAct(with width ==0.03)to Poly(with width ==0.018) space >= 0.019 um
+LIACT.SE.2
+0 0 2 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+LIACT.SE.2: Minimum LiAct(with width ==0.03)to Poly(with width >=0.02) space >= 0.02 um
+LIACT.SE.3
+0 0 2 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+LIACT.SE.3: Minimum LiAct(with width ==0.03)to Poly(with width >=0.028) space >= 0.022 um
+LIACT.SE.4
+0 0 2 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+LIACT.SE.4: Minimum LiAct(with width ==0.04)to Poly space >= 0.04 um
+LIACT.SE.5
+0 0 2 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+LIACT.SE.5: Minimum LiAct(with width ==0.05)to Poly space >= 0.045 um
+LIACT.SE.6
+0 0 2 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+LIACT.SE.6: Minimum LiAct to Poly(with width >=0.08) space >= 0.07 um
+LIACT.SE.7
+0 0 2 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+LIACT.SE.7: Minimum LiAct to Active space >= 0.04 um
+LIACT.E.1
+0 0 2 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+LIACT.E.1: Minimum Active enclosure of LIACT on atleast two opposite sides >=0.014
+V0.W.1
+0 0 2 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+V0.W.1: Maximum and minimum V0 width/length is 0.032
+V0.SP.1
+0 0 2 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+V0.SP.1: Minimum V0 to V0 space >=0.032
+V0.SE.1
+0 0 2 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+V0.SE.1: Minimum V0 to Liact space >= 0.012
+V0.SE.2
+0 0 2 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+V0.SE.2: Minimum V0 to LiPo space >= 0.024
+V0.SE.3
+0 0 2 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+V0.SE.3: Minimum V0 to Poly space >= 0.018
+V0.E.1a
+0 0 2 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+V0.E.1a: Minimum LiAct to V0 enclosure with LiAct width 0.03 >=(-0.001,0.018)
+V0.E.1b
+0 0 2 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+V0.E.1b: Minimum LiAct to V0 enclosure with LiAct width 0.04 >=(0.003,0.018)
+V0.E.1c
+0 0 2 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+V0.E.1c: Minimum LiAct to V0 enclosure with LiAct width 0.05 >=(0.008,0.018)
+V0.E.2a
+0 0 2 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+V0.E.2a: Minimum LiPo to V0 enclosure with LiPo width 0.03 >=(-0.001,0.014)
+V0.E.2b
+0 0 2 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+V0.E.2b: Minimum LiPo to V0 enclosure with LiPo width 0.04 >=(0.004,0.012)
+V0.E.2c
+0 0 2 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+V0.E.2c: Minimum LiPo to V0 enclosure with LiPo width 0.05 >=(0.009,0.009)
+V0.E.3a_V0.E.3b
+0 0 2 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+V0.E.3a_V0.E.3b: Minimum M1 to V0 enclosure >= (0,0.04) or (0.009,0.024)
+CutM11.W.1
+0 0 2 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+CUTM11.W.1: Exact CutMetal width in the non preferred metal direction 0.032 um
+CutM11.W.2
+0 0 2 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+CUTM11.W.2: Minimum CutMetal length in the preferred metal direction >=0.052 um
+CutM11.W.3
+0 0 2 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+CUTM11.W.3: Maximum CutMetal length in the preferred metal direction <=1.0 um
+METAL11.W.1
+0 0 2 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+Minimum M1_all width 0.032
+METAL11.W.2
+0 0 2 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+Maximum M1_all width 2.0
+METAL11.SP.1.1
+0 0 2 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+Minimum M1_all to M1_all space 0.032
+CUTM11.E.1
+0 0 2 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+Minimum CUTM11 extension beyond M1_all >= 0.01
+M1_MASK1_Conflict
+0 0 1 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+M1_MASK2_Conflict
+0 0 1 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+CutM11.SP.4
+0 0 2 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+Minimum CutMetal Space (different mask) >= 0.012
+METAL11.SP.2.1_Mask1
+0 0 1 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+METAL11.SP.2.2_Mask1
+0 0 1 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+METAL11.SP.2.3_Mask1
+0 0 1 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+METAL11.SP.2.4_Mask1
+0 0 1 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+METAL11.SP.4.1_Mask1
+0 0 1 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+CUTM11.SP.1_Mask1
+0 0 2 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+Minimum CutMetal Space (same mask) >= 0.064
+CUTM11.SP.3_Mask1
+0 0 2 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+Minimum CutMetal end of line space(exactly aligned) (same mask) >= 0.02
+CUTM11.SP.2_Mask1
+0 0 2 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+Minimum CutMetal end of line space (same mask) >= 0.08
+CUTM11.SE.1_Mask1
+0 0 2 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+Minimum CutMetal to Metal Space (same mask) >= 0.038
+METAL11.SP.2.1_Mask2
+0 0 1 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+METAL11.SP.2.2_Mask2
+0 0 1 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+METAL11.SP.2.3_Mask2
+0 0 1 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+METAL11.SP.2.4_Mask2
+0 0 1 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+METAL11.SP.4.1_Mask2
+0 0 1 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+CUTM11.SP.1_Mask2
+0 0 2 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+Minimum CutMetal Space (same mask) >= 0.064
+CUTM11.SP.3_Mask2
+0 0 2 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+Minimum CutMetal end of line space(exactly aligned) (same mask) >= 0.02
+CUTM11.SP.2_Mask2
+0 0 2 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+Minimum CutMetal end of line space (same mask) >= 0.08
+CUTM11.SE.1_Mask2
+0 0 2 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+Minimum CutMetal to Metal Space (same mask) >= 0.038
+METAL11.A.1
+0 0 2 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+Minimum M1_all area 0.006176
+CutM12.W.1
+0 0 2 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+CUTM12.W.1: Exact CutMetal width in the non preferred metal direction 0.032 um
+CutM12.W.2
+0 0 2 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+CUTM12.W.2: Minimum CutMetal length in the preferred metal direction >=0.052 um
+CutM12.W.3
+0 0 2 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+CUTM12.W.3: Maximum CutMetal length in the preferred metal direction <=1.0 um
+METAL12.W.1
+0 0 2 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+Minimum M2_all width 0.032
+METAL12.W.2
+0 0 2 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+Maximum M2_all width 2.0
+METAL12.SP.1.1
+0 0 2 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+Minimum M2_all to M2_all space 0.032
+CUTM12.E.1
+0 0 2 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+Minimum CUTM12 extension beyond M2_all >= 0.01
+M2_MASK1_Conflict
+0 0 1 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+M2_MASK2_Conflict
+0 0 1 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+CutM12.SP.4
+0 0 2 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+Minimum CutMetal Space (different mask) >= 0.012
+METAL12.SP.2.1_Mask1
+0 0 1 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+METAL12.SP.2.2_Mask1
+0 0 1 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+METAL12.SP.2.3_Mask1
+0 0 1 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+METAL12.SP.2.4_Mask1
+0 0 1 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+METAL12.SP.4.1_Mask1
+0 0 1 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+CUTM12.SP.1_Mask1
+0 0 2 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+Minimum CutMetal Space (same mask) >= 0.064
+CUTM12.SP.3_Mask1
+0 0 2 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+Minimum CutMetal end of line space(exactly aligned) (same mask) >= 0.02
+CUTM12.SP.2_Mask1
+0 0 2 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+Minimum CutMetal end of line space (same mask) >= 0.08
+CUTM12.SE.1_Mask1
+0 0 2 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+Minimum CutMetal to Metal Space (same mask) >= 0.038
+METAL12.SP.2.1_Mask2
+0 0 1 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+METAL12.SP.2.2_Mask2
+0 0 1 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+METAL12.SP.2.3_Mask2
+0 0 1 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+METAL12.SP.2.4_Mask2
+0 0 1 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+METAL12.SP.4.1_Mask2
+0 0 1 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+CUTM12.SP.1_Mask2
+0 0 2 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+Minimum CutMetal Space (same mask) >= 0.064
+CUTM12.SP.3_Mask2
+0 0 2 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+Minimum CutMetal end of line space(exactly aligned) (same mask) >= 0.02
+CUTM12.SP.2_Mask2
+0 0 2 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+Minimum CutMetal end of line space (same mask) >= 0.08
+CUTM12.SE.1_Mask2
+0 0 2 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+Minimum CutMetal to Metal Space (same mask) >= 0.038
+METAL12.A.1
+0 0 2 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+Minimum M2_all area 0.006176
+CutM13.W.1
+0 0 2 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+CUTM13.W.1: Exact CutMetal width in the non preferred metal direction 0.032 um
+CutM13.W.2
+0 0 2 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+CUTM13.W.2: Minimum CutMetal length in the preferred metal direction >=0.052 um
+CutM13.W.3
+0 0 2 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+CUTM13.W.3: Maximum CutMetal length in the preferred metal direction <=1.0 um
+METAL13.W.1
+0 0 2 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+Minimum M3_all width 0.032
+METAL13.W.2
+0 0 2 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+Maximum M3_all width 2.0
+METAL13.SP.1.1
+0 0 2 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+Minimum M3_all to M3_all space 0.032
+CUTM13.E.1
+0 0 2 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+Minimum CUTM13 extension beyond M3_all >= 0.01
+M3_MASK1_Conflict
+0 0 1 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+M3_MASK2_Conflict
+0 0 1 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+CutM13.SP.4
+0 0 2 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+Minimum CutMetal Space (different mask) >= 0.012
+METAL13.SP.2.1_Mask1
+0 0 1 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+METAL13.SP.2.2_Mask1
+0 0 1 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+METAL13.SP.2.3_Mask1
+0 0 1 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+METAL13.SP.2.4_Mask1
+0 0 1 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+METAL13.SP.4.1_Mask1
+0 0 1 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+CUTM13.SP.1_Mask1
+0 0 2 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+Minimum CutMetal Space (same mask) >= 0.064
+CUTM13.SP.3_Mask1
+0 0 2 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+Minimum CutMetal end of line space(exactly aligned) (same mask) >= 0.02
+CUTM13.SP.2_Mask1
+0 0 2 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+Minimum CutMetal end of line space (same mask) >= 0.08
+CUTM13.SE.1_Mask1
+0 0 2 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+Minimum CutMetal to Metal Space (same mask) >= 0.038
+METAL13.SP.2.1_Mask2
+0 0 1 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+METAL13.SP.2.2_Mask2
+0 0 1 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+METAL13.SP.2.3_Mask2
+0 0 1 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+METAL13.SP.2.4_Mask2
+0 0 1 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+METAL13.SP.4.1_Mask2
+0 0 1 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+CUTM13.SP.1_Mask2
+0 0 2 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+Minimum CutMetal Space (same mask) >= 0.064
+CUTM13.SP.3_Mask2
+0 0 2 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+Minimum CutMetal end of line space(exactly aligned) (same mask) >= 0.02
+CUTM13.SP.2_Mask2
+0 0 2 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+Minimum CutMetal end of line space (same mask) >= 0.08
+CUTM13.SE.1_Mask2
+0 0 2 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+Minimum CutMetal to Metal Space (same mask) >= 0.038
+METAL13.A.1
+0 0 2 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+Minimum M3_all area 0.006176
+VIA11.W.1_W.2
+0 0 1 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+VIA11.SP.1
+0 0 2 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+Minimum V1_all to V1_all space 0.042
+V1_MASK1_LOCK_Conflict
+0 0 1 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+V1_MASK2_LOCK_Conflict
+0 0 1 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+V1_MASK3_LOCK_Conflict
+0 0 1 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+VIA1.SP.2_Same_Mask
+0 0 1 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+VIA11.C.1.1
+0 0 2 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+Minimum number of V1_all in M1_all & M2_all region with width >= 0.032 is 1
+VIA11.C.1.2
+0 0 2 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+Minimum number of V1_all in M1_all & M2_all region with width >= 0.0965 is 2
+VIA11.C.1.3
+0 0 2 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+Minimum number of V1_all in M1_all & M2_all region with width >= 0.3 is 4
+VIA11.C.1.4
+0 0 2 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+Minimum number of V1_all in M1_all & M2_all region with width >= 1.0 is 8
+VIA12.W.1_W.2
+0 0 1 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+VIA12.SP.1
+0 0 2 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+Minimum V2_all to V2_all space 0.042
+V2_MASK1_LOCK_Conflict
+0 0 1 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+V2_MASK2_LOCK_Conflict
+0 0 1 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+V2_MASK3_LOCK_Conflict
+0 0 1 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+VIA2.SP.2_Same_Mask
+0 0 1 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+VIA12.C.1.1
+0 0 2 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+Minimum number of V2_all in M2_all & M3_all region with width >= 0.032 is 1
+VIA12.C.1.2
+0 0 2 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+Minimum number of V2_all in M2_all & M3_all region with width >= 0.0965 is 2
+VIA12.C.1.3
+0 0 2 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+Minimum number of V2_all in M2_all & M3_all region with width >= 0.3 is 4
+VIA12.C.1.4
+0 0 2 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+Minimum number of V2_all in M2_all & M3_all region with width >= 1.0 is 8
+VIA13.W.1_W.2
+0 0 1 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+VIA13.SP.1
+0 0 2 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+Minimum V3_all to V3_all space 0.042
+V3_MASK1_LOCK_Conflict
+0 0 1 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+V3_MASK2_LOCK_Conflict
+0 0 1 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+V3_MASK3_LOCK_Conflict
+0 0 1 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+VIA3.SP.2_Same_Mask
+0 0 1 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+VIA13.C.1.1
+0 0 2 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+Minimum number of V3_all in M3_all & M4_all region with width >= 0.032 is 1
+VIA13.C.1.2
+0 0 2 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+Minimum number of V3_all in M3_all & M4_all region with width >= 0.0965 is 2
+VIA13.C.1.3
+0 0 2 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+Minimum number of V3_all in M3_all & M4_all region with width >= 0.3 is 4
+VIA13.C.1.4
+0 0 2 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+Minimum number of V3_all in M3_all & M4_all region with width >= 1.0 is 8
+METAL14.W.1
+0 0 2 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+Minimum M4 width 0.032
+METAL14.W.2
+0 0 2 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+Maximum M4 width 2.0
+METAL14.SP.2.1
+0 0 1 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+METAL14.SP.2.2
+0 0 1 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+METAL14.SP.2.3
+0 0 1 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+METAL14.SP.2.4
+0 0 1 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+METAL14.SP.4.1
+0 0 1 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+METAL14.A.1
+0 0 2 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+Minimum M4 area 0.006176
+METAL1B1.E.1.1
+0 0 2 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+Minimum M1_all width < 0.052 enclosure V1_sq rect on 4 sides (0,0.01,0,0.01)
+METAL1B1.E.1.3
+0 0 2 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+Minimum M1_all width >= 0.052 and < 0.068 enclosure V1_sq rect on 4 sides (0.028,0.01,0.028,0.01)
+METAL1B1.E.1.4
+0 0 2 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+Minimum M1_all width >= 0.068 enclosure V1_sq on 4 sides (0.018,0.018,0.018,0.018)
+METAL1B1.E.2.1
+0 0 2 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+Minimum M1_all width < 0.05 enclosure V1_rect rect on 4 sides (0.02,0,0.02,0)
+METAL1B1.E.2.2
+0 0 2 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+Minimum M1_all width >= 0.05 and < 0.052 enclosure V1_rect rect on 4 sides (0.012,0.009,0.012,0.009)
+METAL1B1.E.2.3
+0 0 2 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+Minimum M1_all width >= 0.052 and < 0.106 enclosure V1_rect rect on 4 sides (0.01,0.01,0.01,0.01)
+METAL1B1.E.2.4
+0 0 2 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+Minimum M1_all width >= 0.106 enclosure V1_rect on 4 sides (0.01,0,0.01,0)
+METAL1B2.E.1.1
+0 0 2 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+Minimum M2_all width < 0.052 enclosure V2_sq rect on 4 sides (0,0.01,0,0.01)
+METAL1B2.E.1.3
+0 0 2 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+Minimum M2_all width >= 0.052 and < 0.068 enclosure V2_sq rect on 4 sides (0.028,0.01,0.028,0.01)
+METAL1B2.E.1.4
+0 0 2 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+Minimum M2_all width >= 0.068 enclosure V2_sq on 4 sides (0.018,0.018,0.018,0.018)
+METAL1B2.E.2.1
+0 0 2 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+Minimum M2_all width < 0.05 enclosure V2_rect rect on 4 sides (0.02,0,0.02,0)
+METAL1B2.E.2.2
+0 0 2 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+Minimum M2_all width >= 0.05 and < 0.052 enclosure V2_rect rect on 4 sides (0.012,0.009,0.012,0.009)
+METAL1B2.E.2.3
+0 0 2 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+Minimum M2_all width >= 0.052 and < 0.106 enclosure V2_rect rect on 4 sides (0.01,0.01,0.01,0.01)
+METAL1B2.E.2.4
+0 0 2 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+Minimum M2_all width >= 0.106 enclosure V2_rect on 4 sides (0.01,0,0.01,0)
+METAL1B3.E.1.1
+0 0 2 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+Minimum M3_all width < 0.052 enclosure V3_sq rect on 4 sides (0,0.01,0,0.01)
+METAL1B3.E.1.3
+0 0 2 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+Minimum M3_all width >= 0.052 and < 0.068 enclosure V3_sq rect on 4 sides (0.028,0.01,0.028,0.01)
+METAL1B3.E.1.4
+0 0 2 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+Minimum M3_all width >= 0.068 enclosure V3_sq on 4 sides (0.018,0.018,0.018,0.018)
+METAL1B3.E.2.1
+0 0 2 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+Minimum M3_all width < 0.05 enclosure V3_rect rect on 4 sides (0.02,0,0.02,0)
+METAL1B3.E.2.2
+0 0 2 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+Minimum M3_all width >= 0.05 and < 0.052 enclosure V3_rect rect on 4 sides (0.012,0.009,0.012,0.009)
+METAL1B3.E.2.3
+0 0 2 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+Minimum M3_all width >= 0.052 and < 0.106 enclosure V3_rect rect on 4 sides (0.01,0.01,0.01,0.01)
+METAL1B3.E.2.4
+0 0 2 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+Minimum M3_all width >= 0.106 enclosure V3_rect on 4 sides (0.01,0,0.01,0)
+METAL1T2.E.1.1
+0 0 2 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+Minimum M2_all width < 0.052 enclosure V1_sq rect on 4 sides (0,0.01,0,0.01)
+METAL1T2.E.1.3
+0 0 2 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+Minimum M2_all width >= 0.052 and < 0.068 enclosure V1_sq rect on 4 sides (0.028,0.01,0.028,0.01)
+METAL1T2.E.1.4
+0 0 2 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+Minimum M2_all width >= 0.068 enclosure V1_sq on 4 sides (0.018,0.018,0.018,0.018)
+METAL1T2.E.2.1
+0 0 2 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+Minimum M2_all width < 0.05 enclosure V1_rect rect on 4 sides (0.02,0,0.02,0)
+METAL1T2.E.2.2
+0 0 2 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+Minimum M2_all width >= 0.05 and < 0.052 enclosure V1_rect rect on 4 sides (0.012,0.009,0.012,0.009)
+METAL1T2.E.2.3
+0 0 2 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+Minimum M2_all width >= 0.052 and < 0.106 enclosure V1_rect rect on 4 sides (0.01,0.01,0.01,0.01)
+METAL1T2.E.2.4
+0 0 2 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+Minimum M2_all width >= 0.106 enclosure V1_rect on 4 sides (0.01,0,0.01,0)
+METAL1T3.E.1.1
+0 0 2 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+Minimum M3_all width < 0.052 enclosure V2_sq rect on 4 sides (0,0.01,0,0.01)
+METAL1T3.E.1.3
+0 0 2 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+Minimum M3_all width >= 0.052 and < 0.068 enclosure V2_sq rect on 4 sides (0.028,0.01,0.028,0.01)
+METAL1T3.E.1.4
+0 0 2 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+Minimum M3_all width >= 0.068 enclosure V2_sq on 4 sides (0.018,0.018,0.018,0.018)
+METAL1T3.E.2.1
+0 0 2 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+Minimum M3_all width < 0.05 enclosure V2_rect rect on 4 sides (0.02,0,0.02,0)
+METAL1T3.E.2.2
+0 0 2 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+Minimum M3_all width >= 0.05 and < 0.052 enclosure V2_rect rect on 4 sides (0.012,0.009,0.012,0.009)
+METAL1T3.E.2.3
+0 0 2 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+Minimum M3_all width >= 0.052 and < 0.106 enclosure V2_rect rect on 4 sides (0.01,0.01,0.01,0.01)
+METAL1T3.E.2.4
+0 0 2 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+Minimum M3_all width >= 0.106 enclosure V2_rect on 4 sides (0.01,0,0.01,0)
+METAL1T4.E.1.1
+0 0 2 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+Minimum M4_all width < 0.052 enclosure V3_sq rect on 4 sides (0,0.01,0,0.01)
+METAL1T4.E.1.3
+0 0 2 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+Minimum M4_all width >= 0.052 and < 0.068 enclosure V3_sq rect on 4 sides (0.028,0.01,0.028,0.01)
+METAL1T4.E.1.4
+0 0 2 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+Minimum M4_all width >= 0.068 enclosure V3_sq on 4 sides (0.018,0.018,0.018,0.018)
+METAL1T4.E.2.1
+0 0 2 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+Minimum M4_all width < 0.05 enclosure V3_rect rect on 4 sides (0.02,0,0.02,0)
+METAL1T4.E.2.2
+0 0 2 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+Minimum M4_all width >= 0.05 and < 0.052 enclosure V3_rect rect on 4 sides (0.012,0.009,0.012,0.009)
+METAL1T4.E.2.3
+0 0 2 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+Minimum M4_all width >= 0.052 and < 0.106 enclosure V3_rect rect on 4 sides (0.01,0.01,0.01,0.01)
+METAL1T4.E.2.4
+0 0 2 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+Minimum M4_all width >= 0.106 enclosure V3_rect on 4 sides (0.01,0,0.01,0)
+VIA24.W.1
+0 0 2 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+Minimum and Maximum suare V4 width and length 0.042
+VIA24.SP.1
+0 0 2 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+Minimum V4 to V4 space 0.062
+VIA24.SP.2
+0 0 1 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+VIA24.C.1.1
+0 0 2 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+Minimum number of V4 in M4 & M5 region with width >= 0.042 is 1
+VIA24.C.1.2
+0 0 2 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+Minimum number of V4 in M4 & M5 region with width >= 0.1 is 2
+VIA24.C.1.3
+0 0 2 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+Minimum number of V4 in M4 & M5 region with width >= 0.3 is 4
+VIA24.C.1.4
+0 0 2 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+Minimum number of V4 in M4 & M5 region with width >= 1.0 is 8
+VIA25.W.1
+0 0 2 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+Minimum and Maximum suare V5 width and length 0.042
+VIA25.SP.1
+0 0 2 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+Minimum V5 to V5 space 0.062
+VIA25.SP.2
+0 0 1 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+VIA25.C.1.1
+0 0 2 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+Minimum number of V5 in M5 & M6 region with width >= 0.042 is 1
+VIA25.C.1.2
+0 0 2 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+Minimum number of V5 in M5 & M6 region with width >= 0.1 is 2
+VIA25.C.1.3
+0 0 2 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+Minimum number of V5 in M5 & M6 region with width >= 0.3 is 4
+VIA25.C.1.4
+0 0 2 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+Minimum number of V5 in M5 & M6 region with width >= 1.0 is 8
+VIA2X.E.1
+0 0 2 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+Minimum M4 enclosure V4 on 4 sides (0.008,0.008,0.008,0.008)
+METAL25.W.1
+0 0 2 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+Minimum M5 width 0.058
+METAL25.W.2
+0 0 2 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+Maximum M5 width 3.0
+METAL25.SP.1.1
+0 0 2 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+Minimum M5 to M5 space 0.068
+METAL25.SP.1.2
+0 0 2 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+Minimum M5 to M5 spacing width >= 0.06 is 0.08
+METAL25.SP.1.3
+0 0 2 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+Minimum M5 to M5 spacing width >= 0.09 is 0.10
+METAL25.SP.2.1
+0 0 2 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+Minimum M5 end of line spacing 0.074 um
+METAL25.A.1
+0 0 2 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+Minimum M5 area 0.0082
+METAL2T5.E.1.1
+0 0 2 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+Minimum M5 enclosure of V4 0.008
+METAL26.W.1
+0 0 2 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+Minimum M6 width 0.058
+METAL26.W.2
+0 0 2 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+Maximum M6 width 3.0
+METAL26.SP.1.1
+0 0 2 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+Minimum M6 to M6 space 0.068
+METAL26.SP.1.2
+0 0 2 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+Minimum M6 to M6 spacing width >= 0.06 is 0.08
+METAL26.SP.1.3
+0 0 2 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+Minimum M6 to M6 spacing width >= 0.09 is 0.10
+METAL26.SP.2.1
+0 0 2 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+Minimum M6 end of line spacing 0.074 um
+METAL26.A.1
+0 0 2 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+Minimum M6 area 0.0082
+METAL2T6.E.1.1
+0 0 2 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+Minimum M6 enclosure of V5 0.008
+METAL2B5.E.1.1
+0 0 2 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+Minimum M5 enclosure of V5 0.008
+VIA46.W.1
+0 0 2 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+Minimum and Maximum suare V6 width and length 0.064
+VIA46.SP.1
+0 0 2 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+Minimum V6 to V6 space 0.084
+VIA46.SP.2
+0 0 1 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+VIA46.C.1.1
+0 0 2 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+Minimum number of V6 in M6 & M7 region with width >= 0.064 is 1
+VIA46.C.1.2
+0 0 2 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+Minimum number of V6 in M6 & M7 region with width >= 0.15 is 2
+VIA46.C.1.3
+0 0 2 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+Minimum number of V6 in M6 & M7 region with width >= 0.6 is 4
+VIA46.C.1.4
+0 0 2 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+Minimum number of V6 in M6 & M7 region with width >= 1.3 is 8
+VIA4X.E.1
+0 0 2 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+Minimum M6 enclosure V6 on 4 sides (0.015,0.015,0.015,0.015)
+METAL47.W.1
+0 0 2 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+Minimum M7 width 0.069
+METAL47.W.2
+0 0 2 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+Maximum M7 width 4.0
+METAL47.SP.2.1
+0 0 2 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+Minimum M7 to M7 space 0.09
+METAL47.SP.2.2
+0 0 2 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+Minimum M7 to M7 spacing width >= 0.5 is 0.12
+METAL47.SP.2.3
+0 0 2 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+Minimum M7 to M7 spacing width >= 1.0 is 0.4
+METAL47.SP.4.1
+0 0 2 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+Minimum M7 end of line spacing 0.096 um
+METAL47.A.1
+0 0 2 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+Minimum M7 area 0.01
+METAL47.E.1.1
+0 0 2 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+Minimum M7 enclosure of V6 0.015
+CAPMET.E.1
+0 0 2 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+Minimum CMT enclosure of VT 0.08
+CAPMET.E.2
+0 0 2 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+Minimum M7 enclosure of CMT 0.04
+CAPMET.W.1
+0 0 2 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+CAPMET.W.1: Minimum width of CMT >= 0.26
+CAPMET.S.1
+0 0 2 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+CAPMET.S.1: Minimum space of CMT >= 1.0
+VIAT.W.1
+0 0 2 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+VIAT.W.1: Maximum and minimum VT width and length is 0.1
+VIAT.SP.1
+0 0 2 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+VIAT.SP.1: Minimum VT to VT spacing >= 0.12
+VIAT.SP.2
+0 0 2 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+VIAT.SP.2: Minimum 3 adjacent VT to VT spacing >= 0.16 um
+VIAT.C.1.1
+0 0 2 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+VIAT.C.1.1: Minimum number of VT in MT width >= 0.15 is 1
+VIAT.C.1.2
+0 0 2 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+VIAT.C.1.2: Minimum number of VT in MT width >= 0.5 is 2
+VIAT.C.1.3
+0 0 2 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+VIAT.C.1.3: Minimum number of VT in MT width >= 1.0 is 4
+VIAT.C.1.4
+0 0 2 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+VIAT.C.1.4: Minimum number of VT in MT width >= 2.0 is 8
+VIAT.E.1
+0 0 2 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+VIAT.E.1: Minimum last(4x) Metal enclosure of VT >= (0.03, 0.03)
+METALT.W.1
+0 0 2 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+METALT.W.1: Minimum MT width >= 0.22
+METALT.W.2
+0 0 2 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+METALT.W.2: Maximum width <= 6.0
+METALT.SP.1.1
+0 0 2 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+METALT.SP.1.1: Minimum spacing >= 0.20
+METALT.SP.1.2
+0 0 2 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+METALT.SP.1.2: Minimum spacing(with width >=0.75) >= 0.35
+METALT.SP.1.3
+0 0 2 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+METALT.SP.1.3: Minimum spacing(with width >=1.5) >= 0.55
+METALT.SP.1.4
+0 0 2 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+METALT.SP.1.4: Minimum spacing(with width >=2.5) >= 0.75
+METALT.SP.1.5
+0 0 2 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+METALT.SP.1.5: Minimum spacing(with width >=3.5) >= 1.25
+METALT.A.1
+0 0 2 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+METALT.A.1: Minimum area for MT >= 0.0484 um
+METALT.E.1
+0 0 2 Jun 22 16:01:05 2026
+Rule File Pathname: /root/Kamalin/pvs_runs/.technology.rul
+METALT.E.1: Minimum MT to VT enclosure >=(0.06,0.06)

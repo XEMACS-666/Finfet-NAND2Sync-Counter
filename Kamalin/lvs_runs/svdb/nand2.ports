@@ -1,0 +1,7 @@
+# SVDB: Port Table (ports)
+# SVDB: Layout Primary nand2
+Y 3 Y 2692 1878 m1_conn_mask2
+A 6 A 30 2734 m1_conn_mask2
+B 1 B 32 912 m1_conn_mask1
+vdd 2 vdd 1360 3614 m1_conn_mask1
+gnd 5 gnd 1242 20 m1_conn_mask2

@@ -1,0 +1,29 @@
+Gds_Map 2000
+Layers:
+0 0 24 Jun 22 16:06:09 2026
+ngate 0 0
+pgate 2 0
+V1 11 0
+n1svt_dev 15 0
+ntap 24 0
+ptap 25 0
+cont_ndiff 28 0
+cont_pdiff 29 0
+cont_poly 31 0
+V0_Act 32 0
+V0_Po 33 0
+p1svt_dev 35 0
+fin_marker_layer 38 0
+psub 63 0
+LiAct 64 0
+LiPo 66 0
+nw_conn 68 0
+npoly_conn 73 0
+ppoly_conn 74 0
+nsd 85 0
+psd 86 0
+m1_conn_mask1 94 0
+m1_conn_mask2 97 0
+m2_conn_mask2 107 0
+END OF RESPONSE
+0 0 0 Jun 22 16:06:09 2026

@@ -1,0 +1,36 @@
+************************************************************************
+* auCdl Netlist:
+* 
+* Library Name:  Kamalin
+* Top Cell Name: nand2
+* View Name:     schematic
+* Netlisted on:  Jun 22 16:01:43 2026
+************************************************************************
+
+*.BIPOLAR
+*.RESI = 2000 
+*.RESVAL
+*.CAPVAL
+*.DIOPERI
+*.DIOAREA
+*.EQUATION
+*.SCALE METER
+*.MEGA
+.PARAM
+
+
+
+************************************************************************
+* Library Name: Kamalin
+* Cell Name:    nand2
+* View Name:    schematic
+************************************************************************
+
+.SUBCKT nand2 A B Y gnd vdd
+*.PININFO A:I B:I Y:O gnd:B vdd:B
+MNM1 net1 B gnd gnd n1svt m=1 l=18.0n nfin=4 nf=1
+MNM0 Y A net1 gnd n1svt m=1 l=18.0n nfin=4 nf=1
+MPM1 Y B vdd vdd p1svt m=1 l=18n nfin=2 nf=1
+MPM0 Y A vdd vdd p1svt m=1 l=18n nfin=2 nf=1
+.ENDS
+

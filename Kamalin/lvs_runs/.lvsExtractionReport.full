@@ -1,0 +1,32 @@
+			*****************************************************
+			**                                                 **
+			**                L V S  R E P O R T               **
+			**                                                 **
+			*****************************************************
+
+
+Report File Name         : nand2.rep
+ERC Summary File         : nand2.sum
+LVS Comparison Report    : nand2.rep.cls
+Layout Name              : /root/Kamalin/lvs_runs/nand2.gds ("nand2")
+User Name                : root
+Creation Time            : Mon Jun 22 16:06:09 2026
+Current directory        : /root/Kamalin/lvs_runs
+PVS Version              : 22.20-p031 Thu Nov 17 19:06:38 PST 2022
+
+
+			*****************************************************
+			**                                                 **
+			**            D E V E X T  R E P O R T             **
+			**                                                 **
+			*****************************************************
+
+
+
+Clean cell list (added by extraction report parser )
+ for cell "M1_LiAct_CDNS_2"
+ for cell "M2_M1_CDNS_1"
+ for cell "n1svt_CDNS_5"
+ for cell "nand2"
+ for cell "nwellTap_CDNS_3"
+ for cell "p1svt_CDNS_6"

@@ -1,0 +1,1 @@
+technology "cds_ff_mpt_pvs" -ruleSet "default" -techLib "/home/install/FOUNDRY/cds_ff_mpt_v_0.5/pvtech.lib";

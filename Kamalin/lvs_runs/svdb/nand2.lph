@@ -1,0 +1,13 @@
+# Placement Hierarchy File (lph)
+# 
+# 
+# 
+% p1svt_CDNS_6 4
+M0 MP 4
+% n1svt_CDNS_5 4
+M0 MN 4
+% nand2 5
+X11 n1svt_CDNS_5 4
+X12 n1svt_CDNS_5 4
+X13 p1svt_CDNS_6 4
+X14 p1svt_CDNS_6 4

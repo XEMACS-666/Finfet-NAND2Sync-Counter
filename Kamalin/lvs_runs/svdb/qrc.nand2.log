@@ -1,0 +1,1862 @@
+
+
+  Cadence Quantus Extraction - 64-bit Parasitic Extractor - Version
+21.2.2-p045 Fri Sep 23 10:56:50 PDT 2022
+---------------------------------------------------------------------------------------------------------------
+                                  Copyright 2022 Cadence Design Systems,
+Inc.
+
+INFO (LBRCXM-642): Constructing the RCX run script
+
+Forking: agdsPrep -V -rundir /root/Kamalin/lvs_runs/svdb -agf /root/Kamalin/lvs_runs/svdb/nand2.agf -outdir /tmp/qrc_96885/nand2 -sch -df2 -e /root/Kamalin/lvs_runs/svdb/nand2.gds.map:nand2.alm,nand2.ilf -pl nand2.ports -mcell /tmp/qrc_96885/nand2/nand2.hcl -d nand2.devtab -l /root/Kamalin/lvs_runs/svdb/nand2.lvsfile -i nand2.ixf,nand2.lph,nand2.sph:nand2.gdx -n nand2.nxf,nand2.stl:nand2.gnx -s nand2_pin_xy.spi:nand2.xcn,hccidtmfile
+
+agdsPrep took  0.00 user, 0.00 sys, 0.00 elapsed, 14884.0 kbytes
+Forking:  capgen -techdir /home/install/FOUNDRY/cds_ff_mpt_v_0.5/qrc/typical -inc /tmp/qrc_96885/nand2/nand2.ilf -lvs /tmp/qrc_96885/nand2/nand2.xcn -lvsvia -p2lvs /home/install/FOUNDRY/cds_ff_mpt_v_0.5/qrc/typical/qrcTechFile -reseqn -sw3d -cap_ground_layer psub -canonical_res_caps -lexclude Poly -length_units meters -blocking qrcgate:0.001,Oxide -blocking fin_marker_layer:0.001,Poly,Active,Oxide -blocking NPNdmy:-0.001,Poly,Active,Oxide -blocking mim_cap_dev:-0.001,M7,MT -blocking nd1hvt_dev:0.001,Poly,Active,Oxide -blocking nd1lvt_dev:0.001,Poly,Active,Oxide -blocking nd1svt_dev:0.001,Poly,Active,Oxide -blocking nd2svt_dev:0.001,Poly,Active,Oxide -blocking pd1hvt_dev:0.001,Poly,Active,Oxide -blocking pd1lvt_dev:0.001,Poly,Active,Oxide -blocking pd1svt_dev:0.001,Poly,Active,Oxide -blocking pd2svt_dev:0.001,Poly,Active,Oxide /tmp/qrc_96885/nand2
+
+INFO (LBMISC-215205): 
+*** Cadence Quantus Extraction Techgen -trans VERSION 21.2.2 Linux 64 bit - (Fri Sep 23 10:27:37 PDT 2022)  ***
+
+
+INFO (CAPGEN-41199): 
+
+
+Techgen -trans results will be written to directory: /tmp/qrc_96885/nand2
+
+INFO (CAPGEN-41737): Lvs connect layers CMT ndiffres_term nw_term pdiffres_term are not mapped in layer_setup file
+
+The supplied design data will be treated as a HIERARCHICAL design
+rcxspice took  0.22 user, 0.03 sys, 1.00 elapsed, 94516.0 kbytes
+
+Successfully created RCX script '/tmp/qrc_96885/nand2/rcx.sh'
+INFO (LBRCXM-783): Creating runtime extview.rul file : 
+/home/install/QUANTUS212/tools/extraction/bin/64bit//icellToQrc -ext both -i /home/install/FOUNDRY/cds_ff_mpt_v_0.5/qrc/typical/extview.trp -x /tmp/qrc_96885/nand2/nand2.xcn
+
+INFO (ICEMAP-221908): Reading transfer property file: /home/install/FOUNDRY/cds_ff_mpt_v_0.5/qrc/typical/extview.trp
+
+INFO (LBRCXU-108): Starting
+
+ /home/install/IC618/bin/qrcToDfII -extract both -run_name nand2 -call_proc /home/install/FOUNDRY/cds_ff_mpt_v_0.5/qrc/typical/callProc.il -cdlout_run_dir /root/Kamalin/lvs_runs -check_cell_view TRUE -device_finger_delimiter @ -extracted_view av_extracted -lvs_source agds -cap_models yes -capacitor pcapacitor -res_models yes -resistor presistor -cap_prop_name c -res_prop_name r -transfer_net_expression TRUE -t -extview_tmp /tmp/qrc_96885/nand2/extview.tmp -run_dir /tmp/qrc_96885/nand2 -cdslib /root/cds.lib -lib_name Kamalin -cell_name nand2 -view_name layout -extview_rul /tmp/qrc_96885/nand2/extview.rul -server /home/install/QUANTUS212/tools/extraction/bin/64bit//../shapeServer
+Virtuoso Framework License (111) was checked out successfully. Total checkout time was 1.87s.
+device n1svt M n1svt_dev n1svt symbol cds_ff_mpt D G S B 
+Loading cds_ff_mpt/libInit.il ...
+	Loading cds_ff_mpt/loadCxt.ile ... done!
+	Loading context 'cds_ff_mpt' from library 'cds_ff_mpt' ... done!
+	Loading context 'pdkUtils' from library 'cds_ff_mpt' ... done!
+	Loading cds_ff_mpt/cds_ff_mpt_customFilter.il ... done!
+	Loading cds_ff_mpt/libInitCustomExit.il ... 
+	Loading Environment Settings ...
+	Loading cds_ff_mpt/libInitCktPro.il ... done!
+
+  *************************************************************           
+  *              Cadence Design Systems, Inc.                 *           
+  *                                                           *           
+  *             Generic Finfet Multi Pattern PDK              *           
+  *                     (cds_ff_mpt)                          *           
+  *                                                           *           
+  *************************************************************           
+	
+
+	VERSION: 0.5 (10-June-2019) built using ICADVM181-ISR3
+
+done!
+	Loading cds_ff_mpt/cds_ff_mptFgrUtil.il ... 
+*Error* _iliGetSlotSpecs: not a class object or class name - vfoAdvGuardRing
+failed!
+	Loading cds_ff_mpt/cds_ff_mptFgrRing.il ... 
+done!
+Failed to load cds_ff_mpt/libInit.il successfully!*WARNING* (defmethod): unknown class cds_ff_mptFgrGuardRing_ver_1 when defining vfoSfDraw method
+
+device p1svt M p1svt_dev p1svt symbol cds_ff_mpt D G S B 
+
+All device symbols for the extracted view are present.
+
+INFO (LBRCXU-114): Finished /home/install/IC618/bin/qrcToDfII
+
+INFO (LBRCXM-581): Checked out '1' license(s) of QTS320 21.20
+
+INFO (LBRCXM-581): Checked out '1' license(s) of QTS530 21.20
+
+INFO (LBRCXM-581): Checked out '1' license(s) of QTS300 21.20
+
+INFO (LBRCXM-608): Executing command
+   /bin/ksh  /tmp/qrc_96885/nand2/rcx.sh
+
+##=======================================================
+##ADD_EXPLICIT_VIAS=N
+##ADD_BULK_TERMINAL=N
+##AGDS_FILE=/dev/null
+##AGDS_LAYER_MAP_FILE=/root/Kamalin/lvs_runs/svdb/nand2.gds.map
+##HCCI_DEV_PROP_FILE=/dev/null
+##AGDS_SPICE_FILE=/dev/null
+##AGDS_TEXT_LAYERS=
+##ARRAY_VIAS_SPACING=
+##ASSURA_RUN_DIR=.
+##ASSURA_RUN_NAME=run1
+##BLACK_BOX_CELLS=/dev/null
+##BREAK_WIDTH=
+##CAP_COUPLING_FACTOR=1.0
+##CAP_EXTRACT_MODE=decoupled
+##CAP_GROUND=gnd
+##CAP_MODELS=yes
+##DANGLINGR=N
+##DENSITY_CHECK_METHOD=P
+##DELETE_OUTPUT_FILE=N
+##DEVICE_FINGER_DELIMITER='@'
+##DF2=Y
+##DRACULA_RUN_DIR=
+##DRACULA_RUN_NAME=
+##ENABLESENSITIVITYEXTRACTION=N
+##EXCLUDE_FLOAT_LIMIT=
+##EXCLUDE_FLOAT_DECOPULING_FACTOR=
+##EXCLUDE_FLOATING_NETS=N
+##EXCLUDE_NETS_REDUCERC=/dev/null
+##EXCLUDE_SELF_CAPS=N
+##IGNORE_GATE_DIFFUSION_FRINGING_CAP=Y
+##EXTRACT=both
+##EXTRACT_MOS_DIFFUSION_AP=N
+##EXTRACT_MOS_DIFFUSION_HIGH=
+##EXTRACT_MOS_DIFFUSION_RES=N
+##FILTER_SIZE=2.0
+##FIXED_NETS_FILE=/dev/null
+##FMAX=
+##FRACTURE_LENGTH_UNITS=MICRONS
+##FREQUENCY_FILE=/dev/null
+##GROUND_NETS=
+##GROUND_NETS_FILE=/dev/null
+##GROUND_SUBSTRATE_FLOATING_NETS=N
+##HCCI_DEV_PROP=7
+##HCCI_INST_PROP=6
+##HCCI_NET_PROP=5
+##HCCI_RULE_FILE=
+##HCCI_RUN_DIR=/root/Kamalin/lvs_runs/svdb
+##HCCI_RUN_NAME=nand2
+##HEADER_FILE=/dev/null
+##HIERARCHY_DELIMITER='/'
+##OUTPUT_HIERARCHY_DELIMITER='/'
+##HRCX_CELLS_FILE=/dev/null
+##IMPORT_GLOBALS=Y
+##LADDER_NETWORK=N
+##LVS_SOURCE=hcci
+##M_FACTORR=infinite
+##M_FACTORW=N
+##MACRO_CELL=N
+##MAX_FRACTURE_LENGTH=infinite
+##MAX_SIGNALS=
+##MERGE_PARALLEL_R=N
+##MERGE_PARALLEL_VIA=N
+##MINC=
+##MINC_BY_PERCENTAGE=
+##MINR=0.001
+##NET_NAME_SPACE=layout
+##NETS_FILE=/dev/null
+##OUTPUT=/tmp/qrc_96885/nand2/extview.tmp
+##OUTPUT_NET_NAME_SPACE=schematic
+##PARASITIC_BLOCKING_DEVICE_CELLS_TYPE=gray
+##PARASITIC_CAP_MODELS=yes
+##PARASITIC_RES_MODELS=comment
+##PARASITIC_RES_LENGTH=N
+##PARASITIC_RES_WIDTH=Y
+##PARASITIC_RES_WIDTH_DRAWN=N
+##PARASITIC_RES_UNIT=N
+##PARTIAL_CAP_BLOCKING=N
+##PEEC=N
+##PIN_ORDER_FILE=/dev/null
+##PIPE_ADVGEN=
+##PIPE_SPICE2DB=
+##POWER_NETS=
+##POWER_NETS_FILE=/dev/null
+##RC_FREQUENCY=
+##RCXDIR=/tmp/qrc_96885/nand2
+##RCXFS_HIGH=N
+##RCXFS_NETS_FILE=
+##RCXFS_TYPE=none
+##RCXFS_CUTOFF_DISTANCE=
+##RCXFS_CUTOFF_DISTANCE=
+##RCXFS_CUTOFF_DISTANCE=
+##RCXFS_CUTOFF_DISTANCE=
+##RCXFS_CUTOFF_DISTANCE=
+##RCXFS_VIA_OFF=N
+##REDUCERC=N
+##REGION_LIMIT=
+##RES_MODELS=yes
+##RISE_TIME=
+##SAVE_FILL_SHAPES=N
+##SINGLE_CAP_EDSPF=N
+##SHOW_DIODES=N
+##SKIN_FREQUENCY=
+##SPEF=N
+##SPEF_UNITS=
+##SPLIT_PINS=N
+##FORCE_SUBCELL_PIN_ORDERS=N
+##SPLIT_PINS_DISTANCE=
+##SUB_NODE_CHAR='#'
+##SUBSTRATE_PROFILE=/dev/null
+##SUBSTRATE_STAMPING_OFF=N
+##TEMPDIR=/tmp/qrc_96885/nand2/rcx_temp
+##TEMPERATURE=25.0
+##TYPE=full
+##USER_REGION=/dev/null
+##VARIANT_CELL_FILE=/dev/null
+##VIA_EFFECT_OFF=N
+##VIRTUAL_FILL=
+##XREF=/tmp/qrc_96885/nand2/nand2.gnx,/tmp/qrc_96885/nand2/nand2.gdx
+##XY_COORDINATES=c,r
+##=======================================================
+
+CASE_SENSITIVE=TRUE
+export CASE_SENSITIVE
+QRC_MOS_LW_PRECISION=y
+export QRC_MOS_LW_PRECISION
+TEMPDIR=`setTempDir /tmp/qrc_96885/nand2/rcx_temp`
+setTempDir /tmp/qrc_96885/nand2/rcx_temp
+export TEMPDIR
+DEVICE_FINGER_DELIMITER='@'
+HIERARCHY_DELIMITER='/'
+OUTPUT_HIERARCHY_DELIMITER='/'
+cd /tmp/qrc_96885/nand2
+cat <<ENDCAT> caps2dversion
+* caps2d version: 12
+ENDCAT
+cat <<ENDCAT> flattransUnit.info
+meters
+ENDCAT
+QRC=Y
+export QRC
+
+#==========================================================#
+# Generate RCX input data from annotated GDS2 database
+#==========================================================#
+
+agds2rcx -V -H satfile -r /tmp/qrc_96885/nand2/nand2.xcn \
+	-split_float_exclude_layers nw_0conn,psub -crundir \
+	/root/Kamalin/lvs_runs/svdb -unit meters -df2 -xgl -pl nand2.ports -f \
+	nand2.alm -lnn nand2.lnn -pnet 5 -pinst 6 -pdev 7 nand2.agf \
+	nand2_pin_xy.spi
+
+WARNING (AGDSEXT-30124): The <design>.props file is not available. The CCL option "input_db calibre/pvs/pegasus -design_properties_file <filename>" can be used to specify the .props file. 
+
+	***************************************************
+	*			  			  *
+	* Copyright (c) 2026 Cadence Design Systems, Inc. *
+	*		All Rights Reserved		  *
+	*			  			  *
+	*	  THIS IS UNPUBLISHED PROPRIETARY	  *
+	*  INFORMATION OF Cadence Design Systems, Inc. 	  *
+	*	   THE COPYRIGHT NOTICE DOES NOT	  *
+	*	       EVIDENCE PUBLICATION		  *
+	*			  			  *
+	***************************************************
+INFO (AGDSEXT-30016): 
+setting dbunit 5e-10 1 5e-10
+
+agds2rcx took 0.00 user, 0.04 sys, 0.00 elapsed, 16844.0 kbytes
+#==========================================================#
+# Calculate erosion tables for specified process layers
+#==========================================================#
+
+densitymap -V -TC -o M2.den 3.2 m2_0conn_0mask2
+densitymap took 0.00 user, 0.00 sys, 0.00 elapsed, 5328.0 kbytes
+densitymap -V -TC -o M1.den 3.2 m1_0conn_0mask1,m1_0conn_0mask2
+densitymap took 0.00 user, 0.00 sys, 0.00 elapsed, 5320.0 kbytes
+/bin/cp n1svt_0dev n1svt_0dev_orig
+geom n1svt_0dev nsd - n1svt_0dev,10,i,1
+/bin/cp p1svt_0dev p1svt_0dev_orig
+geom p1svt_0dev psd - p1svt_0dev,10,i,1
+
+#==========================================================#
+# Generate power list
+#==========================================================#
+
+cat global.net > power_list
+
+#==========================================================#
+# Create ports for abutment
+#==========================================================#
+
+geom -C npoly_0conn - npoly_0conn,1,i,1
+geom -C ppoly_0conn - ppoly_0conn,1,i,1
+inter npoly_0conn ppoly_0conn -t npoly_0conn_ppoly_0conn_butt:edge
+geom -C ngate - ngate,1,i,1
+inter npoly_0conn ngate -t npoly_0conn_ngate_butt:edge
+geom -C pgate - pgate,1,i,1
+inter ppoly_0conn pgate -t ppoly_0conn_pgate_butt:edge
+/bin/cp nsd nsd_orig
+geom nsd fin_0marker_0layer - nsd,11,i,1
+/bin/cp psd psd_orig
+geom psd fin_0marker_0layer - psd,11,i,1
+/bin/cp ntap ntap_orig
+geom ntap fin_0marker_0layer - ntap,11,i,1
+/bin/cp ptap ptap_orig
+geom ptap fin_0marker_0layer - ptap,11,i,1
+
+#==========================================================#
+# Ensure vias do not extend beyond routing
+#==========================================================#
+
+connect V0_0Act:V0_0Act_new - -
+geom V0_0Act_new m1_0conn_0mask1 LiAct - V0_0Act_small,111,i,1
+geom V0_0Act - V0_0Act,1,i,1
+epick -e V0_0Act_small V0_0Act_new V0_0Act_new2
+geom V0_0Act V0_0Act_new2 - V0_0Act_m1_0conn_0mask1_LiAct,11,i,1
+connect V0_0Act:V0_0Act_new - -
+geom V0_0Act_new m1_0conn_0mask2 LiAct - V0_0Act_small,111,i,1
+geom V0_0Act - V0_0Act,1,i,1
+epick -e V0_0Act_small V0_0Act_new V0_0Act_new2
+geom V0_0Act V0_0Act_new2 - V0_0Act_m1_0conn_0mask2_LiAct,11,i,1
+geom -V cont_0ndiff LiAct nsd - cont_0ndiff_LiAct_nsd,111,i,2
+geom took  0.00 user, 0.00 sys, 0.00 elapsed, 6436.0 kbytes
+geom -C cont_0ndiff,cont_0ndiff_LiAct_nsd - rcont_0ndiff_LiAct_nsd.orig,1,i,1
+geom -V cont_0ndiff LiAct ntap - cont_0ndiff_LiAct_ntap,111,i,2
+geom took  0.00 user, 0.00 sys, 0.00 elapsed, 6088.0 kbytes
+geom -C cont_0ndiff,cont_0ndiff_LiAct_ntap - rcont_0ndiff_LiAct_ntap.orig,1,i,1
+geom -V cont_0pdiff LiAct psd - cont_0pdiff_LiAct_psd,111,i,2
+geom took  0.00 user, 0.00 sys, 0.00 elapsed, 6384.0 kbytes
+geom -C cont_0pdiff,cont_0pdiff_LiAct_psd - rcont_0pdiff_LiAct_psd.orig,1,i,1
+geom -V cont_0pdiff LiAct ptap - cont_0pdiff_LiAct_ptap,111,i,2
+geom took  0.00 user, 0.00 sys, 0.00 elapsed, 6076.0 kbytes
+geom -C cont_0pdiff,cont_0pdiff_LiAct_ptap - rcont_0pdiff_LiAct_ptap.orig,1,i,1
+geom -V npoly_0conn ppoly_0conn - npoly_0conn_ppoly_0conn_ovia,11,i,1
+geom took  0.00 user, 0.00 sys, 0.00 elapsed, 6412.0 kbytes
+geom -V npoly_0conn npoly_0conn_ppoly_0conn_butt - npoly_0conn_npoly_0conn_ppoly_0conn_butt_ovia,11,i,1
+geom took  0.00 user, 0.00 sys, 0.00 elapsed, 6056.0 kbytes
+geom -V ppoly_0conn npoly_0conn_ppoly_0conn_butt - ppoly_0conn_npoly_0conn_ppoly_0conn_butt_ovia,11,i,1
+geom took  0.00 user, 0.00 sys, 0.00 elapsed, 6008.0 kbytes
+connect V0_0Po:V0_0Po_new - -
+geom V0_0Po_new m1_0conn_0mask1 LiPo - V0_0Po_small,111,i,1
+geom V0_0Po - V0_0Po,1,i,1
+epick -e V0_0Po_small V0_0Po_new V0_0Po_new2
+geom V0_0Po V0_0Po_new2 - V0_0Po_m1_0conn_0mask1_LiPo,11,i,1
+connect V0_0Po:V0_0Po_new - -
+geom V0_0Po_new m1_0conn_0mask2 LiPo - V0_0Po_small,111,i,1
+geom V0_0Po - V0_0Po,1,i,1
+epick -e V0_0Po_small V0_0Po_new V0_0Po_new2
+geom V0_0Po V0_0Po_new2 - V0_0Po_m1_0conn_0mask2_LiPo,11,i,1
+geom -V cont_0poly LiPo npoly_0conn - cont_0poly_LiPo_npoly_0conn,111,i,2
+geom took  0.00 user, 0.00 sys, 0.00 elapsed, 6412.0 kbytes
+geom -V cont_0poly LiPo ppoly_0conn - cont_0poly_LiPo_ppoly_0conn,111,i,2
+geom took  0.00 user, 0.00 sys, 0.00 elapsed, 6340.0 kbytes
+geom -V V1 m2_0conn_0mask2 m1_0conn_0mask1 - V1_m2_0conn_0mask2_m1_0conn_0mask1,1xx,i,1
+geom took  0.00 user, 0.00 sys, 0.00 elapsed, 6072.0 kbytes
+geom -V V1 m2_0conn_0mask2 m1_0conn_0mask2 - V1_m2_0conn_0mask2_m1_0conn_0mask2,1xx,i,1
+geom took  0.00 user, 0.00 sys, 0.00 elapsed, 6044.0 kbytes
+geom -V npoly_0conn ngate - npoly_0conn_ngate_ovia,11,i,1
+geom took  0.00 user, 0.00 sys, 0.00 elapsed, 6308.0 kbytes
+geom -V npoly_0conn npoly_0conn_ngate_butt - npoly_0conn_npoly_0conn_ngate_butt_ovia,11,i,1
+geom took  0.00 user, 0.00 sys, 0.00 elapsed, 6372.0 kbytes
+geom -V ngate npoly_0conn_ngate_butt - ngate_npoly_0conn_ngate_butt_ovia,11,i,1
+geom took  0.00 user, 0.00 sys, 0.00 elapsed, 6312.0 kbytes
+geom -V ppoly_0conn pgate - ppoly_0conn_pgate_ovia,11,i,1
+geom took  0.00 user, 0.00 sys, 0.00 elapsed, 6372.0 kbytes
+geom -V ppoly_0conn ppoly_0conn_pgate_butt - ppoly_0conn_ppoly_0conn_pgate_butt_ovia,11,i,1
+geom took  0.00 user, 0.00 sys, 0.00 elapsed, 6356.0 kbytes
+geom -V pgate ppoly_0conn_pgate_butt - pgate_ppoly_0conn_pgate_butt_ovia,11,i,1
+
+geom took  0.00 user, 0.00 sys, 0.00 elapsed, 6396.0 kbytes
+#==========================================================#
+# Flatten net file, routing, via and device layers
+#==========================================================#
+
+SAVEDIR=`beginFlattenInputs`
+beginFlattenInputs
+export SAVEDIR
+/bin/mv -f NET h_NET
+flatnet -V -li -h '/' h_NET NET
+flatnet took 0.00 user, 0.00 sys, 0.00 elapsed, 13552.0 kbytes
+netprint -V -N1 power_list:power_list_nums NET
+flattenTransistorData n1svt_0dev meters
+flattub took  0.00 user, 0.00 sys, 0.00 elapsed, 6348.0 kbytes
+flatnet took 0.00 user, 0.00 sys, 0.00 elapsed, 13612.0 kbytes
+flattrans took 0.00 user, 0.00 sys, 0.00 elapsed, 5440.0 kbytes
+flattenTransistorData p1svt_0dev meters
+flattub took  0.00 user, 0.00 sys, 0.00 elapsed, 6276.0 kbytes
+flatnet took 0.00 user, 0.00 sys, 0.00 elapsed, 13460.0 kbytes
+flattrans took 0.00 user, 0.00 sys, 0.00 elapsed, 5336.0 kbytes
+flattenLayers fin_0marker_0layer
+flattub took  0.00 user, 0.00 sys, 0.00 elapsed, 5732.0 kbytes
+flattenLayers -m V0_0Act cont_0ndiff cont_0pdiff V0_0Po cont_0poly V1 \
+	m2_0conn_0mask2 m1_0conn_0mask1 m1_0conn_0mask2 LiPo LiAct ngate \
+	pgate npoly_0conn ppoly_0conn nsd psd ntap ptap nw_0conn psub \
+	V0_0Act_m1_0conn_0mask1_LiAct V0_0Act_m1_0conn_0mask2_LiAct \
+	cont_0ndiff_LiAct_nsd cont_0ndiff_LiAct_ntap cont_0pdiff_LiAct_psd \
+	cont_0pdiff_LiAct_ptap npoly_0conn_ppoly_0conn_ovia \
+	npoly_0conn_npoly_0conn_ppoly_0conn_butt_ovia \
+	npoly_0conn_ppoly_0conn_butt \
+	ppoly_0conn_npoly_0conn_ppoly_0conn_butt_ovia \
+	V0_0Po_m1_0conn_0mask1_LiPo V0_0Po_m1_0conn_0mask2_LiPo \
+	cont_0poly_LiPo_npoly_0conn cont_0poly_LiPo_ppoly_0conn \
+	V1_m2_0conn_0mask2_m1_0conn_0mask1 V1_m2_0conn_0mask2_m1_0conn_0mask2 \
+	npoly_0conn_ngate_ovia npoly_0conn_npoly_0conn_ngate_butt_ovia \
+	npoly_0conn_ngate_butt ngate_npoly_0conn_ngate_butt_ovia \
+	ppoly_0conn_pgate_ovia ppoly_0conn_ppoly_0conn_pgate_butt_ovia \
+	ppoly_0conn_pgate_butt pgate_ppoly_0conn_pgate_butt_ovia nsd_orig \
+	psd_orig ntap_orig ptap_orig rcont_0ndiff_LiAct_nsd.orig \
+	rcont_0ndiff_LiAct_ntap.orig rcont_0pdiff_LiAct_psd.orig \
+	rcont_0pdiff_LiAct_ptap.orig n1svt_0dev_orig p1svt_0dev_orig
+flattub took  0.00 user, 0.00 sys, 0.00 elapsed, 7308.0 kbytes
+endFlattenInputs
+
+#==========================================================#
+# Initialize CAP_GROUND variable
+#==========================================================#
+
+CAP_GROUND=`findCapGround -g gnd -l psub NET`
+findCapGround -g gnd -l psub NET
+echo "CAP_GROUND=" ${CAP_GROUND}
+CAP_GROUND= 4
+export CAP_GROUND
+echo ${CAP_GROUND} > cgnetfile
+netprint -n cgnetfile:gn_summary.log NET
+/bin/rm -f viaenclosurefile
+reconnect -cgnd ${CAP_GROUND} -float floatlvsnetsfile -tf \
+	n1svt_0dev,p1svt_0dev -probe \
+	text_m1_0conn_0mask1:m1_0conn_0mask1:text_m1_0conn_0mask1_fvia,text_m1_0conn_0mask2:m1_0conn_0mask2:text_m1_0conn_0mask2_fvia
+iprint -count floatlvsnetsfile > floatlvsnetsfile.txt
+geom m1_0conn_0mask1 -  M1_1,1
+geom m1_0conn_0mask2 -  M1_2,1
+createEmptyLayer M2_1
+geom m2_0conn_0mask2 -  M2_2,1
+createEmptyLayer M3_1
+createEmptyLayer M3_2
+geom n1svt_0dev,p1svt_0dev - qrcgate,1,i,1
+geom nsd_orig,psd_orig,ntap_orig,ptap_orig - qrc_diffusion,1,i,1
+iprint -count floatlvsnetsfile > input_nets_summary.log
+iprint -imerge power_list_nums floatlvsnetsfile power_list_nums2
+mv power_list_nums power_list_nums_orig
+cp power_list_nums2 power_list_nums 
+
+#==========================================================#
+# Segregate interconnect into resistive and non-resistive
+#==========================================================#
+
+selectNetsByNumber power_list_nums LiAct p_rLiAct np_rLiAct
+epick took  0.00 user, 0.00 sys, 0.00 elapsed, 5480.0 kbytes
+selectNetsByNumber power_list_nums LiPo p_rLiPo np_rLiPo
+epick took  0.00 user, 0.00 sys, 0.00 elapsed, 5492.0 kbytes
+selectNetsByNumber power_list_nums m1_0conn_0mask1 p_rm1_0conn_0mask1 np_rm1_0conn_0mask1
+epick took  0.00 user, 0.00 sys, 0.00 elapsed, 5476.0 kbytes
+selectNetsByNumber power_list_nums m1_0conn_0mask2 p_rm1_0conn_0mask2 np_rm1_0conn_0mask2
+epick took  0.00 user, 0.00 sys, 0.00 elapsed, 5524.0 kbytes
+selectNetsByNumber power_list_nums m2_0conn_0mask2 p_rm2_0conn_0mask2 np_rm2_0conn_0mask2
+epick took  0.00 user, 0.00 sys, 0.00 elapsed, 5504.0 kbytes
+selectNetsByNumber power_list_nums ngate p_rngate np_rngate
+epick took  0.00 user, 0.00 sys, 0.00 elapsed, 5456.0 kbytes
+selectNetsByNumber power_list_nums npoly_0conn p_rnpoly_0conn np_rnpoly_0conn
+epick took  0.00 user, 0.00 sys, 0.00 elapsed, 5488.0 kbytes
+selectNetsByNumber power_list_nums npoly_0conn_ngate_butt p_rnpoly_0conn_ngate_butt np_rnpoly_0conn_ngate_butt
+epick took  0.00 user, 0.00 sys, 0.00 elapsed, 5368.0 kbytes
+selectNetsByNumber power_list_nums npoly_0conn_ppoly_0conn_butt p_rnpoly_0conn_ppoly_0conn_butt np_rnpoly_0conn_ppoly_0conn_butt
+epick took  0.00 user, 0.00 sys, 0.00 elapsed, 5480.0 kbytes
+selectNetsByNumber power_list_nums nsd p_rnsd np_rnsd
+epick took  0.00 user, 0.00 sys, 0.00 elapsed, 5452.0 kbytes
+selectNetsByNumber power_list_nums ntap p_rntap np_rntap
+epick took  0.00 user, 0.00 sys, 0.00 elapsed, 5452.0 kbytes
+selectNetsByNumber power_list_nums pgate p_rpgate np_rpgate
+epick took  0.00 user, 0.00 sys, 0.00 elapsed, 5392.0 kbytes
+selectNetsByNumber power_list_nums ppoly_0conn p_rppoly_0conn np_rppoly_0conn
+epick took  0.00 user, 0.00 sys, 0.00 elapsed, 5448.0 kbytes
+selectNetsByNumber power_list_nums ppoly_0conn_pgate_butt p_rppoly_0conn_pgate_butt np_rppoly_0conn_pgate_butt
+epick took  0.00 user, 0.00 sys, 0.00 elapsed, 5424.0 kbytes
+selectNetsByNumber power_list_nums psd p_rpsd np_rpsd
+epick took  0.00 user, 0.00 sys, 0.00 elapsed, 5488.0 kbytes
+selectNetsByNumber power_list_nums ptap p_rptap np_rptap
+epick took  0.00 user, 0.00 sys, 0.00 elapsed, 5456.0 kbytes
+selectNetsByNumber power_list_nums nw_0conn p_rnw_0conn np_rnw_0conn
+epick took  0.00 user, 0.00 sys, 0.00 elapsed, 5448.0 kbytes
+selectNetsByNumber power_list_nums psub p_rpsub np_rpsub
+epick took  0.00 user, 0.00 sys, 0.00 elapsed, 5480.0 kbytes
+selectNetsByNumber power_list_nums V0_0Act_m1_0conn_0mask1_LiAct p_rV0_0Act_m1_0conn_0mask1_LiAct np_rV0_0Act_m1_0conn_0mask1_LiAct
+epick took  0.00 user, 0.00 sys, 0.00 elapsed, 5452.0 kbytes
+selectNetsByNumber power_list_nums V0_0Act_m1_0conn_0mask2_LiAct p_rV0_0Act_m1_0conn_0mask2_LiAct np_rV0_0Act_m1_0conn_0mask2_LiAct
+epick took  0.00 user, 0.00 sys, 0.00 elapsed, 5500.0 kbytes
+selectNetsByNumber power_list_nums V0_0Po_m1_0conn_0mask1_LiPo p_rV0_0Po_m1_0conn_0mask1_LiPo np_rV0_0Po_m1_0conn_0mask1_LiPo
+epick took  0.00 user, 0.00 sys, 0.00 elapsed, 5396.0 kbytes
+selectNetsByNumber power_list_nums V0_0Po_m1_0conn_0mask2_LiPo p_rV0_0Po_m1_0conn_0mask2_LiPo np_rV0_0Po_m1_0conn_0mask2_LiPo
+epick took  0.00 user, 0.00 sys, 0.00 elapsed, 5480.0 kbytes
+selectNetsByNumber power_list_nums V1_m2_0conn_0mask2_m1_0conn_0mask1 p_rV1_m2_0conn_0mask2_m1_0conn_0mask1 np_rV1_m2_0conn_0mask2_m1_0conn_0mask1
+epick took  0.00 user, 0.00 sys, 0.00 elapsed, 5492.0 kbytes
+selectNetsByNumber power_list_nums V1_m2_0conn_0mask2_m1_0conn_0mask2 p_rV1_m2_0conn_0mask2_m1_0conn_0mask2 np_rV1_m2_0conn_0mask2_m1_0conn_0mask2
+epick took  0.00 user, 0.00 sys, 0.00 elapsed, 5528.0 kbytes
+selectNetsByNumber power_list_nums cont_0ndiff_LiAct_nsd p_rcont_0ndiff_LiAct_nsd np_rcont_0ndiff_LiAct_nsd
+epick took  0.00 user, 0.00 sys, 0.00 elapsed, 5436.0 kbytes
+selectNetsByNumber power_list_nums cont_0ndiff_LiAct_ntap p_rcont_0ndiff_LiAct_ntap np_rcont_0ndiff_LiAct_ntap
+epick took  0.00 user, 0.00 sys, 0.00 elapsed, 5528.0 kbytes
+selectNetsByNumber power_list_nums cont_0pdiff_LiAct_psd p_rcont_0pdiff_LiAct_psd np_rcont_0pdiff_LiAct_psd
+epick took  0.00 user, 0.00 sys, 0.00 elapsed, 5456.0 kbytes
+selectNetsByNumber power_list_nums cont_0pdiff_LiAct_ptap p_rcont_0pdiff_LiAct_ptap np_rcont_0pdiff_LiAct_ptap
+epick took  0.00 user, 0.00 sys, 0.00 elapsed, 5452.0 kbytes
+selectNetsByNumber power_list_nums cont_0poly_LiPo_npoly_0conn p_rcont_0poly_LiPo_npoly_0conn np_rcont_0poly_LiPo_npoly_0conn
+epick took  0.00 user, 0.00 sys, 0.00 elapsed, 5492.0 kbytes
+selectNetsByNumber power_list_nums cont_0poly_LiPo_ppoly_0conn p_rcont_0poly_LiPo_ppoly_0conn np_rcont_0poly_LiPo_ppoly_0conn
+epick took  0.00 user, 0.00 sys, 0.00 elapsed, 5448.0 kbytes
+selectNetsByNumber power_list_nums npoly_0conn_ngate_ovia p_rnpoly_0conn_ngate_ovia np_rnpoly_0conn_ngate_ovia
+epick took  0.00 user, 0.00 sys, 0.00 elapsed, 5452.0 kbytes
+selectNetsByNumber power_list_nums npoly_0conn_ppoly_0conn_ovia p_rnpoly_0conn_ppoly_0conn_ovia np_rnpoly_0conn_ppoly_0conn_ovia
+epick took  0.00 user, 0.00 sys, 0.00 elapsed, 5464.0 kbytes
+selectNetsByNumber power_list_nums ppoly_0conn_pgate_ovia p_rppoly_0conn_pgate_ovia np_rppoly_0conn_pgate_ovia
+epick took  0.00 user, 0.00 sys, 0.00 elapsed, 5548.0 kbytes
+mv power_list_nums_orig power_list_nums
+
+#==========================================================#
+# Create resistor cut regions between resistive
+# interconnect levels
+#==========================================================#
+
+mergevia -V -tech /home/install/FOUNDRY/cds_ff_mpt_v_0.5/qrc/typical -fin \
+	fin_0marker_0layer -gate qrcgate -diffusion qrc_diffusion -unitarea \
+	0.001024,0.00256 np_rV0_0Act_m1_0conn_0mask1_LiAct \
+	rV0_0Act_m1_0conn_0mask1_LiAct - np_rm1_0conn_0mask1 np_rLiAct
+mergevia took 0.06 user, 0.03 sys, 0.00 elapsed, 32080.0 kbytes
+cp rV0_0Act_m1_0conn_0mask1_LiAct rV0_0Act_m1_0conn_0mask1_LiAct_orig
+mergevia -V -tech /home/install/FOUNDRY/cds_ff_mpt_v_0.5/qrc/typical -fin \
+	fin_0marker_0layer -gate qrcgate -diffusion qrc_diffusion -unitarea \
+	0.001024,0.00256 np_rV0_0Act_m1_0conn_0mask2_LiAct \
+	rV0_0Act_m1_0conn_0mask2_LiAct - np_rm1_0conn_0mask2 np_rLiAct
+mergevia took 0.06 user, 0.03 sys, 0.00 elapsed, 32156.0 kbytes
+cp rV0_0Act_m1_0conn_0mask2_LiAct rV0_0Act_m1_0conn_0mask2_LiAct_orig
+mergevia -V -tech /home/install/FOUNDRY/cds_ff_mpt_v_0.5/qrc/typical -fin \
+	fin_0marker_0layer -gate qrcgate -diffusion qrc_diffusion -unitarea \
+	0.001024,0.00256 np_rV0_0Po_m1_0conn_0mask1_LiPo \
+	rV0_0Po_m1_0conn_0mask1_LiPo - np_rm1_0conn_0mask1 np_rLiPo
+mergevia took 0.06 user, 0.03 sys, 0.00 elapsed, 32140.0 kbytes
+cp rV0_0Po_m1_0conn_0mask1_LiPo rV0_0Po_m1_0conn_0mask1_LiPo_orig
+mergevia -V -tech /home/install/FOUNDRY/cds_ff_mpt_v_0.5/qrc/typical -fin \
+	fin_0marker_0layer -gate qrcgate -diffusion qrc_diffusion -unitarea \
+	0.001024,0.00256 np_rV0_0Po_m1_0conn_0mask2_LiPo \
+	rV0_0Po_m1_0conn_0mask2_LiPo - np_rm1_0conn_0mask2 np_rLiPo
+mergevia took 0.06 user, 0.02 sys, 0.00 elapsed, 32140.0 kbytes
+cp rV0_0Po_m1_0conn_0mask2_LiPo rV0_0Po_m1_0conn_0mask2_LiPo_orig
+mergevia -V -tech /home/install/FOUNDRY/cds_ff_mpt_v_0.5/qrc/typical \
+	-bot_layers np_rm1_0conn_0mask2 -lvs_abutment_via_inverse -fin \
+	fin_0marker_0layer -gate qrcgate -diffusion qrc_diffusion -unitarea \
+	0.001024,0.00256 np_rV1_m2_0conn_0mask2_m1_0conn_0mask1 \
+	rV1_m2_0conn_0mask2_m1_0conn_0mask1 - np_rm2_0conn_0mask2 \
+	np_rm1_0conn_0mask1
+mergevia took 0.03 user, 0.00 sys, 1.00 elapsed, 32168.0 kbytes
+cp rV1_m2_0conn_0mask2_m1_0conn_0mask1 rV1_m2_0conn_0mask2_m1_0conn_0mask1_orig
+mergevia -V -tech /home/install/FOUNDRY/cds_ff_mpt_v_0.5/qrc/typical \
+	-bot_layers np_rm1_0conn_0mask1 -lvs_abutment_via_inverse -fin \
+	fin_0marker_0layer -gate qrcgate -diffusion qrc_diffusion -unitarea \
+	0.001024,0.00256 np_rV1_m2_0conn_0mask2_m1_0conn_0mask2 \
+	rV1_m2_0conn_0mask2_m1_0conn_0mask2 - np_rm2_0conn_0mask2 \
+	np_rm1_0conn_0mask2
+mergevia took 0.03 user, 0.00 sys, 0.00 elapsed, 32120.0 kbytes
+cp rV1_m2_0conn_0mask2_m1_0conn_0mask2 rV1_m2_0conn_0mask2_m1_0conn_0mask2_orig
+/bin/cp -f np_rcont_0ndiff_LiAct_nsd rcont_0ndiff_LiAct_nsd
+/bin/cp -f np_rcont_0ndiff_LiAct_ntap rcont_0ndiff_LiAct_ntap
+/bin/cp -f np_rcont_0pdiff_LiAct_psd rcont_0pdiff_LiAct_psd
+/bin/cp -f np_rcont_0pdiff_LiAct_ptap rcont_0pdiff_LiAct_ptap
+mergevia -V -tech /home/install/FOUNDRY/cds_ff_mpt_v_0.5/qrc/typical -f -fin \
+	fin_0marker_0layer -gate qrcgate -diffusion qrc_diffusion -unitarea \
+	0.00072,0.0008,0.0009,0.00096,0.001,0.0012,0.0015 \
+	np_rcont_0poly_LiPo_npoly_0conn rcont_0poly_LiPo_npoly_0conn - \
+	np_rLiPo np_rnpoly_0conn
+mergevia took 0.05 user, 0.01 sys, 0.00 elapsed, 299512.0 kbytes
+cp rcont_0poly_LiPo_npoly_0conn rcont_0poly_LiPo_npoly_0conn_orig
+mergevia -V -tech /home/install/FOUNDRY/cds_ff_mpt_v_0.5/qrc/typical -f -fin \
+	fin_0marker_0layer -gate qrcgate -diffusion qrc_diffusion -unitarea \
+	0.00072,0.0008,0.0009,0.00096,0.001,0.0012,0.0015 \
+	np_rcont_0poly_LiPo_ppoly_0conn rcont_0poly_LiPo_ppoly_0conn - \
+	np_rLiPo np_rppoly_0conn
+mergevia took 0.05 user, 0.02 sys, 0.00 elapsed, 299532.0 kbytes
+cp rcont_0poly_LiPo_ppoly_0conn rcont_0poly_LiPo_ppoly_0conn_orig
+mergevia -V -tech /home/install/FOUNDRY/cds_ff_mpt_v_0.5/qrc/typical -fin \
+	fin_0marker_0layer -gate qrcgate -diffusion qrc_diffusion -cnt \
+	np_rnpoly_0conn_ngate_ovia rnpoly_0conn_ngate_ovia - np_rnpoly_0conn \
+	np_rngate
+mergevia took 0.00 user, 0.00 sys, 0.00 elapsed, 21088.0 kbytes
+cp rnpoly_0conn_ngate_ovia rnpoly_0conn_ngate_ovia_orig
+mergevia -V -tech /home/install/FOUNDRY/cds_ff_mpt_v_0.5/qrc/typical -fin \
+	fin_0marker_0layer -gate qrcgate -diffusion qrc_diffusion -cnt \
+	np_rnpoly_0conn_ppoly_0conn_ovia rnpoly_0conn_ppoly_0conn_ovia - \
+	np_rnpoly_0conn np_rppoly_0conn
+mergevia took 0.00 user, 0.00 sys, 0.00 elapsed, 21024.0 kbytes
+cp rnpoly_0conn_ppoly_0conn_ovia rnpoly_0conn_ppoly_0conn_ovia_orig
+mergevia -V -tech /home/install/FOUNDRY/cds_ff_mpt_v_0.5/qrc/typical -fin \
+	fin_0marker_0layer -gate qrcgate -diffusion qrc_diffusion -cnt \
+	np_rppoly_0conn_pgate_ovia rppoly_0conn_pgate_ovia - np_rppoly_0conn \
+	np_rpgate
+mergevia took 0.00 user, 0.00 sys, 0.00 elapsed, 20940.0 kbytes
+cp rppoly_0conn_pgate_ovia rppoly_0conn_pgate_ovia_orig
+
+#==========================================================#
+# Create resistive interconnect MOSFET terminals
+#==========================================================#
+
+createMosfetGateTerminal -V n1svt_0dev np_rngate n1svt_0dev_mgvia
+createMosfetGateTerminal took 0.02 user, 0.01 sys, 0.00 elapsed, 4144.0 kbytes
+createMosfetSDTerminals n1svt_0dev np_rnsd n1svt_0dev_msdvia
+grow took  0.00 user, 0.00 sys, 0.00 elapsed, 5664.0 kbytes
+geom took  0.00 user, 0.00 sys, 0.00 elapsed, 5912.0 kbytes
+createMosfetSDTerminals n1svt_0dev nsd_orig n1svt_0dev_msdvia_orig
+grow took  0.00 user, 0.00 sys, 0.00 elapsed, 5680.0 kbytes
+geom took  0.00 user, 0.00 sys, 0.00 elapsed, 5956.0 kbytes
+grow .002 ngate tmp_ngate
+geom tmp_ngate n1svt_0dev_msdvia - n1svt_0dev_msdvia.lvs,11,i,1 
+/bin/rm tmp_ngate
+createMosfetGateTerminal -V p1svt_0dev np_rpgate p1svt_0dev_mgvia
+createMosfetGateTerminal took 0.02 user, 0.01 sys, 0.00 elapsed, 4208.0 kbytes
+createMosfetSDTerminals p1svt_0dev np_rpsd p1svt_0dev_msdvia
+grow took  0.00 user, 0.00 sys, 0.00 elapsed, 5664.0 kbytes
+geom took  0.00 user, 0.00 sys, 0.00 elapsed, 5984.0 kbytes
+createMosfetSDTerminals p1svt_0dev psd_orig p1svt_0dev_msdvia_orig
+grow took  0.00 user, 0.00 sys, 0.00 elapsed, 5612.0 kbytes
+geom took  0.00 user, 0.00 sys, 0.00 elapsed, 5964.0 kbytes
+grow .002 pgate tmp_pgate
+geom tmp_pgate p1svt_0dev_msdvia - p1svt_0dev_msdvia.lvs,11,i,1 
+/bin/rm tmp_pgate
+
+#==========================================================#
+# Assign net numbers to cut regions
+#==========================================================#
+
+connect -V -relocate NET \
+	np_rnpoly_0conn_ngate_butt:np_rnpoly_0conn_ngate_butt.conn \
+	np_rnpoly_0conn_ppoly_0conn_butt:np_rnpoly_0conn_ppoly_0conn_butt.conn \
+	np_rppoly_0conn_pgate_butt:np_rppoly_0conn_pgate_butt.conn \
+	rV0_0Act_m1_0conn_0mask1_LiAct rV0_0Act_m1_0conn_0mask2_LiAct \
+	rV0_0Po_m1_0conn_0mask1_LiPo rV0_0Po_m1_0conn_0mask2_LiPo \
+	rV1_m2_0conn_0mask2_m1_0conn_0mask1 \
+	rV1_m2_0conn_0mask2_m1_0conn_0mask2 rcont_0ndiff_LiAct_nsd \
+	rcont_0ndiff_LiAct_ntap rcont_0pdiff_LiAct_psd \
+	rcont_0pdiff_LiAct_ptap rcont_0poly_LiPo_npoly_0conn \
+	rcont_0poly_LiPo_ppoly_0conn rnpoly_0conn_ngate_ovia \
+	rnpoly_0conn_ppoly_0conn_ovia rppoly_0conn_pgate_ovia \
+	n1svt_0dev_mgvia n1svt_0dev_msdvia p1svt_0dev_mgvia p1svt_0dev_msdvia \
+	n1svt_0dev_msdvia_orig p1svt_0dev_msdvia_orig - \
+	n1svt_0dev_msdvia,20,23 p1svt_0dev_msdvia,22,24 -
+
+connect took  0.00 user, 0.00 sys, 0.00 elapsed, 274432.0 kbytes
+#==========================================================#
+# Assign net numbers to resistor vias
+#==========================================================#
+
+/bin/cp  ngate_npoly_0conn_ngate_butt_ovia tmp_rngate_npoly_0conn_ngate_butt_ovia
+stamp -i np_rnpoly_0conn_ngate_butt.conn tmp_rngate_npoly_0conn_ngate_butt_ovia
+[ -r rngate_npoly_0conn_ngate_butt_ovia ] && /bin/rm -f rngate_npoly_0conn_ngate_butt_ovia
+/bin/mv -f tmp_rngate_npoly_0conn_ngate_butt_ovia rngate_npoly_0conn_ngate_butt_ovia
+/bin/cp  npoly_0conn_npoly_0conn_ngate_butt_ovia tmp_rnpoly_0conn_npoly_0conn_ngate_butt_ovia
+stamp -i np_rnpoly_0conn_ngate_butt.conn tmp_rnpoly_0conn_npoly_0conn_ngate_butt_ovia
+[ -r rnpoly_0conn_npoly_0conn_ngate_butt_ovia ] && /bin/rm -f rnpoly_0conn_npoly_0conn_ngate_butt_ovia
+/bin/mv -f tmp_rnpoly_0conn_npoly_0conn_ngate_butt_ovia rnpoly_0conn_npoly_0conn_ngate_butt_ovia
+/bin/cp  npoly_0conn_npoly_0conn_ppoly_0conn_butt_ovia tmp_rnpoly_0conn_npoly_0conn_ppoly_0conn_butt_ovia
+stamp -i np_rnpoly_0conn_ppoly_0conn_butt.conn tmp_rnpoly_0conn_npoly_0conn_ppoly_0conn_butt_ovia
+[ -r rnpoly_0conn_npoly_0conn_ppoly_0conn_butt_ovia ] && /bin/rm -f rnpoly_0conn_npoly_0conn_ppoly_0conn_butt_ovia
+/bin/mv -f tmp_rnpoly_0conn_npoly_0conn_ppoly_0conn_butt_ovia rnpoly_0conn_npoly_0conn_ppoly_0conn_butt_ovia
+/bin/cp  pgate_ppoly_0conn_pgate_butt_ovia tmp_rpgate_ppoly_0conn_pgate_butt_ovia
+stamp -i np_rppoly_0conn_pgate_butt.conn tmp_rpgate_ppoly_0conn_pgate_butt_ovia
+[ -r rpgate_ppoly_0conn_pgate_butt_ovia ] && /bin/rm -f rpgate_ppoly_0conn_pgate_butt_ovia
+/bin/mv -f tmp_rpgate_ppoly_0conn_pgate_butt_ovia rpgate_ppoly_0conn_pgate_butt_ovia
+/bin/cp  ppoly_0conn_npoly_0conn_ppoly_0conn_butt_ovia tmp_rppoly_0conn_npoly_0conn_ppoly_0conn_butt_ovia
+stamp -i np_rnpoly_0conn_ppoly_0conn_butt.conn tmp_rppoly_0conn_npoly_0conn_ppoly_0conn_butt_ovia
+[ -r rppoly_0conn_npoly_0conn_ppoly_0conn_butt_ovia ] && /bin/rm -f rppoly_0conn_npoly_0conn_ppoly_0conn_butt_ovia
+/bin/mv -f tmp_rppoly_0conn_npoly_0conn_ppoly_0conn_butt_ovia rppoly_0conn_npoly_0conn_ppoly_0conn_butt_ovia
+/bin/cp  ppoly_0conn_ppoly_0conn_pgate_butt_ovia tmp_rppoly_0conn_ppoly_0conn_pgate_butt_ovia
+stamp -i np_rppoly_0conn_pgate_butt.conn tmp_rppoly_0conn_ppoly_0conn_pgate_butt_ovia
+[ -r rppoly_0conn_ppoly_0conn_pgate_butt_ovia ] && /bin/rm -f rppoly_0conn_ppoly_0conn_pgate_butt_ovia
+/bin/mv -f tmp_rppoly_0conn_ppoly_0conn_pgate_butt_ovia rppoly_0conn_ppoly_0conn_pgate_butt_ovia
+
+#==========================================================#
+# Assign net numbers to nonresistive layers
+#==========================================================#
+
+
+#==========================================================#
+# Process text layers
+#==========================================================#
+
+flatlabel -V  -tc -F -l flatlabel.info text_m1_0conn_0mask1,text_m1_0conn_0mask2 L1T0,L2T0
+INFO (FLTLBL-89003): exec labsort -V L1T0
+
+INFO (FLTLBL-89003): exec labsort -V L2T0
+
+# 1 ptap
+# 2 ntap
+# 3 psd
+# 4 nsd
+# 5 ppoly_0conn
+# 6 npoly_0conn
+# 7 pgate
+# 8 ngate
+# 9 LiAct
+# 10 LiPo
+# 11 m1_0conn_0mask2
+# 12 m1_0conn_0mask1
+# 13 m2_0conn_0mask2
+
+#==========================================================#
+# Parasitic R extraction with default precision
+#==========================================================#
+
+rex -V -m -pd -I'#' -tech /home/install/FOUNDRY/cds_ff_mpt_v_0.5/qrc/typical \
+	-map p2elayermapfile -N NET -e2 -P \
+	n1svt_0dev_mgvia,p1svt_0dev_mgvia:n1svt_0dev_msdvia,p1svt_0dev_msdvia \
+	-rP res.mod np_rptap::ptap_cut np_rntap::ntap_cut np_rpsd::psd_cut \
+	np_rnsd::nsd_cut np_rppoly_0conn::ppoly_0conn_cut \
+	np_rnpoly_0conn::npoly_0conn_cut np_rpgate::pgate_cut \
+	np_rngate::ngate_cut np_rLiAct::LiAct_cut np_rLiPo::LiPo_cut \
+	np_rm1_0conn_0mask2::m1_0conn_0mask2_cut \
+	np_rm1_0conn_0mask1::m1_0conn_0mask1_cut np_rm2_0conn_0mask2::M2_cut \
+	- rV0_0Act_m1_0conn_0mask1_LiAct,9,12,t \
+	rV0_0Act_m1_0conn_0mask2_LiAct,9,11,t \
+	rV0_0Po_m1_0conn_0mask1_LiPo,10,12,t \
+	rV0_0Po_m1_0conn_0mask2_LiPo,10,11,t \
+	rV1_m2_0conn_0mask2_m1_0conn_0mask1,12,13,t \
+	rV1_m2_0conn_0mask2_m1_0conn_0mask2,11,13,t \
+	rcont_0ndiff_LiAct_nsd,4,9,t rcont_0ndiff_LiAct_ntap,2,9,t \
+	rcont_0pdiff_LiAct_psd,3,9,t rcont_0pdiff_LiAct_ptap,1,9,t \
+	rcont_0poly_LiPo_npoly_0conn,6,10,t \
+	rcont_0poly_LiPo_ppoly_0conn,5,10,t \
+	rngate_npoly_0conn_ngate_butt_ovia,8 rnpoly_0conn_ngate_ovia,6,8 \
+	rnpoly_0conn_npoly_0conn_ngate_butt_ovia,6 \
+	rnpoly_0conn_npoly_0conn_ppoly_0conn_butt_ovia,6 \
+	rnpoly_0conn_ppoly_0conn_ovia,5,6 \
+	rpgate_ppoly_0conn_pgate_butt_ovia,7 \
+	rppoly_0conn_npoly_0conn_ppoly_0conn_butt_ovia,5 \
+	rppoly_0conn_pgate_ovia,5,7 \
+	rppoly_0conn_ppoly_0conn_pgate_butt_ovia,5 n1svt_0dev_mgvia,8,z \
+	n1svt_0dev_msdvia,4,z p1svt_0dev_mgvia,7,z p1svt_0dev_msdvia,3,z - \
+	L1T0,12,I L2T0,11,I
+
+INFO (REX-163462):  exec rex -g -V -m -pd -I# -tech /home/install/FOUNDRY/cds_ff_mpt_v_0.5/qrc/typical -map p2elayermapfile -N NET -e2 -P n1svt_0dev_mgvia,p1svt_0dev_mgvia:n1svt_0dev_msdvia,p1svt_0dev_msdvia -rP res.mod np_rptap::ptap_cut np_rntap::ntap_cut np_rpsd::psd_cut np_rnsd::nsd_cut np_rppoly_0conn::ppoly_0conn_cut np_rnpoly_0conn::npoly_0conn_cut np_rpgate::pgate_cut np_rngate::ngate_cut np_rLiAct::LiAct_cut np_rLiPo::LiPo_cut np_rm1_0conn_0mask2::m1_0conn_0mask2_cut np_rm1_0conn_0mask1::m1_0conn_0mask1_cut np_rm2_0conn_0mask2::M2_cut - rV0_0Act_m1_0conn_0mask1_LiAct,9,12,t rV0_0Act_m1_0conn_0mask2_LiAct,9,11,t rV0_0Po_m1_0conn_0mask1_LiPo,10,12,t rV0_0Po_m1_0conn_0mask2_LiPo,10,11,t rV1_m2_0conn_0mask2_m1_0conn_0mask1,12,13,t rV1_m2_0conn_0mask2_m1_0conn_0mask2,11,13,t rcont_0ndiff_LiAct_nsd,4,9,t rcont_0ndiff_LiAct_ntap,2,9,t rcont_0pdiff_LiAct_psd,3,9,t rcont_0pdiff_LiAct_ptap,1,9,t rcont_0poly_LiPo_npoly_0conn,6,10,t rcont_0poly_LiPo_ppoly_0conn,5,10,t rngate_npoly_0conn_ngate_butt_ovia,8 rnpoly_0conn_ngate_ovia,6,8 rnpoly_0conn_npoly_0conn_ngate_butt_ovia,6 rnpoly_0conn_npoly_0conn_ppoly_0conn_butt_ovia,6 rnpoly_0conn_ppoly_0conn_ovia,5,6 rpgate_ppoly_0conn_pgate_butt_ovia,7 rppoly_0conn_npoly_0conn_ppoly_0conn_butt_ovia,5 rppoly_0conn_pgate_ovia,5,7 rppoly_0conn_ppoly_0conn_pgate_butt_ovia,5 n1svt_0dev_mgvia,8,z n1svt_0dev_msdvia,4,z p1svt_0dev_mgvia,7,z p1svt_0dev_msdvia,3,z - L1T0,12,I L2T0,11,I
+
+INFO (REX-163462):  exec createEmptyLayer np_rptap
+
+INFO (REX-163462):  exec createEmptyLayer ptap_cut
+
+INFO (REX-163462):  exec createEmptyLayer Rnp_rptap.dev2
+
+INFO (REX-163462):  exec createEmptyLayer Rrcont_0pdiff_LiAct_ptap.dev2
+
+INFO (REX-163462):  exec createEmptyLayer np_rntap
+
+INFO (REX-163462):  exec createEmptyLayer ntap_cut
+
+INFO (REX-163462):  exec createEmptyLayer Rnp_rntap.dev2
+
+INFO (REX-163462):  exec createEmptyLayer Rrcont_0ndiff_LiAct_ntap.dev2
+
+rex took  0.01 user, 0.02 sys, 0.00 elapsed, 44372.0 kbytes
+INFO (REX-163511): Forked command: REX 7
+
+  rex (np_rm1_0conn_0mask1) took  0.00 user, 0.01 sys, 0.00 elapsed, 45844.0 kbytes
+INFO (LBMISC-215513): Socket: connection with sd 15 closed
+
+INFO (REX-163511): Forked command: REX 8
+
+  rex (np_rm1_0conn_0mask2) took  0.00 user, 0.01 sys, 0.00 elapsed, 45764.0 kbytes
+INFO (LBMISC-215513): Socket: connection with sd 15 closed
+
+INFO (REX-163511): Forked command: REX 1
+
+INFO (LBMISC-215513): Socket: connection with sd 15 closed
+
+INFO (REX-163511): Forked command: REX 9
+
+  rex (np_rnsd) took  0.00 user, 0.01 sys, 0.00 elapsed, 44992.0 kbytes
+INFO (REX-163511): Forked command: REX 2
+
+INFO (REX-163511): Forked command: REX 3
+
+INFO (REX-163511): Forked command: REX 11
+
+INFO (LBMISC-215513): Forked command: REX 11
+
+  rex (np_rpsd) took  0.00 user, 0.00 sys, 0.00 elapsed, 45028.0 kbytes
+INFO (REX-163511): Forked command: REX 4
+
+INFO (LBMISC-215513): Socket: connection with sd 15 closed
+
+INFO (REX-163511): Forked command: REX 10
+
+  rex (np_rLiAct) took  0.00 user, 0.00 sys, 0.00 elapsed, 45600.0 kbytes
+INFO (LBMISC-215513): 
+INFO (REX-163511): Forked command: REX 12
+
+  rex (np_rLiPo) took  0.00 user, 0.00 sys, 0.00 elapsed, 45720.0 kbytes
+INFO (LBMISC-215513): Socket: connection with sd 15 closed
+
+INFO (REX-163511): Forked command: REX 13
+
+  rex (np_rm2_0conn_0mask2) took  0.00 user, 0.01 sys, 0.00 elapsed, 44992.0 kbytes
+INFO (REX-163511): Forked command: REX 5
+
+INFO (REX-163511): Forked command: REX 14
+
+  rex (np_rppoly_0conn) took  0.00 user, 0.00 sys, 0.00 elapsed, 44784.0 kbytes
+INFO (LBMISC-215513): Socket: connection with sd 15 closed
+
+INFO (REX-163511): Forked command: REX 6
+
+INFO (LBMISC-215513): Socket: connection with sd 15 closed
+
+INFO (REX-163511): Forked command: REX 15
+
+  rex (np_rnpoly_0conn) took  0.00 user, 0.00 sys, 1.00 elapsed, 44916.0 kbytes
+INFO (REX-163511): Forked command: REX 16
+
+  rexmerge took  0.00 user, 0.00 sys, 0.00 elapsed, 4788.0 kbytes
+INFO (REX-163511): Forked command: REX 17
+
+INFO (REX-163511): Forked command: REX 18
+
+INFO (REX-163511): Forked command: REX 19
+
+INFO (REX-163511): Forked command: REX 20
+
+rex took  2.13 user, 0.31 sys, 3.00 elapsed, 315316.0 kbytes
+#==========================================================#
+# Form resistive via layers
+#==========================================================#
+
+stamp -V -i2 np_rm1_0conn_0mask1 rV0_0Act_m1_0conn_0mask1_LiAct np_rV0_0Act_m1_0conn_0mask1_LiAct
+stamp took  0.02 user, 0.01 sys, 0.00 elapsed, 274888.0 kbytes
+geom -V np_rV0_0Act_m1_0conn_0mask1_LiAct,p_rV0_0Act_m1_0conn_0mask1_LiAct - rV0_0Act_m1_0conn_0mask1_LiAct,1,i,1
+geom took  0.00 user, 0.00 sys, 0.00 elapsed, 5892.0 kbytes
+stamp -V -i2 np_rm1_0conn_0mask2 rV0_0Act_m1_0conn_0mask2_LiAct np_rV0_0Act_m1_0conn_0mask2_LiAct
+stamp took  0.03 user, 0.01 sys, 0.00 elapsed, 274928.0 kbytes
+geom -V np_rV0_0Act_m1_0conn_0mask2_LiAct,p_rV0_0Act_m1_0conn_0mask2_LiAct - rV0_0Act_m1_0conn_0mask2_LiAct,1,i,1
+geom took  0.00 user, 0.00 sys, 0.00 elapsed, 5944.0 kbytes
+stamp -V -i2 np_rm1_0conn_0mask1 rV0_0Po_m1_0conn_0mask1_LiPo np_rV0_0Po_m1_0conn_0mask1_LiPo
+stamp took  0.03 user, 0.01 sys, 0.00 elapsed, 274804.0 kbytes
+geom -V np_rV0_0Po_m1_0conn_0mask1_LiPo,p_rV0_0Po_m1_0conn_0mask1_LiPo - rV0_0Po_m1_0conn_0mask1_LiPo,1,i,1
+geom took  0.00 user, 0.00 sys, 0.00 elapsed, 5996.0 kbytes
+stamp -V -i2 np_rm1_0conn_0mask2 rV0_0Po_m1_0conn_0mask2_LiPo np_rV0_0Po_m1_0conn_0mask2_LiPo
+stamp took  0.03 user, 0.01 sys, 0.00 elapsed, 274816.0 kbytes
+geom -V np_rV0_0Po_m1_0conn_0mask2_LiPo,p_rV0_0Po_m1_0conn_0mask2_LiPo - rV0_0Po_m1_0conn_0mask2_LiPo,1,i,1
+geom took  0.00 user, 0.00 sys, 0.00 elapsed, 5928.0 kbytes
+stamp -V -i2 np_rm2_0conn_0mask2 rV1_m2_0conn_0mask2_m1_0conn_0mask1 np_rV1_m2_0conn_0mask2_m1_0conn_0mask1
+stamp took  0.02 user, 0.01 sys, 0.00 elapsed, 274928.0 kbytes
+geom -V np_rV1_m2_0conn_0mask2_m1_0conn_0mask1,p_rV1_m2_0conn_0mask2_m1_0conn_0mask1 - rV1_m2_0conn_0mask2_m1_0conn_0mask1,1,i,1
+geom took  0.00 user, 0.00 sys, 0.00 elapsed, 5924.0 kbytes
+stamp -V -i2 np_rm2_0conn_0mask2 rV1_m2_0conn_0mask2_m1_0conn_0mask2 np_rV1_m2_0conn_0mask2_m1_0conn_0mask2
+stamp took  0.04 user, 0.03 sys, 0.00 elapsed, 274916.0 kbytes
+geom -V np_rV1_m2_0conn_0mask2_m1_0conn_0mask2,p_rV1_m2_0conn_0mask2_m1_0conn_0mask2 - rV1_m2_0conn_0mask2_m1_0conn_0mask2,1,i,1
+geom took  0.00 user, 0.00 sys, 0.00 elapsed, 5964.0 kbytes
+stamp -V -i2 np_rLiAct rcont_0ndiff_LiAct_nsd np_rcont_0ndiff_LiAct_nsd
+stamp took  0.02 user, 0.01 sys, 0.00 elapsed, 274800.0 kbytes
+geom -V np_rcont_0ndiff_LiAct_nsd,p_rcont_0ndiff_LiAct_nsd - rcont_0ndiff_LiAct_nsd,1,i,1
+geom took  0.00 user, 0.00 sys, 0.00 elapsed, 5956.0 kbytes
+stamp -V -i2 np_rLiAct rcont_0ndiff_LiAct_ntap np_rcont_0ndiff_LiAct_ntap
+stamp took  0.02 user, 0.01 sys, 0.00 elapsed, 274460.0 kbytes
+geom -V np_rcont_0ndiff_LiAct_ntap,p_rcont_0ndiff_LiAct_ntap - rcont_0ndiff_LiAct_ntap,1,i,1
+geom took  0.00 user, 0.00 sys, 0.00 elapsed, 5944.0 kbytes
+stamp -V -i2 np_rLiAct rcont_0pdiff_LiAct_psd np_rcont_0pdiff_LiAct_psd
+stamp took  0.02 user, 0.01 sys, 0.00 elapsed, 274932.0 kbytes
+geom -V np_rcont_0pdiff_LiAct_psd,p_rcont_0pdiff_LiAct_psd - rcont_0pdiff_LiAct_psd,1,i,1
+geom took  0.00 user, 0.00 sys, 0.00 elapsed, 5904.0 kbytes
+stamp -V -i2 np_rLiAct rcont_0pdiff_LiAct_ptap np_rcont_0pdiff_LiAct_ptap
+stamp took  0.02 user, 0.01 sys, 0.00 elapsed, 274440.0 kbytes
+geom -V np_rcont_0pdiff_LiAct_ptap,p_rcont_0pdiff_LiAct_ptap - rcont_0pdiff_LiAct_ptap,1,i,1
+geom took  0.00 user, 0.00 sys, 0.00 elapsed, 5968.0 kbytes
+stamp -V -i2 np_rLiPo rcont_0poly_LiPo_npoly_0conn np_rcont_0poly_LiPo_npoly_0conn
+stamp took  0.03 user, 0.00 sys, 0.00 elapsed, 274896.0 kbytes
+geom -V np_rcont_0poly_LiPo_npoly_0conn,p_rcont_0poly_LiPo_npoly_0conn - rcont_0poly_LiPo_npoly_0conn,1,i,1
+geom took  0.00 user, 0.00 sys, 0.00 elapsed, 5924.0 kbytes
+stamp -V -i2 np_rLiPo rcont_0poly_LiPo_ppoly_0conn np_rcont_0poly_LiPo_ppoly_0conn
+stamp took  0.02 user, 0.01 sys, 0.00 elapsed, 274780.0 kbytes
+geom -V np_rcont_0poly_LiPo_ppoly_0conn,p_rcont_0poly_LiPo_ppoly_0conn - rcont_0poly_LiPo_ppoly_0conn,1,i,1
+geom took  0.00 user, 0.00 sys, 0.00 elapsed, 5952.0 kbytes
+stamp -V -i2 np_rnpoly_0conn rnpoly_0conn_ngate_ovia np_rnpoly_0conn_ngate_ovia
+stamp took  0.03 user, 0.01 sys, 0.00 elapsed, 274488.0 kbytes
+geom -V np_rnpoly_0conn_ngate_ovia,p_rnpoly_0conn_ngate_ovia - rnpoly_0conn_ngate_ovia,1,i,1
+geom took  0.00 user, 0.00 sys, 0.00 elapsed, 5940.0 kbytes
+stamp -V -i2 np_rnpoly_0conn rnpoly_0conn_ppoly_0conn_ovia np_rnpoly_0conn_ppoly_0conn_ovia
+stamp took  0.02 user, 0.01 sys, 0.00 elapsed, 274536.0 kbytes
+geom -V np_rnpoly_0conn_ppoly_0conn_ovia,p_rnpoly_0conn_ppoly_0conn_ovia - rnpoly_0conn_ppoly_0conn_ovia,1,i,1
+geom took  0.00 user, 0.00 sys, 0.00 elapsed, 5940.0 kbytes
+stamp -V -i2 np_rppoly_0conn rppoly_0conn_pgate_ovia np_rppoly_0conn_pgate_ovia
+stamp took  0.02 user, 0.01 sys, 0.00 elapsed, 274508.0 kbytes
+geom -V np_rppoly_0conn_pgate_ovia,p_rppoly_0conn_pgate_ovia - rppoly_0conn_pgate_ovia,1,i,1
+
+geom took  0.00 user, 0.00 sys, 0.00 elapsed, 5936.0 kbytes
+#==========================================================#
+# Perform stamp operations
+#==========================================================#
+
+stamp -V -maxnet -i -mV -B np_rntap np_rnw_0conn
+stamp took  0.02 user, 0.01 sys, 0.00 elapsed, 274836.0 kbytes
+stamp -V -maxnet -i -mV -B np_rptap np_rpsub
+
+stamp took  0.03 user, 0.01 sys, 0.00 elapsed, 274904.0 kbytes
+#==========================================================#
+# Combine power non-power
+#==========================================================#
+
+/bin/rm -f ngate
+geom np_rngate,p_rngate - ngate,1,i,1
+epick -c -f floatlvsnetsfile ngate ngate
+/bin/rm -f nsd
+geom np_rnsd,p_rnsd - nsd,1,i,1
+epick -c -f floatlvsnetsfile nsd nsd
+/bin/rm -f pgate
+geom np_rpgate,p_rpgate - pgate,1,i,1
+epick -c -f floatlvsnetsfile pgate pgate
+/bin/rm -f psd
+geom np_rpsd,p_rpsd - psd,1,i,1
+epick -c -f floatlvsnetsfile psd psd
+/bin/rm -f nw_0conn
+emerge np_rnw_0conn p_rnw_0conn  nw_0conn
+epick -c -f floatlvsnetsfile nw_0conn nw_0conn
+/bin/rm -f psub
+emerge np_rpsub p_rpsub  psub
+epick -c -f floatlvsnetsfile psub psub
+
+#==========================================================#
+# Reconnect MOSFET devices
+#==========================================================#
+
+reconnect -V -mbg -n NET -se2 mwires.res -mf -t \
+	n1svt_0dev.trans:n1svt_0dev.transr n1svt_0dev \
+	n1svt_0dev_msdvia,n1svt_0dev_mgvia,psub -t \
+	p1svt_0dev.trans:p1svt_0dev.transr p1svt_0dev \
+	p1svt_0dev_msdvia,p1svt_0dev_mgvia,nw_0conn
+reconnect took 0.03 user, 0.01 sys, 1.00 elapsed, 289192.0 kbytes
+changeTransFileNameAP n1svt_0dev.trans n1svt_0dev.transr
+changeTransFileNameAP p1svt_0dev.trans p1svt_0dev.transr
+netprint -max NET > original_maxnetfile
+
+#==========================================================#
+# Form capacitance layers for resistive process layers
+#==========================================================#
+
+#4 
+ geom -V -i p_rnsd,p_rpsd,p_rntap,p_rptap,np_rnsd,np_rpsd,np_rntap,np_rptap - so_Active,1,n
+geom took  0.00 user, 0.00 sys, 0.00 elapsed, 5968.0 kbytes
+#4 
+ geom -V -i p_rnsd,p_rpsd,p_rntap,p_rptap,np_rnsd,np_rpsd,np_rntap,np_rptap - Active,1,n
+geom took  0.00 user, 0.00 sys, 0.00 elapsed, 5980.0 kbytes
+geom -V -i nsd_cut,psd_cut,ntap_cut,ptap_cut - Active_cut,1,n
+geom took  0.00 user, 0.00 sys, 0.00 elapsed, 5928.0 kbytes
+#4 
+ geom -V -i p_rngate,p_rpgate,p_rnpoly_0conn,p_rppoly_0conn,np_rngate,np_rpgate,np_rnpoly_0conn,np_rppoly_0conn - so_Poly,1,n
+geom took  0.00 user, 0.00 sys, 0.00 elapsed, 6296.0 kbytes
+#4 
+ geom -V -i p_rngate,p_rpgate,p_rnpoly_0conn,p_rppoly_0conn,np_rngate,np_rpgate,np_rnpoly_0conn,np_rppoly_0conn - Poly,1,n
+geom took  0.00 user, 0.00 sys, 0.00 elapsed, 5956.0 kbytes
+geom -V -i ngate_cut,pgate_cut,npoly_0conn_cut,ppoly_0conn_cut - Poly_cut,1,n
+geom took  0.00 user, 0.00 sys, 0.00 elapsed, 5964.0 kbytes
+#4 
+ geom -V -i p_rLiAct,np_rLiAct - so_LiAct,1,n
+geom took  0.00 user, 0.00 sys, 0.00 elapsed, 5908.0 kbytes
+geom -V p_rLiAct,np_rLiAct - LiAct,1,i,1
+geom took  0.00 user, 0.00 sys, 0.00 elapsed, 5964.0 kbytes
+#4 
+ geom -V -i p_rLiPo,np_rLiPo - so_LiPo,1,n
+geom took  0.00 user, 0.00 sys, 0.00 elapsed, 5992.0 kbytes
+geom -V p_rLiPo,np_rLiPo - LiPo,1,i,1
+geom took  0.00 user, 0.00 sys, 0.00 elapsed, 5952.0 kbytes
+#4 
+ geom -V -i p_rm1_0conn_0mask1,p_rm1_0conn_0mask2,np_rm1_0conn_0mask1,np_rm1_0conn_0mask2 - so_M1,1,n
+geom took  0.00 user, 0.00 sys, 0.00 elapsed, 5948.0 kbytes
+#4 
+ geom -V -i p_rm1_0conn_0mask1,p_rm1_0conn_0mask2,np_rm1_0conn_0mask1,np_rm1_0conn_0mask2 - M1,1,n
+geom took  0.00 user, 0.00 sys, 0.00 elapsed, 5972.0 kbytes
+geom -V -i m1_0conn_0mask1_cut,m1_0conn_0mask2_cut - M1_cut,1,n
+geom took  0.00 user, 0.00 sys, 0.00 elapsed, 5972.0 kbytes
+#4 
+ geom -V -i p_rm2_0conn_0mask2,np_rm2_0conn_0mask2 - so_M2,1,n
+geom took  0.00 user, 0.00 sys, 0.00 elapsed, 5928.0 kbytes
+geom -V p_rm2_0conn_0mask2,np_rm2_0conn_0mask2 - M2,1,i,1
+
+geom took  0.00 user, 0.00 sys, 0.00 elapsed, 5900.0 kbytes
+#==========================================================#
+# Form capacitance layers for non-resistive process layers
+#==========================================================#
+
+createEmptyLayer MT
+createEmptyLayer M7
+createEmptyLayer M6
+createEmptyLayer M5
+createEmptyLayer M4
+createEmptyLayer M3
+
+#==========================================================#
+# Form substrate
+#==========================================================#
+
+geom -V p_rnw_0conn,np_rnw_0conn - nw_0conn,1,i,1
+geom took  0.00 user, 0.00 sys, 0.00 elapsed, 5900.0 kbytes
+geom -V p_rpsub,np_rpsub - psub,1,i,1
+geom took  0.00 user, 0.00 sys, 0.00 elapsed, 5948.0 kbytes
+/bin/cp -f psub psub.df2
+grow -V 0.001 nw_0conn g_nw_0conn
+grow took  0.00 user, 0.00 sys, 0.00 elapsed, 5680.0 kbytes
+geom -V psub g_nw_0conn - psub,10,i,1
+geom took  0.00 user, 0.00 sys, 0.00 elapsed, 5976.0 kbytes
+geom -V nw_0conn,psub - Oxide,1,i,1
+geom took  0.00 user, 0.00 sys, 0.00 elapsed, 5944.0 kbytes
+xytoebbox -V -g 6.002 -e MT,M7,M6,M5,M4,M3,M2,M1,LiPo,LiAct,Poly,Active,nw_0conn,psub xg_Oxide
+grow -V 0.001 Oxide g_Oxide
+grow took  0.00 user, 0.00 sys, 0.00 elapsed, 5700.0 kbytes
+geom -V xg_Oxide g_Oxide - tmp_Oxide,10
+geom took  0.00 user, 0.00 sys, 0.00 elapsed, 5948.0 kbytes
+epick -V -reo -D ${CAP_GROUND} tmp_Oxide pick_Oxide
+epick took  0.00 user, 0.00 sys, 0.00 elapsed, 3496.0 kbytes
+grow -V -m 0.002 pick_Oxide g_pick_Oxide
+grow took  0.00 user, 0.00 sys, 0.00 elapsed, 5676.0 kbytes
+geom took  0.00 user, 0.00 sys, 0.00 elapsed, 5964.0 kbytes
+stamp -i Oxide g_pick_Oxide
+grow -V -m -0.002 g_pick_Oxide pick_Oxide
+grow took  0.00 user, 0.00 sys, 0.00 elapsed, 5592.0 kbytes
+sort edges took  0.00 user, 0.00 sys, 0.00 elapsed, 5852.0 kbytes
+geom took  0.00 user, 0.00 sys, 0.00 elapsed, 5920.0 kbytes
+emerge -V pick_Oxide Oxide tmp1_Oxide
+emerge took 0.00 user, 0.00 sys, 0.00 elapsed, 3312.0 kbytes
+geom -V tmp1_Oxide - Oxide,1,i,1
+geom took  0.00 user, 0.00 sys, 0.00 elapsed, 5972.0 kbytes
+/bin/rm -f g_pick_Oxide xg_Oxide tmp_Oxide tmp1_Oxide
+
+#==========================================================#
+# Perform Marker processing
+#==========================================================#
+
+createEmptyLayer qelayer
+geom np_rntap,p_rntap - NActive,1,i,1
+geom np_rptap,p_rptap - PActive,1,i,1
+geom np_rnpoly_0conn,p_rnpoly_0conn - NPOLY,1,i,1
+geom np_rppoly_0conn,p_rppoly_0conn - PPOLY,1,i,1
+geom np_rngate,p_rngate - NGATE,1,i,1
+geom np_rpgate,p_rpgate - PGATE,1,i,1
+geom n1svt_0dev,p1svt_0dev - qrcgate,1,i,1
+netprint -max NET > maxnetfile
+/bin/rm -f gateblockingmap ovl_gateblockingmap gateblockingmaxnet gateblockingmaxid blockingmap
+
+#==========================================================#
+# Prepare blocking layers
+#==========================================================#
+
+/bin/cp Oxide Oxide.df2
+/bin/cp Poly Poly.df2
+/bin/cp Active Active.df2
+grow -V 0.002 qrcgate g_qrcgate_1
+grow took  0.00 user, 0.00 sys, 0.00 elapsed, 5680.0 kbytes
+grow -V 0.002 fin_0marker_0layer g_fin_0marker_0layer_2
+grow took  0.00 user, 0.00 sys, 0.00 elapsed, 5644.0 kbytes
+geom -V g_qrcgate_1,g_fin_0marker_0layer_2  - tmp_dev,1
+geom took  0.00 user, 0.00 sys, 0.00 elapsed, 5936.0 kbytes
+grow -V -0.001 tmp_dev g_dev_1
+grow took  0.00 user, 0.00 sys, 0.00 elapsed, 5688.0 kbytes
+sort edges took  0.00 user, 0.00 sys, 0.00 elapsed, 5880.0 kbytes
+geom tmp_dev g_dev_1 Oxide - Oxide_in,111,i,3 Oxide_out,001,i,3 Oxide_new_cut,101
+/bin/rm -f tmp_dev g_dev_1
+/bin/mv -f Oxide_new_cut Oxide_cut
+grow -V -0.001 g_fin_0marker_0layer_2 g_dev_2
+geom took  0.00 user, 0.00 sys, 0.00 elapsed, 6016.0 kbytes
+merge input file took 0.00 user, 0.00 sys, 0.00 elapsed, 5688.0 kbytes
+grow took  0.00 user, 0.00 sys, 0.00 elapsed, 5808.0 kbytes
+sort edges took  0.00 user, 0.00 sys, 0.00 elapsed, 5892.0 kbytes
+geom g_fin_0marker_0layer_2 g_dev_2 Active - Active_in,111,i,3 Active_out,001,i,3 Active_new_cut,101
+# /bin/rm -f g_dev_2
+emerge Active_cut Active_new_cut tmp_cut
+/bin/mv -f tmp_cut Active_cut
+grow -V -0.001 g_fin_0marker_0layer_2 g_dev_3
+geom took  0.00 user, 0.00 sys, 0.00 elapsed, 5988.0 kbytes
+merge input file took 0.00 user, 0.00 sys, 0.00 elapsed, 5724.0 kbytes
+grow took  0.00 user, 0.00 sys, 0.00 elapsed, 5840.0 kbytes
+sort edges took  0.00 user, 0.00 sys, 0.00 elapsed, 5924.0 kbytes
+geom g_fin_0marker_0layer_2 g_dev_3 Poly - Poly_in,111,i,3 Poly_out,001,i,3 Poly_new_cut,101
+# /bin/rm -f g_dev_3
+emerge Poly_cut Poly_new_cut tmp_cut
+/bin/mv -f tmp_cut Poly_cut
+relocate -V -I relocatemap -n NET Oxide_in
+emerge Oxide_in Oxide_out Oxide
+relocate -V -I blockingmap -n NET Active_in Poly_in
+emerge Active_in Active_out Active
+emerge Poly_in Poly_out Poly
+
+#==========================================================#
+# Prepare qrcgate block 
+#==========================================================#
+
+connect fin_0marker_0layer:qrcgateblock - -
+inter -net NET -I blockingmap qrcgateblock Poly -b gateblockingmap
+inter -net NET -N0 -I blockingmap qrcgateblock Active -b gateblockingmap
+/bin/rm -f lvsblockingmaxnet lvsblockingmap
+
+#==========================================================#
+# Prepare via layers for sip
+#==========================================================#
+
+geom -V rV0_0Po_m1_0conn_0mask1_LiPo,rV0_0Po_m1_0conn_0mask2_LiPo - V0_LiPo,1,i,1
+geom took  0.00 user, 0.00 sys, 0.00 elapsed, 5944.0 kbytes
+geom -V rV0_0Act_m1_0conn_0mask1_LiAct,rV0_0Act_m1_0conn_0mask2_LiAct - V0,1,i,1
+geom took  0.00 user, 0.00 sys, 0.00 elapsed, 6012.0 kbytes
+geom -V rV1_m2_0conn_0mask2_m1_0conn_0mask1,rV1_m2_0conn_0mask2_m1_0conn_0mask2 - V1,1,i,1
+geom took  0.00 user, 0.00 sys, 0.00 elapsed, 5944.0 kbytes
+createEmptyLayer V2
+createEmptyLayer V3
+createEmptyLayer V4
+createEmptyLayer V5
+createEmptyLayer V6
+createEmptyLayer VT
+
+#==========================================================#
+# Create sip/sw3d/cn3d capacitance data files
+#==========================================================#
+
+cat <<ENDCAT> sip.cmd
+sip -V -NEWP -s -o  -n 0.5 -Maxw 0.5 -j -0.001 -svia -i 0,0.501 -b LiPo -t M1 \
+	-p V0_LiPo,key 0,0.5 - V0_LiPo.sip
+sip -V -NEWP -s -o  -n 0.688 -Maxw 0.688 -j 0.032 -svia -i 0,0.689 -b LiAct \
+	-t M1 -p V0,key 0,0.688 - V0.sip
+sip -V -NEWP -s -o  -n 0.48 -Maxw 0.48 -j 0.032 -svia -i 0,0.481 -b M1 -t M2 \
+	-p V1,key 0,0.48 - V1.sip
+sip -V -cgnd ${CAP_GROUND} -s -o -sub 1 -mlc M1,M2 -n 0.64 -i 0,0.641 -b \
+	M2,M1,LiPo,LiAct,Poly,Active,Oxide -t M4,M5,M6,M7,MT -j 0.032 -Maxw \
+	0.72 -p M3,key 0,0.64 - M3.sip
+sip -V -cgnd ${CAP_GROUND} -s -o -sub 1 -mlc M2,M3 -n 0.72 -i 0,0.721 -b \
+	M3,M2,M1,LiPo,LiAct,Poly,Active,Oxide -t M5,M6,M7,MT -j 0.032 -Maxw \
+	1.08 -p M4,key 0,0.72 - M4.sip
+sip -V -cgnd ${CAP_GROUND} -s -o -sub 1 -mlc M3,M4 -n 1.02 -i 0,1.021 -b \
+	M4,M3,M2,M1,LiPo,LiAct,Poly,Active,Oxide -t M6,M7,MT -j 0.058 -Maxw \
+	1.53 -p M5,key 0,1.02 - M5.sip
+sip -V -cgnd ${CAP_GROUND} -s -o -sub 1 -mlc M4,M5 -n 1.36 -i 0,1.361 -b \
+	M5,M4,M3,M2,M1,LiPo,LiAct,Poly,Active,Oxide -t M7,MT -j 0.058 -Maxw \
+	2.04 -p M6,key 0,1.36 - M6.sip
+sip -V -cgnd ${CAP_GROUND} -s -o -sub 1 -mlc M5,M6 -n 1.8 -i 0,1.801 -b \
+	M6,M5,M4,M3,M2,M1,LiPo,LiAct,Poly,Active,Oxide -t MT -j 0.069 -Maxw \
+	1.5525 -p M7,key 0,1.8 - M7.sip
+sip -V -cgnd ${CAP_GROUND} -s -o -sub 1 -mlc M6,M7 -n 3 -i 0,3.001 -b \
+	M7,M6,M5,M4,M3,M2,M1,LiPo,LiAct,Poly,Active,Oxide -j 0.22 -Maxw 4.95 \
+	-p MT,key 0,3 - MT.sip
+sip -V -cgnd ${CAP_GROUND} -s -o -sub 1 -n 0.27 -i 0,0.271 -b Oxide -t \
+	Poly,LiAct,LiPo,M1,M2,M3,M4,M5,M6,M7,MT -j 0.062 -Maxw 1.395 -p \
+	Active,key 0,0.27 - Active.sip
+sip -V -cgnd ${CAP_GROUND} -s -o -sub 1 -mlc Active -n 0.69 -i 0,0.691 -b \
+	Poly,Active,Oxide -t LiPo,M1,M2,M3,M4,M5,M6,M7,MT -j 0.03 -Maxw 1.035 \
+	-p LiAct,key 0,0.69 - LiAct.sip
+sip -V -cgnd ${CAP_GROUND} -s -o -sub 1 -mlc Active,LiAct -n 0.48 -i 0,0.481 \
+	-b LiPo,LiAct,Poly,Active,Oxide -t M2,M3,M4,M5,M6,M7,MT -j 0.032 \
+	-Maxw 0.72 -p M1,key 0,0.48 - M1.sip
+sip -V -cgnd ${CAP_GROUND} -s -o -sub 1 -mlc LiAct,M1 -n 0.48 -i 0,0.481 -b \
+	M1,LiPo,LiAct,Poly,Active,Oxide -t M3,M4,M5,M6,M7,MT -j 0.032 -Maxw \
+	0.72 -p M2,key 0,0.48 - M2.sip
+sip -V -s -cgnd ${CAP_GROUND} -sub 1 -L3A -h -b \
+	M6,M5,M4,M3,M2,M1,LiPo,LiAct,Poly,Active,Oxide -Maxw 4.95 -p \
+	M7,key,MT,key 0,3,0 - M7_MT.sip
+sip -V -s -cgnd ${CAP_GROUND} -sub 1 -L3A -h -R MT -b \
+	M5,M4,M3,M2,M1,LiPo,LiAct,Poly,Active,Oxide -Maxw 4.95 -p \
+	M6,key,MT,key 0,3,0 - M6_MT.sip
+sip -V -s -cgnd ${CAP_GROUND} -sub 1 -h -b \
+	M5,M4,M3,M2,M1,LiPo,LiAct,Poly,Active,Oxide -t MT -Maxw 2.04 -p \
+	M6,key,M7,key 0,1.8,0 - M6_M7.sip
+sip -V -s -cgnd ${CAP_GROUND} -sub 1 -L3A -h -R M7 -b \
+	M4,M3,M2,M1,LiPo,LiAct,Poly,Active,Oxide -t MT -Maxw 1.5525 -p \
+	M5,key,M7,key 0,1.8,0 - M5_M7.sip
+sip -V -s -cgnd ${CAP_GROUND} -sub 1 -h -b \
+	M4,M3,M2,M1,LiPo,LiAct,Poly,Active,Oxide -t M7,MT -Maxw 2.04 -p \
+	M5,key,M6,key 0,1.36,0 - M5_M6.sip
+sip -V -s -cgnd ${CAP_GROUND} -sub 1 -L3A -h -R M6 -b \
+	M3,M2,M1,LiPo,LiAct,Poly,Active,Oxide -t M7,MT -Maxw 2.04 -p \
+	M4,key,M6,key 0,1.36,0 - M4_M6.sip
+sip -V -s -cgnd ${CAP_GROUND} -sub 1 -h -b \
+	M3,M2,M1,LiPo,LiAct,Poly,Active,Oxide -t M6,M7,MT -Maxw 1.53 -p \
+	M4,key,M5,key 0,1.02,0 - M4_M5.sip
+sip -V -s -cgnd ${CAP_GROUND} -sub 1 -L3A -h -R M5 -b \
+	M2,M1,LiPo,LiAct,Poly,Active,Oxide -t M6,M7,MT -Maxw 1.53 -p \
+	M3,key,M5,key 0,1.02,0 - M3_M5.sip
+sip -V -s -cgnd ${CAP_GROUND} -sub 1 -h -b M2,M1,LiPo,LiAct,Poly,Active,Oxide \
+	-t M5,M6,M7,MT -Maxw 1.08 -p M3,key,M4,key 0,0.72,0 - M3_M4.sip
+sip -V -s -cgnd ${CAP_GROUND} -sub 1 -L3A -h -R M4 -b \
+	M1,LiPo,LiAct,Poly,Active,Oxide -t M5,M6,M7,MT -Maxw 1.08 -p \
+	M2:M2_cut,key,M4,key 0,0.72,0 - M2_M4.sip
+sip -V -s -cgnd ${CAP_GROUND} -sub 1 -h -b M1,LiPo,LiAct,Poly,Active,Oxide -t \
+	M4,M5,M6,M7,MT -Maxw 0.72 -p M2:M2_cut,key,M3,key 0,0.64,0 - \
+	M2_M3.sip
+sip -V -s -cgnd ${CAP_GROUND} -sub 1 -L3A -h -R M3 -b \
+	LiPo,LiAct,Poly,Active,Oxide -t M4,M5,M6,M7,MT -k M2:0.08 -Maxw 0.72 \
+	-p M1:M1_cut,key,M3,key 0,0.64,0 - M1_M3.sip
+sip -V -s -cgnd ${CAP_GROUND} -sub 1 -h -b LiPo,LiAct,Poly,Active,Oxide -t \
+	M3,M4,M5,M6,M7,MT -Maxw 0.72 -p M1:M1_cut,key,M2:M2_cut,key 0,0.48,0 \
+	- M1_M2.sip
+sip -V -s -cgnd ${CAP_GROUND} -sub 1 -L3A -h -R M2 -b Poly,Active,Oxide -t \
+	M3,M4,M5,M6,M7,MT -k LiPo:0.116,M1:0.16 -Maxw 1.035 -p \
+	LiAct:LiAct_cut,key,M2:M2_cut,key 0,0.69,0 - LiAct_M2.sip
+sip -V -s -cgnd ${CAP_GROUND} -sub 1 -h -b Poly,Active,Oxide -t \
+	M2,M3,M4,M5,M6,M7,MT -k LiPo:0.058 -Maxw 1.035 -p \
+	LiAct:LiAct_cut,key,M1:M1_cut,key 0,0.69,0 - LiAct_M1.sip
+sip -V -s -cgnd ${CAP_GROUND} -sub 1 -L3A -h -R M1 -b Oxide -t \
+	M2,M3,M4,M5,M6,M7,MT -k Poly:0.195,LiAct:0.16,LiPo:0.174 -Maxw 1.395 \
+	-p Active:Active_cut,key,M1:M1_cut,key 0,0.48,0 - Active_M1.sip
+sip -V -s -cgnd ${CAP_GROUND} -sub 1 -h -R LiAct,Active -b Oxide -t \
+	LiPo,M1,M2,M3,M4,M5,M6,M7,MT -k Poly:0.065 -Maxw 1.395 -p \
+	Active:Active_cut,key,LiAct:LiAct_cut,key 0,0.69,0 - Active_LiAct.sip
+sw3d -V -cgnd ${CAP_GROUND} -sub 1 -b \
+	M6,M5,M4,M3,M2,M1,LiPo,LiAct,Poly,Active,Oxide -p M7,MT - M7_MT.sw3d
+sw3d -V -cgnd ${CAP_GROUND} -sub 1 -b \
+	M5,M4,M3,M2,M1,LiPo,LiAct,Poly,Active,Oxide -t MT -p M6,M7 - \
+	M6_M7.sw3d
+sw3d -V -cgnd ${CAP_GROUND} -sub 1 -b \
+	M4,M3,M2,M1,LiPo,LiAct,Poly,Active,Oxide -t M7,MT -p M5,M6 - \
+	M5_M6.sw3d
+sw3d -V -cgnd ${CAP_GROUND} -sub 1 -b M3,M2,M1,LiPo,LiAct,Poly,Active,Oxide \
+	-t M6,M7,MT -p M4,M5 - M4_M5.sw3d
+sw3d -V -cgnd ${CAP_GROUND} -sub 1 -b M2,M1,LiPo,LiAct,Poly,Active,Oxide -t \
+	M5,M6,M7,MT -p M3,M4 - M3_M4.sw3d
+sw3d -V -cgnd ${CAP_GROUND} -sub 1 -b M1,LiPo,LiAct,Poly,Active,Oxide -t \
+	M4,M5,M6,M7,MT -p M2:M2_cut,M3 - M2_M3.sw3d
+sw3d -V -cgnd ${CAP_GROUND} -sub 1 -b LiPo,LiAct,Poly,Active,Oxide -t \
+	M3,M4,M5,M6,M7,MT -p M1:M1_cut,M2:M2_cut - M1_M2.sw3d
+ENDCAT
+
+#==========================================================#
+# Perform Marker Via Preparation
+#==========================================================#
+
+createEmptyLayer Active_LiAct
+createEmptyLayer Nactive_LiAct
+createEmptyLayer Pactive_LiAct
+geom nsd np_rnsd - np_rnsd,11,i,1
+geom nsd p_rnsd - p_rnsd,11,i,1
+geom np_rnsd,p_rnsd - nsd,1,i,1
+/bin/cp nsd nsd_region
+grow .001  nsd_region nsd_region
+connect nsd_region - -
+inter nsd_region n1svt_0dev -P region_file
+  Output 16 Regions for INFO (INTER-122004): Overlap
+
+
+epick -f region_file nsd_region n1svt_0dev_diff
+geom Active n1svt_0dev_diff - NGATE_Active,11,i,1
+geom psd np_rpsd - np_rpsd,11,i,1
+geom psd p_rpsd - p_rpsd,11,i,1
+geom np_rpsd,p_rpsd - psd,1,i,1
+/bin/cp psd psd_region
+grow .001  psd_region psd_region
+connect psd_region - -
+inter psd_region p1svt_0dev -P region_file
+  Output 8 Regions for INFO (INTER-122004): Overlap
+
+
+epick -f region_file psd_region p1svt_0dev_diff
+geom Active p1svt_0dev_diff - PGATE_Active,11,i,1
+geom NActive NGATE_Active,PGATE_Active - NActive,10,i,1
+geom PActive NGATE_Active,PGATE_Active - PActive,10,i,1
+geom nsd np_rnsd - np_rnsd,11,i,1
+geom nsd p_rnsd - p_rnsd,11,i,1
+geom np_rnsd,p_rnsd - nsd,1,i,1
+/bin/cp nsd_orig nsd_region
+grow .001  nsd_region nsd_region
+connect nsd_region - -
+inter nsd_region n1svt_0dev -P region_file
+  Output 4 Regions for INFO (INTER-122004): Overlap
+
+
+epick -f region_file nsd_region n1svt_0dev_diff
+geom LiAct n1svt_0dev_diff - NGATE_LiAct,11,i,1
+geom psd np_rpsd - np_rpsd,11,i,1
+geom psd p_rpsd - p_rpsd,11,i,1
+geom np_rpsd,p_rpsd - psd,1,i,1
+/bin/cp psd_orig psd_region
+grow .001  psd_region psd_region
+connect psd_region - -
+inter psd_region p1svt_0dev -P region_file
+  Output 4 Regions for INFO (INTER-122004): Overlap
+
+
+epick -f region_file psd_region p1svt_0dev_diff
+geom LiAct p1svt_0dev_diff - PGATE_LiAct,11,i,1
+/bin/cp Active Active_allshape
+geom Active NGATE_Active - NGATE_Active,11,i,1
+geom Active PGATE_Active - PGATE_Active,11,i,1
+geom Active NActive - NActive,11,i,1
+geom Active PActive - PActive,11,i,1
+geom Active NGATE_Active,PGATE_Active,NActive,PActive - Active,10,i,1
+/bin/cp Poly Poly_allshape
+geom Poly NGATE - NGATE,11,i,1
+geom Poly PGATE - PGATE,11,i,1
+geom Poly NPOLY - NPOLY,11,i,1
+geom Poly PPOLY - PPOLY,11,i,1
+geom Poly NGATE,PGATE,NPOLY,PPOLY - Poly,10,i,1
+/bin/cp LiAct LiAct_allshape
+geom LiAct NGATE_LiAct - NGATE_LiAct,11,i,1
+geom LiAct PGATE_LiAct - PGATE_LiAct,11,i,1
+geom LiAct NGATE_LiAct,PGATE_LiAct - LiAct,10,i,1
+
+#==========================================================#
+# layer preparation for Pax16
+#==========================================================#
+
+createEmptyLayer Pax16EmptyEdge 
+/bin/cp V0 _ict_V0
+/bin/cp M1 V0_ictvia_M1
+/bin/cp LiAct V0_ictvia_LiAct
+/bin/cp M2 _pax_viatop_M2
+/bin/cp M1 _pax_viabot_M1
+/bin/cp M3 _pax_viatop_M3
+/bin/cp M2 _pax_viabot_M2
+/bin/cp M4 _pax_viatop_M4
+/bin/cp M3 _pax_viabot_M3
+/bin/cp M5 _pax_viatop_M5
+/bin/cp M4 _pax_viabot_M4
+/bin/cp M6 _pax_viatop_M6
+/bin/cp M5 _pax_viabot_M5
+/bin/cp M7 _pax_viatop_M7
+/bin/cp M6 _pax_viabot_M6
+/bin/cp MT _pax_viatop_MT
+/bin/cp M7 _pax_viabot_M7
+geom NGATE_LiAct,PGATE_LiAct,LiPo,V0_ictvia_LiAct - V0_ictvia_LiAct,1,i,1 
+geom V0_LiPo,V0 - V0,1,i,1 
+geom M1,V0_ictvia_M1 - V0_ictvia_M1,1,i,1 
+/bin/mv NGATE_Active _ict_NGATE_Active
+/bin/mv PGATE_Active _ict_PGATE_Active
+/bin/mv NActive _ict_NActive
+/bin/mv PActive _ict_PActive
+/bin/mv Active _ict_Active
+/bin/mv NGATE _ict_NGATE
+/bin/mv PGATE _ict_PGATE
+/bin/mv NPOLY _ict_NPOLY
+/bin/mv PPOLY _ict_PPOLY
+/bin/mv Poly _ict_Poly
+/bin/mv NGATE_LiAct _ict_NGATE_LiAct
+/bin/mv PGATE_LiAct _ict_PGATE_LiAct
+/bin/mv LiAct _ict_LiAct
+/bin/mv LiPo _ict_LiPo
+/bin/cp _ict_Active Active
+/bin/cp _ict_NGATE_Active NGATE_Active
+/bin/cp _ict_Poly Poly
+/bin/cp _ict_NGATE NGATE
+/bin/cp _ict_LiAct LiAct
+/bin/cp _ict_NGATE_LiAct NGATE_LiAct
+/bin/cp _ict_LiPo LiPo
+geom _ict_PGATE_Active,NGATE_Active - NGATE_Active,1,i,1 
+geom _ict_NActive,_ict_PActive,Active - Active,1,i,1 
+geom _ict_PGATE,NGATE - NGATE,1,i,1 
+geom _ict_NPOLY,_ict_PPOLY,Poly - Poly,1,i,1 
+geom _ict_PGATE_LiAct,NGATE_LiAct - NGATE_LiAct,1,i,1 
+/bin/cp Active pax16_NGATE
+/bin/cp NGATE_LiAct pax16_LiPo
+/bin/cp Active pax16_active
+geom NGATE_Active,pax16_active - pax16_active,1,i,1 
+geom NGATE_LiAct,LiAct,LiPo - pax17_LiPo,1,i,1 
+geom NGATE_Active,Poly_allshape,pax16_NGATE Active,NGATE_Active - pax16_NGATE,10,i,1 
+geom LiAct,LiPo,pax16_LiPo LiAct,NGATE_LiAct - pax16_LiPo,10,i,1 
+geom LiAct,NGATE_LiAct,pax16_NGATE - pax16_NGATE,1,i,1 
+geom Active,NGATE_Active - pax16_active,1,i,1 
+geom NGATE,LiAct,_ict_NGATE_LiAct,_ict_PGATE_LiAct,Poly - pax16_NGATE,1,i,1 
+geom LiPo - pax16_LiPo,1,i,1 
+/bin/cp _ict_NGATE_Active pax16_merged_active
+geom _ict_PGATE_Active,pax16_merged_active - pax16_merged_active,1,i,1 
+grow -m 0.001 pax16_active pax16_active_m_tmp 
+grow -0.001 pax16_active_m_tmp pax16_active_m 
+/bin/rm pax16_active_m_tmp 
+grow -m 0.001 pax16_NGATE pax16_NGATE_m_tmp 
+grow -0.001 pax16_NGATE_m_tmp pax16_NGATE_m 
+/bin/rm pax16_NGATE_m_tmp 
+grow -m 0.001 pax16_LiPo pax16_LiPo_m_tmp 
+grow -0.001 pax16_LiPo_m_tmp pax16_LiPo_m 
+/bin/rm pax16_LiPo_m_tmp 
+grow -D -0.02,0,0,0 LiAct LiAct_tmp 
+grow -D 0.02,0,0,0 LiAct_tmp LiAct_finm 
+/bin/rm LiAct_tmp
+grow -D -0.02,0,0,0 _ict_NGATE_LiAct _ict_NGATE_LiAct_tmp 
+grow -D 0.02,0,0,0 _ict_NGATE_LiAct_tmp _ict_NGATE_LiAct_finm 
+/bin/rm _ict_NGATE_LiAct_tmp
+grow -D -0.02,0,0,0 _ict_PGATE_LiAct _ict_PGATE_LiAct_tmp 
+grow -D 0.02,0,0,0 _ict_PGATE_LiAct_tmp _ict_PGATE_LiAct_finm 
+/bin/rm _ict_PGATE_LiAct_tmp
+grow 0.001 pax16_merged_active SIPactive_grow 
+connect SIPactive_grow:SIPactive_region - - 
+connect LiAct_finm,_ict_NGATE_LiAct_finm,_ict_PGATE_LiAct_finm:SIPfinPoly_region - - 
+/bin/rm LiAct_finm
+/bin/rm _ict_NGATE_LiAct_finm
+/bin/rm _ict_PGATE_LiAct_finm
+inter SIPactive_region SIPfinPoly_region -a SIPtouchregionNum 
+  Output 24 Regions for INFO (INTER-122004): Interact
+
+
+epick -f SIPtouchregionNum SIPactive_region SIPactive_pick 
+grow 0.001 SIPfinPoly_region SIPGrowfinPoly 
+geom SIPactive_pick SIPGrowfinPoly - SIPSdactive_pick,11,i,1 
+/bin/rm SIPactive_region
+/bin/rm SIPtouchregionNum
+/bin/rm SIPactive_pick
+/bin/rm SIPactive_grow
+/bin/rm SIPGrowfinPoly
+connect SIPfinPoly_region,SIPSdactive_pick:fin_from_connect - - 
+/bin/rm SIPfinPoly_region
+/bin/rm SIPSdactive_pick
+/bin/cp Pax16EmptyEdge pax16d_LiPo
+geom _ict_LiPo,_ict_LiAct,_ict_NGATE_LiAct,_ict_PGATE_LiAct,_ict_LiAct,_ict_NGATE_LiAct,_ict_PGATE_LiAct,pax16d_LiPo - pax16d_LiPo,1,i,1 
+
+#==========================================================#
+# Run pax16 to generate capfile
+#==========================================================#
+
+pax16 -V -lee_off -gnd ${CAP_GROUND} -via V0_LiPo,V0,V1,V2,V3,V4,V5,V6,VT \
+	-ignore_cf_table -scf sip.cmd -filterfile maxnetfile -cgnd \
+	${CAP_GROUND},1.0 -rcxlvs rcxtolvsmapfile -M_perim_off -c \
+	/home/install/FOUNDRY/cds_ff_mpt_v_0.5/qrc/typical/qrcTechFile \
+	-skip_layer_prep -f Oxide:Oxide_cut Active:Active_cut Poly:Poly_cut \
+	LiAct:LiAct_cut LiPo:LiPo_cut M1:M1_cut M2:M2_cut M3 M4 M5 M6 M7 MT - \
+	/home/install/FOUNDRY/cds_ff_mpt_v_0.5/qrc/typical/qrcTechFile - - \
+	NET - capfile
+INFO (PAXSXTN-221338): 60 capacitors are blocked, with a total value of 3.419E-17
+
+pax16 took  0.23 user, 0.17 sys, 1.00 elapsed, 143364.0 kbytes
+relocate -V -R gateblockingmaxnet,gateblockingmap -n NET Poly NGATE PGATE \
+	NPOLY PPOLY Active NGATE_Active PGATE_Active NActive PActive
+relocate -V -r maxnetfile -n NET Oxide Active Poly LiPo NGATE_Active \
+	PGATE_Active NActive PActive NGATE PGATE NPOLY PPOLY \
+	rV0_0Act_m1_0conn_0mask1_LiAct rV0_0Act_m1_0conn_0mask2_LiAct \
+	rV0_0Po_m1_0conn_0mask1_LiPo rV0_0Po_m1_0conn_0mask2_LiPo \
+	rV1_m2_0conn_0mask2_m1_0conn_0mask1 \
+	rV1_m2_0conn_0mask2_m1_0conn_0mask2 rcont_0ndiff_LiAct_nsd \
+	rcont_0ndiff_LiAct_ntap rcont_0pdiff_LiAct_psd \
+	rcont_0pdiff_LiAct_ptap rcont_0poly_LiPo_npoly_0conn \
+	rcont_0poly_LiPo_ppoly_0conn rnpoly_0conn_ngate_ovia \
+	rnpoly_0conn_ppoly_0conn_ovia rppoly_0conn_pgate_ovia
+
+#==========================================================#
+# Generate netlister data files
+#==========================================================#
+
+
+#==========================================================#
+# Perform RC reduction
+#==========================================================#
+
+xreduce -V -mergecap -n NET -tech \
+	/home/install/FOUNDRY/cds_ff_mpt_v_0.5/qrc/typical -d1 -e \
+	MT,M7,M6,M5,M4,M3,M2,M1,LiPo,LiAct,Poly,Active,Oxide,np_rnw_0conn,np_rpsub,rV0_0Act_m1_0conn_0mask1_LiAct,rV0_0Act_m1_0conn_0mask2_LiAct,rV0_0Po_m1_0conn_0mask1_LiPo,rV0_0Po_m1_0conn_0mask2_LiPo,rV1_m2_0conn_0mask2_m1_0conn_0mask1,rV1_m2_0conn_0mask2_m1_0conn_0mask2,rcont_0ndiff_LiAct_nsd,rcont_0ndiff_LiAct_ntap,rcont_0pdiff_LiAct_psd,rcont_0pdiff_LiAct_ptap,rcont_0poly_LiPo_npoly_0conn,rcont_0poly_LiPo_ppoly_0conn,rnpoly_0conn_ngate_ovia,rnpoly_0conn_ppoly_0conn_ovia,rppoly_0conn_pgate_ovia \
+	-mfactorR infinite -decoupled -sr -minR 0.001 -rPvia \
+	rV0_0Act_m1_0conn_0mask1_LiAct.res,rV0_0Act_m1_0conn_0mask2_LiAct.res,rcont_0ndiff_LiAct_nsd.res,rcont_0ndiff_LiAct_ntap.res,rcont_0pdiff_LiAct_psd.res,rcont_0pdiff_LiAct_ptap.res,rV0_0Po_m1_0conn_0mask1_LiPo.res,rV0_0Po_m1_0conn_0mask2_LiPo.res,rcont_0poly_LiPo_npoly_0conn.res,rcont_0poly_LiPo_ppoly_0conn.res,rV1_m2_0conn_0mask2_m1_0conn_0mask1.res,rV1_m2_0conn_0mask2_m1_0conn_0mask2.res \
+	-rP \
+	np_rptap.res,np_rntap.res,np_rpsd.res,np_rnsd.res,np_rppoly_0conn.res,np_rnpoly_0conn.res,np_rpgate.res,np_rngate.res,np_rLiAct.res,np_rLiPo.res,np_rm1_0conn_0mask2.res,np_rm1_0conn_0mask1.res,np_rm2_0conn_0mask2.res,mwires.res \
+	-cap capfile L1T0 L2T0 n1svt_0dev.transr p1svt_0dev.transr
+
+INFO (XREDUCE-199097): mFactorR set to infinite
+
+INFO (XREDUCE-199128): mfactorR option to keep resistors is disabled
+
+INFO (XREDUCE-199107): Total number of resistors is 145
+
+INFO (XREDUCE-199108): d1 option renamed 0 nets
+
+INFO (XREDUCE-199109): minR option removed 8 resistors (6%)
+
+INFO (XREDUCE-199054): Total number of capacitors in capfile is 97
+
+INFO (XREDUCE-199052): mergecap required for 0 (0%) of 902 nets
+
+INFO (XREDUCE-199114): mfactorR option merged 0 groups of parallel transistors
+
+INFO (XREDUCE-199107): Total number of resistors is 91
+
+INFO (XREDUCE-199108): d1 option renamed 1 nets
+
+INFO (XREDUCE-199054): Total number of capacitors in capfile is 96
+
+xreduce took 0.13 user, 0.27 sys, 0.00 elapsed, 26724.0 kbytes
+#==========================================================#
+# Generate HSPICE file
+#==========================================================#
+
+advgen -V -g0 -li -f -n -o HSPICE -TL L1T0,L2T0 -cgnd ${CAP_GROUND},1.0 \
+	-dxref /tmp/qrc_96885/nand2/nand2.gdx -nxref \
+	/tmp/qrc_96885/nand2/nand2.gnx -addprefix -sc caps2dversion -mMx \
+	capfile MT,M7,M6,M5,M4,M3,M2,M1,LiPo,LiAct,Poly,Active,Oxide -rPmw \
+	res.mod np_rm2_0conn_0mask2.res,Rnp_rm2_0conn_0mask2.dev2 \
+	np_rm1_0conn_0mask1.res,Rnp_rm1_0conn_0mask1.dev2 \
+	np_rm1_0conn_0mask2.res,Rnp_rm1_0conn_0mask2.dev2 \
+	np_rLiPo.res,Rnp_rLiPo.dev2 np_rLiAct.res,Rnp_rLiAct.dev2 \
+	np_rngate.res,Rnp_rngate.dev2 np_rpgate.res,Rnp_rpgate.dev2 \
+	np_rnpoly_0conn.res,Rnp_rnpoly_0conn.dev2 \
+	np_rppoly_0conn.res,Rnp_rppoly_0conn.dev2 np_rnsd.res,Rnp_rnsd.dev2 \
+	np_rpsd.res,Rnp_rpsd.dev2 np_rntap.res,Rnp_rntap.dev2 \
+	np_rptap.res,Rnp_rptap.dev2 \
+	rV0_0Act_m1_0conn_0mask1_LiAct.res,RrV0_0Act_m1_0conn_0mask1_LiAct.dev2 \
+	rV0_0Act_m1_0conn_0mask2_LiAct.res,RrV0_0Act_m1_0conn_0mask2_LiAct.dev2 \
+	rcont_0ndiff_LiAct_nsd.res,Rrcont_0ndiff_LiAct_nsd.dev2 \
+	rcont_0ndiff_LiAct_ntap.res,Rrcont_0ndiff_LiAct_ntap.dev2 \
+	rcont_0pdiff_LiAct_psd.res,Rrcont_0pdiff_LiAct_psd.dev2 \
+	rcont_0pdiff_LiAct_ptap.res,Rrcont_0pdiff_LiAct_ptap.dev2 \
+	rV0_0Po_m1_0conn_0mask1_LiPo.res,RrV0_0Po_m1_0conn_0mask1_LiPo.dev2 \
+	rV0_0Po_m1_0conn_0mask2_LiPo.res,RrV0_0Po_m1_0conn_0mask2_LiPo.dev2 \
+	rcont_0poly_LiPo_npoly_0conn.res,Rrcont_0poly_LiPo_npoly_0conn.dev2 \
+	rcont_0poly_LiPo_ppoly_0conn.res,Rrcont_0poly_LiPo_ppoly_0conn.dev2 \
+	rV1_m2_0conn_0mask2_m1_0conn_0mask1.res,RrV1_m2_0conn_0mask2_m1_0conn_0mask1.dev2 \
+	rV1_m2_0conn_0mask2_m1_0conn_0mask2.res,RrV1_m2_0conn_0mask2_m1_0conn_0mask2.dev2 \
+	-rPmw mwires.mod mwires.res,mwires.dev2 -ta lvsmos.mod,n1svt_0dev.net \
+	n1svt_0dev.transr -ta lvsmos.mod,p1svt_0dev.net p1svt_0dev.transr - \
+	NET - /tmp/qrc_96885/nand2/extview.tmp
+
+INFO (ADVGN-5365): spice2db warning: No reference for net "X14/9" in subckt nand2.
+
+INFO (ADVGN-5365): spice2db warning: No reference for net "X14/10" in subckt nand2.
+
+INFO (ADVGN-5365): spice2db warning: No reference for net "X14/5" in subckt nand2.
+
+INFO (ADVGN-5365): spice2db warning: No reference for net "X14/6" in subckt nand2.
+
+INFO (ADVGN-5365): spice2db warning: No reference for net "X14/7" in subckt nand2.
+
+INFO (ADVGN-5365): spice2db warning: No reference for net "X14/8" in subckt nand2.
+
+INFO (ADVGN-5365): spice2db warning: No reference for net "X13/9" in subckt nand2.
+
+INFO (ADVGN-5365): spice2db warning: No reference for net "X13/10" in subckt nand2.
+
+INFO (ADVGN-5365): spice2db warning: No reference for net "X13/5" in subckt nand2.
+
+INFO (ADVGN-5365): spice2db warning: No reference for net "X13/6" in subckt nand2.
+
+advgen took:  0.12 user, 0.13 sys, 0.00 elapsed, 31432.0 kbytes
+#==========================================================#
+# Create _save_layers file for Assura extracted view
+#==========================================================#
+
+geom M2 np_rm2_0conn_0mask2 - np_rm2_0conn_0mask2,11,i,1
+geom M1 np_rm1_0conn_0mask1 - np_rm1_0conn_0mask1,11,i,1
+geom M1 np_rm1_0conn_0mask2 - np_rm1_0conn_0mask2,11,i,1
+geom LiPo np_rLiPo - np_rLiPo,11,i,1
+geom LiAct,NGATE_LiAct,PGATE_LiAct np_rLiAct - np_rLiAct,11,i,1
+geom Poly,NGATE,PGATE,NPOLY,PPOLY np_rngate - np_rngate,11,i,1
+geom Poly,NGATE,PGATE,NPOLY,PPOLY np_rpgate - np_rpgate,11,i,1
+geom Poly,NGATE,PGATE,NPOLY,PPOLY np_rnpoly_0conn - np_rnpoly_0conn,11,i,1
+geom Poly,NGATE,PGATE,NPOLY,PPOLY np_rppoly_0conn - np_rppoly_0conn,11,i,1
+geom Active,NGATE_Active,PGATE_Active,NActive,PActive np_rnsd - np_rnsd,11,i,1
+geom Active,NGATE_Active,PGATE_Active,NActive,PActive np_rpsd - np_rpsd,11,i,1
+geom Active,NGATE_Active,PGATE_Active,NActive,PActive np_rntap - np_rntap,11,i,1
+geom Active,NGATE_Active,PGATE_Active,NActive,PActive np_rptap - np_rptap,11,i,1
+stamp -i2 np_rm1_0conn_0mask1 rV0_0Act_m1_0conn_0mask1_LiAct np_rV0_0Act_m1_0conn_0mask1_LiAct
+stamp -i2 np_rm1_0conn_0mask2 rV0_0Act_m1_0conn_0mask2_LiAct np_rV0_0Act_m1_0conn_0mask2_LiAct
+stamp -i2 np_rm1_0conn_0mask1 rV0_0Po_m1_0conn_0mask1_LiPo np_rV0_0Po_m1_0conn_0mask1_LiPo
+stamp -i2 np_rm1_0conn_0mask2 rV0_0Po_m1_0conn_0mask2_LiPo np_rV0_0Po_m1_0conn_0mask2_LiPo
+stamp -i2 np_rm2_0conn_0mask2 rV1_m2_0conn_0mask2_m1_0conn_0mask1 np_rV1_m2_0conn_0mask2_m1_0conn_0mask1
+stamp -i2 np_rm2_0conn_0mask2 rV1_m2_0conn_0mask2_m1_0conn_0mask2 np_rV1_m2_0conn_0mask2_m1_0conn_0mask2
+stamp -i2 np_rLiAct rcont_0ndiff_LiAct_nsd np_rcont_0ndiff_LiAct_nsd
+stamp -i2 np_rLiAct rcont_0ndiff_LiAct_ntap np_rcont_0ndiff_LiAct_ntap
+stamp -i2 np_rLiAct rcont_0pdiff_LiAct_psd np_rcont_0pdiff_LiAct_psd
+stamp -i2 np_rLiAct rcont_0pdiff_LiAct_ptap np_rcont_0pdiff_LiAct_ptap
+stamp -i2 np_rLiPo rcont_0poly_LiPo_npoly_0conn np_rcont_0poly_LiPo_npoly_0conn
+stamp -i2 np_rLiPo rcont_0poly_LiPo_ppoly_0conn np_rcont_0poly_LiPo_ppoly_0conn
+stamp -i2 np_rnpoly_0conn rnpoly_0conn_ngate_ovia np_rnpoly_0conn_ngate_ovia
+stamp -i2 np_rnpoly_0conn rnpoly_0conn_ppoly_0conn_ovia np_rnpoly_0conn_ppoly_0conn_ovia
+stamp -i2 np_rppoly_0conn rppoly_0conn_pgate_ovia np_rppoly_0conn_pgate_ovia
+ereduce  rngate_npoly_0conn_ngate_butt_ovia rngate_npoly_0conn_ngate_butt_ovia.reduce
+stamp -i  np_rngate rngate_npoly_0conn_ngate_butt_ovia.reduce
+stamp -i  rngate_npoly_0conn_ngate_butt_ovia.reduce rngate_npoly_0conn_ngate_butt_ovia
+stamp -i  rngate_npoly_0conn_ngate_butt_ovia ngate_npoly_0conn_ngate_butt_ovia
+/bin/rm -f rngate_npoly_0conn_ngate_butt_ovia.reduce
+ereduce  rnpoly_0conn_npoly_0conn_ngate_butt_ovia rnpoly_0conn_npoly_0conn_ngate_butt_ovia.reduce
+stamp -i  np_rnpoly_0conn rnpoly_0conn_npoly_0conn_ngate_butt_ovia.reduce
+stamp -i  rnpoly_0conn_npoly_0conn_ngate_butt_ovia.reduce rnpoly_0conn_npoly_0conn_ngate_butt_ovia
+stamp -i  rnpoly_0conn_npoly_0conn_ngate_butt_ovia npoly_0conn_npoly_0conn_ngate_butt_ovia
+/bin/rm -f rnpoly_0conn_npoly_0conn_ngate_butt_ovia.reduce
+ereduce  rnpoly_0conn_npoly_0conn_ppoly_0conn_butt_ovia rnpoly_0conn_npoly_0conn_ppoly_0conn_butt_ovia.reduce
+stamp -i  np_rnpoly_0conn rnpoly_0conn_npoly_0conn_ppoly_0conn_butt_ovia.reduce
+stamp -i  rnpoly_0conn_npoly_0conn_ppoly_0conn_butt_ovia.reduce rnpoly_0conn_npoly_0conn_ppoly_0conn_butt_ovia
+stamp -i  rnpoly_0conn_npoly_0conn_ppoly_0conn_butt_ovia npoly_0conn_npoly_0conn_ppoly_0conn_butt_ovia
+/bin/rm -f rnpoly_0conn_npoly_0conn_ppoly_0conn_butt_ovia.reduce
+ereduce  rpgate_ppoly_0conn_pgate_butt_ovia rpgate_ppoly_0conn_pgate_butt_ovia.reduce
+stamp -i  np_rpgate rpgate_ppoly_0conn_pgate_butt_ovia.reduce
+stamp -i  rpgate_ppoly_0conn_pgate_butt_ovia.reduce rpgate_ppoly_0conn_pgate_butt_ovia
+stamp -i  rpgate_ppoly_0conn_pgate_butt_ovia pgate_ppoly_0conn_pgate_butt_ovia
+/bin/rm -f rpgate_ppoly_0conn_pgate_butt_ovia.reduce
+ereduce  rppoly_0conn_npoly_0conn_ppoly_0conn_butt_ovia rppoly_0conn_npoly_0conn_ppoly_0conn_butt_ovia.reduce
+stamp -i  np_rppoly_0conn rppoly_0conn_npoly_0conn_ppoly_0conn_butt_ovia.reduce
+stamp -i  rppoly_0conn_npoly_0conn_ppoly_0conn_butt_ovia.reduce rppoly_0conn_npoly_0conn_ppoly_0conn_butt_ovia
+stamp -i  rppoly_0conn_npoly_0conn_ppoly_0conn_butt_ovia ppoly_0conn_npoly_0conn_ppoly_0conn_butt_ovia
+/bin/rm -f rppoly_0conn_npoly_0conn_ppoly_0conn_butt_ovia.reduce
+ereduce  rppoly_0conn_ppoly_0conn_pgate_butt_ovia rppoly_0conn_ppoly_0conn_pgate_butt_ovia.reduce
+stamp -i  np_rppoly_0conn rppoly_0conn_ppoly_0conn_pgate_butt_ovia.reduce
+stamp -i  rppoly_0conn_ppoly_0conn_pgate_butt_ovia.reduce rppoly_0conn_ppoly_0conn_pgate_butt_ovia
+stamp -i  rppoly_0conn_ppoly_0conn_pgate_butt_ovia ppoly_0conn_ppoly_0conn_pgate_butt_ovia
+/bin/rm -f rppoly_0conn_ppoly_0conn_pgate_butt_ovia.reduce
+cat <<ENDCAT> _save_layers
+Oxide Oxide
+M3 M3
+M4 M4
+M5 M5
+M6 M6
+M7 M7
+MT MT
+V0_0Act np_rV0_0Act_m1_0conn_0mask2_LiAct p_rV0_0Act_m1_0conn_0mask2_LiAct np_rV0_0Act_m1_0conn_0mask1_LiAct p_rV0_0Act_m1_0conn_0mask1_LiAct
+cont_0ndiff np_rcont_0ndiff_LiAct_ntap p_rcont_0ndiff_LiAct_ntap np_rcont_0ndiff_LiAct_nsd p_rcont_0ndiff_LiAct_nsd
+cont_0pdiff np_rcont_0pdiff_LiAct_ptap p_rcont_0pdiff_LiAct_ptap np_rcont_0pdiff_LiAct_psd p_rcont_0pdiff_LiAct_psd
+V0_0Po np_rV0_0Po_m1_0conn_0mask2_LiPo p_rV0_0Po_m1_0conn_0mask2_LiPo np_rV0_0Po_m1_0conn_0mask1_LiPo p_rV0_0Po_m1_0conn_0mask1_LiPo
+cont_0poly np_rcont_0poly_LiPo_ppoly_0conn p_rcont_0poly_LiPo_ppoly_0conn np_rcont_0poly_LiPo_npoly_0conn p_rcont_0poly_LiPo_npoly_0conn
+V1 np_rV1_m2_0conn_0mask2_m1_0conn_0mask2 p_rV1_m2_0conn_0mask2_m1_0conn_0mask2 np_rV1_m2_0conn_0mask2_m1_0conn_0mask1 p_rV1_m2_0conn_0mask2_m1_0conn_0mask1
+m2_0conn_0mask2 np_rm2_0conn_0mask2 p_rm2_0conn_0mask2
+m1_0conn_0mask1 np_rm1_0conn_0mask1 p_rm1_0conn_0mask1
+m1_0conn_0mask2 np_rm1_0conn_0mask2 p_rm1_0conn_0mask2
+LiPo np_rLiPo p_rLiPo
+LiAct np_rLiAct p_rLiAct
+ngate np_rngate p_rngate
+pgate np_rpgate p_rpgate
+npoly_0conn np_rnpoly_0conn p_rnpoly_0conn
+ppoly_0conn np_rppoly_0conn p_rppoly_0conn
+nsd np_rnsd p_rnsd
+psd np_rpsd p_rpsd
+ntap np_rntap p_rntap
+ptap np_rptap p_rptap
+nw_0conn np_rnw_0conn p_rnw_0conn
+psub psub
+npoly_0conn_ppoly_0conn_ovia np_rnpoly_0conn_ppoly_0conn_ovia p_rnpoly_0conn_ppoly_0conn_ovia
+npoly_0conn_npoly_0conn_ppoly_0conn_butt_ovia npoly_0conn_npoly_0conn_ppoly_0conn_butt_ovia
+npoly_0conn_ppoly_0conn_butt np_rnpoly_0conn_ppoly_0conn_butt p_rnpoly_0conn_ppoly_0conn_butt
+ppoly_0conn_npoly_0conn_ppoly_0conn_butt_ovia ppoly_0conn_npoly_0conn_ppoly_0conn_butt_ovia
+npoly_0conn_ngate_ovia np_rnpoly_0conn_ngate_ovia p_rnpoly_0conn_ngate_ovia
+npoly_0conn_npoly_0conn_ngate_butt_ovia npoly_0conn_npoly_0conn_ngate_butt_ovia
+npoly_0conn_ngate_butt np_rnpoly_0conn_ngate_butt p_rnpoly_0conn_ngate_butt
+ngate_npoly_0conn_ngate_butt_ovia ngate_npoly_0conn_ngate_butt_ovia
+ppoly_0conn_pgate_ovia np_rppoly_0conn_pgate_ovia p_rppoly_0conn_pgate_ovia
+ppoly_0conn_ppoly_0conn_pgate_butt_ovia ppoly_0conn_ppoly_0conn_pgate_butt_ovia
+ppoly_0conn_pgate_butt np_rppoly_0conn_pgate_butt p_rppoly_0conn_pgate_butt
+pgate_ppoly_0conn_pgate_butt_ovia pgate_ppoly_0conn_pgate_butt_ovia
+ENDCAT
+cat /tmp/qrc_96885/nand2/hccisavefile >> _save_layers
+
+INFO (LBRCXM-610): Extraction finished.
+
+INFO (LBRCXU-108): Starting
+
+ /home/install/IC618/bin/qrcToDfII -extract both -run_name nand2 -call_proc /home/install/FOUNDRY/cds_ff_mpt_v_0.5/qrc/typical/callProc.il -cdlout_run_dir /root/Kamalin/lvs_runs -check_cell_view TRUE -device_finger_delimiter @ -extracted_view av_extracted -lvs_source agds -cap_models no -capacitor pcapacitor -res_models no -resistor presistor -cap_prop_name c -res_prop_name r -transfer_net_expression TRUE -extview_tmp /tmp/qrc_96885/nand2/extview.tmp -run_dir /tmp/qrc_96885/nand2 -cdslib /root/cds.lib -lib_name Kamalin -cell_name nand2 -view_name layout -extview_rul /tmp/qrc_96885/nand2/extview.rul -server /home/install/QUANTUS212/tools/extraction/bin/64bit//../shapeServer
+Virtuoso Framework License (111) was checked out successfully. Total checkout time was 14.09s.
+WARNING License '111' took more than 5.00 seconds (actual time was 14.09 seconds) to check out.
+device n1svt M n1svt_dev n1svt symbol cds_ff_mpt D G S B 
+Loading cds_ff_mpt/libInit.il ...
+	Loading cds_ff_mpt/loadCxt.ile ... done!
+	Loading context 'cds_ff_mpt' from library 'cds_ff_mpt' ... done!
+	Loading context 'pdkUtils' from library 'cds_ff_mpt' ... done!
+	Loading cds_ff_mpt/cds_ff_mpt_customFilter.il ... done!
+	Loading cds_ff_mpt/libInitCustomExit.il ... 
+	Loading Environment Settings ...
+	Loading cds_ff_mpt/libInitCktPro.il ... done!
+
+  *************************************************************           
+  *              Cadence Design Systems, Inc.                 *           
+  *                                                           *           
+  *             Generic Finfet Multi Pattern PDK              *           
+  *                     (cds_ff_mpt)                          *           
+  *                                                           *           
+  *************************************************************           
+	
+
+	VERSION: 0.5 (10-June-2019) built using ICADVM181-ISR3
+
+done!
+	Loading cds_ff_mpt/cds_ff_mptFgrUtil.il ... 
+*Error* _iliGetSlotSpecs: not a class object or class name - vfoAdvGuardRing
+failed!
+	Loading cds_ff_mpt/cds_ff_mptFgrRing.il ... 
+done!
+Failed to load cds_ff_mpt/libInit.il successfully!*WARNING* (defmethod): unknown class cds_ff_mptFgrGuardRing_ver_1 when defining vfoSfDraw method
+
+device p1svt M p1svt_dev p1svt symbol cds_ff_mpt D G S B 
+Loading CDLOUT map files for /root/Kamalin/lvs_runs
+
+Creating extracted view for nand2
+
+Save recognition layer mim_cap_dev
+Layer mim_cap_dev has 0 shapes.
+Save recognition layer n1hvt_dev
+Layer n1hvt_dev has 0 shapes.
+Save recognition layer n1lvt_dev
+Layer n1lvt_dev has 0 shapes.
+Save recognition layer n1svt_dev
+Layer n1svt_dev has 2 shapes.
+Save recognition layer n2svt_dev
+Layer n2svt_dev has 0 shapes.
+Save recognition layer nd1hvt_dev
+Layer nd1hvt_dev has 0 shapes.
+Save recognition layer nd1lvt_dev
+Layer nd1lvt_dev has 0 shapes.
+Save recognition layer nd1svt_dev
+Layer nd1svt_dev has 0 shapes.
+Save recognition layer nd2svt_dev
+Layer nd2svt_dev has 0 shapes.
+Save recognition layer npn_dev_1x1
+Layer npn_dev_1x1 has 0 shapes.
+Save recognition layer npn_dev_2x2
+Layer npn_dev_2x2 has 0 shapes.
+Save recognition layer p1hvt_dev
+Layer p1hvt_dev has 0 shapes.
+Save recognition layer p1lvt_dev
+Layer p1lvt_dev has 0 shapes.
+Save recognition layer p1svt_dev
+Layer p1svt_dev has 2 shapes.
+Save recognition layer p2svt_dev
+Layer p2svt_dev has 0 shapes.
+Save recognition layer pd1hvt_dev
+Layer pd1hvt_dev has 0 shapes.
+Save recognition layer pd1lvt_dev
+Layer pd1lvt_dev has 0 shapes.
+Save recognition layer pd1svt_dev
+Layer pd1svt_dev has 0 shapes.
+Save recognition layer pd2svt_dev
+Layer pd2svt_dev has 0 shapes.
+Save recognition layer m1res_dev
+Layer m1res_dev has 0 shapes.
+Save recognition layer m2res_dev
+Layer m2res_dev has 0 shapes.
+Save recognition layer m3res_dev
+Layer m3res_dev has 0 shapes.
+Save recognition layer m4res_dev
+Layer m4res_dev has 0 shapes.
+Save recognition layer m5res_dev
+Layer m5res_dev has 0 shapes.
+Save recognition layer m6res_dev
+Layer m6res_dev has 0 shapes.
+Save recognition layer m7res_dev
+Layer m7res_dev has 0 shapes.
+Save recognition layer mtres_dev
+Layer mtres_dev has 0 shapes.
+Save recognition layer rnsnd_dev
+Layer rnsnd_dev has 0 shapes.
+Save recognition layer rnsnp_dev
+Layer rnsnp_dev has 0 shapes.
+Save recognition layer rnspd_dev
+Layer rnspd_dev has 0 shapes.
+Save recognition layer rnspp_dev
+Layer rnspp_dev has 0 shapes.
+Save recognition layer rnwo_dev
+Layer rnwo_dev has 0 shapes.
+Save recognition layer rnws_dev
+Layer rnws_dev has 0 shapes.
+Save recognition layer rsnd_dev
+Layer rsnd_dev has 0 shapes.
+Save recognition layer rsnp_dev
+Layer rsnp_dev has 0 shapes.
+Save recognition layer rspd_dev
+Layer rspd_dev has 0 shapes.
+Save recognition layer rspp_dev
+Layer rspp_dev has 0 shapes.
+Copying layer BuriedNWell
+Layer BuriedNWell has 0 shapes.
+Copying layer CMT
+Layer CMT has 0 shapes.
+Copying layer LiAct
+Layer LiAct has 32 shapes.
+Copying layer LiPo
+Layer LiPo has 8 shapes.
+Copying layer V0_Act
+Layer V0_Act has 8 shapes.
+Copying layer V0_Po
+Layer V0_Po has 4 shapes.
+Copying layer V1
+Layer V1 has 4 shapes.
+Copying layer V2
+Layer V2 has 0 shapes.
+Copying layer V3
+Layer V3 has 0 shapes.
+Copying layer V4
+Layer V4 has 0 shapes.
+Copying layer V5
+Layer V5 has 0 shapes.
+Copying layer V6
+Layer V6 has 0 shapes.
+Copying layer VT
+Layer VT has 0 shapes.
+Copying layer m1_conn_mask1
+Layer m1_conn_mask1 has 17 shapes.
+Copying layer m1_conn_mask2
+Layer m1_conn_mask2 has 12 shapes.
+Copying layer m2_conn_mask1
+Layer m2_conn_mask1 has 0 shapes.
+Copying layer m2_conn_mask2
+Layer m2_conn_mask2 has 2 shapes.
+Copying layer m3_conn_mask1
+Layer m3_conn_mask1 has 0 shapes.
+Copying layer m3_conn_mask2
+Layer m3_conn_mask2 has 0 shapes.
+Copying layer m4_conn
+Layer m4_conn has 0 shapes.
+Copying layer m5_conn
+Layer m5_conn has 0 shapes.
+Copying layer m6_conn
+Layer m6_conn has 0 shapes.
+Copying layer m7_conn
+Layer m7_conn has 0 shapes.
+Copying layer mt_conn
+Layer mt_conn has 0 shapes.
+Copying layer npoly_conn
+INFO (LBCLV-5365): spice2db warning: No reference for net "X13/6" in subckt nand2.
+
+INFO (LBCLV-5365): spice2db warning: No reference for net "X13/5" in subckt nand2.
+
+INFO (LBCLV-5365): spice2db warning: No reference for net "X11/6" in subckt nand2.
+
+INFO (LBCLV-5365): spice2db warning: No reference for net "X12/6" in subckt nand2.
+
+INFO (LBCLV-5365): spice2db warning: No reference for net "X11/5" in subckt nand2.
+
+INFO (LBCLV-5365): spice2db warning: No reference for net "X12/5" in subckt nand2.
+
+INFO (LBCLV-5365): spice2db warning: No reference for net "X11/7" in subckt nand2.
+
+INFO (LBCLV-5365): spice2db warning: No reference for net "X12/7" in subckt nand2.
+
+INFO (LBCLV-5365): spice2db warning: No reference for net "X13/8" in subckt nand2.
+
+INFO (LBCLV-5365): spice2db warning: No reference for net "X13/7" in subckt nand2.
+
+Layer npoly_conn has 28 shapes.
+Copying layer ppoly_conn
+Layer ppoly_conn has 12 shapes.
+Apply user provided callProc for Kamalin/nand2/av_extracted
+
+
+Summary for Kamalin/nand2/av_extracted
+
+instance count totals:
+
+    lib              cell             view                    total
+    analogLib        pcapacitor       symbol                     90
+    analogLib        presistor        symbol                     91
+    cds_ff_mpt       n1svt            symbol                      2
+    cds_ff_mpt       p1svt            symbol                      2
+
+Extracted view creation has completed.
+INFO (LBRCXU-114): Finished /home/install/IC618/bin/qrcToDfII
+
+INFO (LBRCXM-582): Checking in license of QTS530 21.20
+
+INFO (LBRCXM-582): Checking in license of QTS320 21.20
+
+INFO (LBRCXM-582): Checking in license of QTS300 21.20
+
+INFO (LBRCXM-985): Summary:
+ Number of CPUs requested:		1
+ Techfile(s):
+    /home/install/FOUNDRY/cds_ff_mpt_v_0.5/qrc/typical/qrcTechFile; process name: cds_ff_mpt_typical
+ License(s) used:	QTS300 (x1), QTS320 (x1), QTS530 (x1)
+ Design data:
+    global nets:                  0
+    LVS nets:                     34
+    signal nets:                  6
+    floating nets:                28
+    ground net name:              gnd
+ Reduction statistics:
+    Dangling Rs removed:          0
+    Merged Parallel Rs:           0
+    Rs shorted by min_res option: 8
+    Merged Parallel Self Caps:    0
+    CCs filtered by minC option:  0
+    Shorted Incomplete Nets:      0
+ Output statistics:
+    R: 91
+    C: 90
+    L: 0
+
+
+INFO (LBRCXM-920): Host name and peak memory report
+ Host Name:                    tcevlsi.tce.edu
+ Peak memory used:             693 MB (sampled at 15s intervals)
+
+INFO (LBRCXM-982): Floating net statistics in the design:
+
+   Total floating nets =  28
+     Total signal nets =  6
+         Total LVS net = 34
+
+INFO (LBRCXM-702): Run ended: Mon Jun 22 16:08:01 2026
+
+
+INFO (LBRCXM-805): Quantus run took:  13s user, 23s sys, 41s elapsed
+
+
+INFO (LBRCXM-708): *****  Quantus terminated normally  *****
+
+

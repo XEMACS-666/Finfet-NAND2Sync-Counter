@@ -1,0 +1,37 @@
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+* CDL Netlist:                                              *
+*                                                           *
+* Cell Name  : nand2                                        *
+* Netlisted  : Mon Jun 22 16:06:09 2026                     *
+* PVS Version: 22.20-p031 Thu Nov 17 19:06:38 PST 2022      *
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+*.LDD
+*.DEVTMPLT 0 MN(n1svt) n1svt_dev nsd(D) ngate(G) nsd(S) psub(B)
+*.DEVTMPLT 1 MP(p1svt) p1svt_dev psd(D) pgate(G) psd(S) nw_conn(B)
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+* Sub cell: n1svt_CDNS_5                                    *
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+.subckt n1svt_CDNS_5 1 2 3 4
+** N=10 EP=4 FDC=1
+M0 3 1 2 4 n1svt L=1.8e-08 nf=1 nfin=4 asej=3.808e-15 adej=3.808e-15 psej=6e-07 pdej=6e-07 $X=0 $Y=0 $dt=0
+.ends n1svt_CDNS_5
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+* Sub cell: p1svt_CDNS_6                                    *
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+.subckt p1svt_CDNS_6 1 2 3
+** N=10 EP=3 FDC=1
+M0 3 1 2 2 p1svt L=1.8e-08 nf=1 nfin=2 asej=1.904e-15 adej=1.904e-15 psej=3e-07 pdej=3e-07 $X=0 $Y=0 $dt=1
+.ends p1svt_CDNS_6
+
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+* Sub cell: nand2                                           *
+* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++ *
+.subckt nand2 A B Y gnd vdd
+** N=6 EP=5 FDC=4
+X11 B gnd 4 gnd n1svt_CDNS_5 $T=1310 738 0 0 $X=794 $Y=542
+X12 A 4 Y gnd n1svt_CDNS_5 $T=1310 1656 0 0 $X=794 $Y=1460
+X13 A vdd Y p1svt_CDNS_6 $T=874 2578 0 0 $X=358 $Y=2448
+X14 B vdd Y p1svt_CDNS_6 $T=2086 2578 0 0 $X=1570 $Y=2448
+.ends nand2

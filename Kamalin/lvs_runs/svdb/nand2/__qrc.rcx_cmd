@@ -1,0 +1,49 @@
+avParameters(
+	?cellName "nand2"
+	?viewName "layout"
+	?inputLayout ( "DFII" "Kamalin" )
+	?cdslib "/root/cds.lib"
+	?workingDirectory "/root/Kamalin/lvs_runs/svdb"
+
+)
+rcxParameters(
+	?capCouplingFactor 1.0
+	?capGround "gnd"
+	?mFactorR "infinite"
+	?arrayViasSpacing "auto"
+	?maxFractureLength "infinite"
+	?fractureLengthUnits "MICRONS"
+	?maxMergedViaSize "auto"
+	?netNameSpace "layout"
+	?mergeParallelR nil
+	?minR 0.001
+	?pvsRunDir "/root/Kamalin/lvs_runs/svdb"
+	?pvsPrimary "nand2"
+	?lvsSource "pvs"
+	?capacitor "pcapacitor"
+	?capPropName "c"
+	?deviceFingerDelimiter "@"
+	?checkCellView t
+	?capModels "no"
+	?parasiticCapModels "yes"
+	?parasiticResModels "comment"
+	?parasiticResWidth t
+	?resModels "no"
+	?resistor "presistor"
+	?resPropName "r"
+	?transferNetExpression t
+	?outputFormat "dfii"
+	?lvsExtractedCellView nil
+	?extractedView "av_extracted"
+	?runName "nand2"
+	?tempdir "/root/Kamalin/lvs_runs/svdb/nand2/rcx_temp"
+	?rcxSetupDir ( "/home/install/FOUNDRY/cds_ff_mpt_v_0.5/qrc/typical" )
+	?temperature ( 25.0 )
+	?type "full"
+	?extract "both"
+	?capExtractMode "decoupled"
+
+)
+(avRCX)
+
+

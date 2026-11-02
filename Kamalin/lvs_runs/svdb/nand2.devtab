@@ -1,0 +1,49 @@
+Device_Table 2000
+0 0 1 Mon Jun 22 16:06:09 2026
+2
+Device Entry 0
+0 0 21 Mon Jun 22 16:06:09 2026
+n1svt_dev
+MOS
+MN
+n1svt
+(null)
+cds_ff_mpt_n1svt
+4
+G ngate 0
+S nsd 1
+D nsd 1
+B psub 0
+1
+nactive
+7
+nf
+l
+nfin
+asej
+adej
+psej
+pdej
+Device Entry 1
+0 0 21 Mon Jun 22 16:06:09 2026
+p1svt_dev
+MOS
+MP
+p1svt
+(null)
+cds_ff_mpt_p1svt
+4
+G pgate 0
+S psd 1
+D psd 1
+B nw_conn 0
+1
+pactive
+7
+nf
+l
+nfin
+asej
+adej
+psej
+pdej

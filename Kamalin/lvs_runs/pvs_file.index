@@ -1,0 +1,68 @@
+# This PVS File Index Registry was created automatically
+# Do not attempt to modify this file as any change may lead
+# to PVS Debug Environment malfunction.
+# 
+"Run Directory" internal none /root/Kamalin/lvs_runs
+"Current Directory" internal none /root
+"Cadence Directory" internal none /root/.cadence/
+"Job Signature" internal none IPVS_1782124561_46417
+"PVS Job Mode" internal none lvs
+"GUI Flow" internal none virtuoso6
+"GUI Preset" internal none /root/Kamalin/lvs_runs/.preset.autosave
+"Technology Name" internal none "cds_ff_mpt_pvs"
+"Technology RuleSet" internal none "default"
+"Technology Mapping File" internal none /home/install/FOUNDRY/cds_ff_mpt_v_0.5/pvtech.lib
+"Technology Rule File" internal none /root/Kamalin/lvs_runs/.technology.rul
+"PVS Version" internal none 22.20-p031
+"Binary Name" internal none pvsgui
+"PVS Build Date" internal none "Thu Nov 17 19:06:38 PST 2022"
+"PVS Job Time" internal none 1782124562
+"DFII version" internal none 6.1.8.0
+"Rule File" input text /root/Kamalin/lvs_runs/.technology.rul
+"Layout Scale" internal none 0.0005
+"Layout TechLib" internal none cds_ff_mpt
+"Layout Library Name" internal none Kamalin
+"Layout Cell Name" internal none nand2
+"Layout View Name" internal none layout
+"Layout ConvertPin" internal text geometry
+"Layout HierDepth" internal none 32
+"Layout MaxVertices" internal none 2048
+"Layout Top Cell" internal none nand2
+"Layout GDSII" input none /root/Kamalin/lvs_runs/nand2.gds
+"Intermediate GDSII File" output none /root/Kamalin/lvs_runs/nand2.gds
+"Intermediate GDSII File creation Errors" output none /root/Kamalin/lvs_runs/PIPO1.LOG
+"Intermediate OASIS File creation Errors" output none /root/Kamalin/lvs_runs/PIPO1.LOG
+"Layout ReplaceBusBitChar" input none nil
+"Layout NoConvertHalfWidthPath" input none nil
+"Schematic Top Cell" internal none nand2
+"Schematic Netlist" input text /root/Kamalin/lvs_runs/nand2.cdl
+"Extracted Spice File" output text /root/Kamalin/lvs_runs/nand2.spi
+"Quantus QRC Data" internal none ENABLED
+"Do not check rules files before run" internal none ENABLED
+"Control File" input text /root/Kamalin/lvs_runs/pvslvsctl
+"PVS Job Log" log text /root/Kamalin/lvs_runs/pvsuilvs.log
+"PIPO Setup File I" internal text /root/Kamalin/lvs_runs/pipo1.setup
+"PIPO Log I" log text /root/Kamalin/lvs_runs/PIPO1.LOG
+"PIPO Output I" internal text /root/Kamalin/lvs_runs/PIPO1.OUT
+"Input Layout" input none OA: Kamalin nand2 layout
+"Output Layout Cellmap I" internal text /root/Kamalin/lvs_runs/lay_cellMap.txt
+"Binary Name" internal none pvsvirt
+"Comparison Report" output cls /root/Kamalin/lvs_runs/nand2.rep.cls
+"Extraction Report" output erc /root/Kamalin/lvs_runs/nand2.rep
+"Mask SVDB Directory" internal none /root/Kamalin/lvs_runs/svdb
+"QRC Top Cell" internal none nand2
+"LVS Report Options" internal none -none
+"ERC Summary" output text /root/Kamalin/lvs_runs/nand2.sum
+"Extraction Result" internal none CLEAN
+"ERC Result" internal none EMPTY
+"UI Data" internal none ENABLED
+"PVS Mode Info" internal none ACGLAJLHGOOMKFIHABDOGHFMCCABFNAK
+"Report MaxResults" internal none 1000
+"Binary Name" internal none pvs
+"Schematic Netlist" input text /root/Kamalin/lvs_runs/netlist
+"Comparison Result" internal none MATCH
+"LVS Run Name" internal none nand2.rep
+"PVS Version" internal none 22.20-p031
+"Binary Name" internal none pvsnvn
+"PVS Build Date" internal none "Thu Nov 17 19:06:38 PST 2022"
+"PVS Job Time" internal none 1782124571
