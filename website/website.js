@@ -1,2 +1,94 @@
-const stages=[['NAND','NAND.png','Two parallel PMOS and two series NMOS devices form the reusable logic gate.','Y = ¬(A · B)','Only two high inputs produce a low output.'],['D latch','D-Latch.png','NAND gates form a one-bit memory controlled by enable E.','E = 1: follow · E = 0: hold','Look for feedback: that is what keeps the stored state.'],['Master–slave DFF','MS.png','Two latches use opposite clock phases. The master captures the data; the slave transfers it to Q.','Two latches → one flip-flop','This arrangement transfers on the falling clock edge.'],['T flip-flop','T-FF.png','A NAND-based XOR feeds the D flip-flop with T and its current output.','D = T ⊕ Q','T = 0 holds the bit. T = 1 toggles it.'],['4-bit counter','4-Bit_Synchronous_Counter.png','Four flip-flops share a clock. Combinational enables select which bits toggle together.','0000 → … → 1111 → 0000','Q0 is the least significant bit. Startup requires initialization for a known zero state.']];
-const $=id=>document.getElementById(id);stages.forEach((s,i)=>{const b=document.createElement('button');b.textContent=s[0];b.onclick=()=>selectStage(i);$('stage-buttons').append(b)});function selectStage(i){const s=stages[i];[...$('stage-buttons').children].forEach((b,j)=>b.setAttribute('aria-pressed',i===j));$('stage-title').textContent=s[0];$('stage-copy').textContent=s[2];$('stage-rule').textContent=s[3];$('stage-recall').textContent=s[4];$('stage-image').src='schematic/'+s[1];$('stage-image').alt=s[0]+' schematic';$('stage-caption').textContent='Click to inspect the original schematic.'}selectStage(0);function waves(){const s=$('wave-select').value;$('wave-before').src='assets/readme/'+s+'.png';$('wave-after').src='assets/readme/'+s+'-av.png'}$('wave-select').onchange=waves;waves();let trigger;document.querySelectorAll('[data-zoom]').forEach(im=>{im.tabIndex=0;im.setAttribute('role','button');const open=()=>{trigger=im;$('full-image').src=im.src;$('full-image').alt=im.alt;$('full-caption').textContent=im.alt;$('viewer').showModal()};im.onclick=open;im.onkeydown=e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();open()}}});$('close').onclick=()=>$('viewer').close();$('viewer').addEventListener('click',e=>{if(e.target===$('viewer'))$('viewer').close()});$('viewer').addEventListener('close',()=>trigger?.focus());$('theme').onclick=()=>document.body.classList.toggle('light');const observer=new IntersectionObserver(entries=>{entries.forEach(e=>{if(e.isIntersecting)document.querySelectorAll('nav a').forEach(a=>a.classList.toggle('active',a.hash==='#'+e.target.id))})},{rootMargin:'-20% 0px -55% 0px'});document.querySelectorAll('main section').forEach(s=>observer.observe(s));
+const stages = [
+  ['NAND','NAND.png','Two parallel PMOS and two series NMOS devices form the reusable logic gate.','Y = ¬(A · B)','Only two high inputs produce a low output.'],
+  ['D latch','D-Latch.png','NAND gates form a one-bit memory controlled by enable E.','E = 1: follow · E = 0: hold','Feedback keeps the stored state when the latch closes.'],
+  ['Master–slave DFF','MS.png','Two latches use opposite clock phases. The master captures data; the slave transfers it to Q.','Two latches → one flip-flop','Transfers on the falling clock edge.'],
+  ['T flip-flop','T-FF.png','A NAND-based XOR feeds the D flip-flop with T and its current output.','D = T ⊕ Q','T = 0 holds the bit. T = 1 toggles it.'],
+  ['4-bit counter','4-Bit_Synchronous_Counter.png','Four flip-flops share a clock. Combinational enables select which bits toggle together.','0000 → … → 1111 → 0000','Q0 is the least significant bit. Startup requires initialization for a known zero state.']
+];
+
+const $ = id => document.getElementById(id);
+
+/* ---- Stage tabs ---- */
+stages.forEach((s, i) => {
+  const b = document.createElement('button');
+  b.textContent = s[0];
+  b.onclick = () => selectStage(i);
+  $('stage-buttons').append(b);
+});
+
+function selectStage(i) {
+  const s = stages[i];
+  [...$('stage-buttons').children].forEach((b, j) =>
+    b.setAttribute('aria-pressed', i === j)
+  );
+  $('stage-title').textContent = s[0];
+  $('stage-copy').textContent = s[2];
+  $('stage-rule').textContent = s[3];
+  $('stage-recall').textContent = s[4];
+  $('stage-image').src = 'schematic/' + s[1];
+  $('stage-image').alt = s[0] + ' schematic';
+  $('stage-caption').textContent = 'Click to inspect the original schematic.';
+}
+selectStage(0);
+
+/* ---- Waveform comparison ---- */
+function waves() {
+  const s = $('wave-select').value;
+  $('wave-before').src = 'assets/readme/' + s + '.png';
+  $('wave-after').src = 'assets/readme/' + s + '-av.png';
+}
+$('wave-select').onchange = waves;
+waves();
+
+/* ---- Image zoom dialog ---- */
+let trigger;
+
+function openImage(im) {
+  trigger = im;
+  $('full-image').src = im.src;
+  $('full-image').alt = im.alt;
+  $('full-caption').textContent = im.alt;
+  $('viewer').showModal();
+}
+
+function registerZoom(im) {
+  im.tabIndex = 0;
+  im.setAttribute('role', 'button');
+  im.onclick = () => openImage(im);
+  im.onkeydown = e => {
+    if (e.key === 'Enter' || e.key === ' ') {
+      e.preventDefault();
+      openImage(im);
+    }
+  };
+}
+
+document.querySelectorAll('[data-zoom]').forEach(registerZoom);
+
+$('close').onclick = () => $('viewer').close();
+$('viewer').addEventListener('click', e => {
+  if (e.target === $('viewer')) $('viewer').close();
+});
+$('viewer').addEventListener('close', () => trigger && trigger.focus());
+
+document.addEventListener('keydown', e => {
+  if (e.key === 'Escape' && $('viewer').open) $('viewer').close();
+});
+
+/* ---- Theme toggle ---- */
+$('theme').onclick = () => document.body.classList.toggle('light');
+
+/* ---- Scroll-spy navigation ---- */
+const observer = new IntersectionObserver(
+  entries => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        document.querySelectorAll('aside nav a').forEach(a =>
+          a.classList.toggle('active', a.getAttribute('href') === '#' + e.target.id)
+        );
+      }
+    });
+  },
+  { rootMargin: '-20% 0px -55% 0px' }
+);
+document.querySelectorAll('main section').forEach(s => observer.observe(s));

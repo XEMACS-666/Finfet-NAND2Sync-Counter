@@ -1,8 +1,94 @@
 <!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="XEMACS — FinFET NAND layout, physical verification and synchronous counter revision guide."><title>Finfet-NAND2Sync-Counter · XEMACS</title><link rel="stylesheet" href="website/website.css"></head>
-<body><a class="skip" href="#layout">Skip to content</a><header><a class="brand" href="#layout">F<span> / </span>N2S</a><span>Finfet-NAND2Sync-Counter</span><button id="theme" aria-label="Switch color theme">◐</button></header><aside><small>XEMACS / LAB NOTEBOOK</small><nav><a href="#layout">01 &nbsp; Physical layout</a><a href="#verification">02 &nbsp; Verification</a><a href="#stages">03 &nbsp; Building blocks</a><a href="#waveforms">04 &nbsp; Waveforms</a><a href="#lab">05 &nbsp; Lab reference</a></nav><p>Cadence Virtuoso<br>cds_ff_mpt · SVT<br>0.8 V supply</p><a href="README.md">Read the full documentation ↗</a></aside><main>
-<section id="layout"><div class="section-head"><div><small>01 / THE PHYSICAL DESIGN</small><h1>NAND, down to the layout.</h1></div><span class="pill">SVT · FinFET</span></div><p>The foundation of the counter: a two-input NAND, drawn, routed and checked in Virtuoso. Select any image to inspect it at full size.</p><div class="layout-grid"><figure class="layout-image"><img src="layout/NAND_Layout.png" alt="NAND physical layout" data-zoom><figcaption>01.1 / Completed NAND layout</figcaption></figure><div class="layout-notes"><h2>From geometry<br>to a verified gate.</h2><p>Parallel PMOS devices pull the output high. Series NMOS devices pull it low when both inputs are high.</p><div class="formula">Y = ¬(A · B)</div><dl><dt>Design rule checking</dt><dd>379 checks <span> / 0 violations</span></dd><dt>Layout versus schematic</dt><dd>MATCH</dd><dt>Extracted interconnect</dt><dd>91 R <span> / </span>90 C</dd></dl><a class="button" href="#verification">Inspect the evidence ↓</a></div></div><details><summary>See the extracted layout</summary><img src="layout/NAND_av_extracted.png" alt="NAND extracted view" loading="lazy" data-zoom><a href="assets/NAND_av_Extracted.webm">Open extraction recording ↗</a></details></section>
-<section id="verification"><small>02 / CHECK THE FOUNDATION</small><h2>Three checks. Three different jobs.</h2><div class="cards"><article><b>DRC</b><h3>Does the geometry obey the rules?</h3><p>Checks widths, spacing and enclosure. The saved NAND report has zero violations across 379 checks.</p><a href="verification/NAND_DRC_summary.sum">Read DRC summary ↗</a></article><article><b>LVS</b><h3>Does the layout match the circuit?</h3><p>Compares devices and connectivity. The saved NAND comparison reports MATCH.</p><a href="Kamalin/lvs_runs/nand2.rep.cls">Read LVS comparison ↗</a></article><article><b>PEX</b><h3>What does the wiring add?</h3><p>Quantus adds parasitic resistance and capacitance to the NAND extracted view.</p><a href="Kamalin/lvs_runs/svdb/qrc.nand2.log">Read extraction log ↗</a></article></div><p class="note">Physical verification covers the NAND cell. Higher-level simulations can use its extracted view; a complete counter layout was outside this project’s scope. These are saved lab results, not newly executed checks.</p></section>
-<section id="stages"><small>03 / QUICK REVISION</small><h2>One gate becomes a counter.</h2><div id="stage-buttons" class="tabs" aria-label="Choose a circuit stage"></div><div class="stage-panel"><div><h3 id="stage-title"></h3><p id="stage-copy"></p><div id="stage-rule" class="formula"></div><p id="stage-recall" class="note"></p></div><figure><img id="stage-image" data-zoom alt=""><figcaption id="stage-caption"></figcaption></figure></div><details><summary>Recall the synchronous counter’s toggle conditions</summary><table><tr><th>Bit</th><th>Toggle input</th><th>Ideal frequency</th></tr><tr><td>Q0</td><td>1</td><td>CLK / 2</td></tr><tr><td>Q1</td><td>Q0</td><td>CLK / 4</td></tr><tr><td>Q2</td><td>Q0 · Q1</td><td>CLK / 8</td></tr><tr><td>Q3</td><td>Q0 · Q1 · Q2</td><td>CLK / 16</td></tr></table><p>All four flip-flops share the clock. Toggle-enable logic determines which bits change.</p></details></section>
-<section id="waveforms"><small>04 / COMPARE THE RUNS</small><h2>Read the signals, side by side.</h2><label for="wave-select">Circuit</label> <select id="wave-select"><option value="nand">NAND</option><option value="dlatch">D latch</option><option value="ms_dff">Master–slave DFF</option><option value="tff">T flip-flop</option><option value="synchronous_4bit_counter">Synchronous counter</option><option value="nand_cap">NAND CAP run</option></select><div class="wave-grid"><figure><img id="wave-before" data-zoom alt="Schematic waveform"><figcaption>Schematic simulation</figcaption></figure><figure><img id="wave-after" data-zoom alt="Extracted-view waveform"><figcaption>AV / extracted-view simulation</figcaption></figure></div><p class="note">Trace order and initialization differ between some saved runs. Compare named signals and settled transitions. These plots alone do not establish worst-case timing or a controlled measure of parasitic effects.</p></section>
-<section id="lab"><small>05 / BACK TO THE BENCH</small><h2>The things worth remembering.</h2><details><summary>What did DRC and LVS debugging involve?</summary><p>LiAct width violations, supply-pin alignment, and unmatched labels were part of the lab work. The screenshots preserve that process.</p><div class="wave-grid"><img src="assets/Screenshots/DRC_Check_Success.png" alt="Saved DRC success panel" loading="lazy" data-zoom><img src="assets/Screenshots/LVS_Check_Success.png" alt="Saved LVS match panel" loading="lazy" data-zoom></div><p>Tool and environment warnings remain in the archived logs; a passing geometry or comparison result does not clear every diagnostic.</p></details><details><summary>How do I reopen and simulate this?</summary><ol><li>Register the Kamalin library in your configured Virtuoso installation.</li><li>Load the matching cds_ff_mpt PDK and transistor models.</li><li>For extracted runs, select av_extracted before schematic.</li><li>Include one custom parasitic model file for cmodel and rmodel.</li><li>Check stimulus, supply, model corner and initialization before comparing runs.</li></ol><a href="models/qrc_parasitic_models.scs">Parasitic model definitions ↗</a><p>The reconstructed model aliases have not been rerun here in Cadence.</p></details><details><summary>Where are the complete schematics, PDFs and lab screenshots?</summary><p>The repository README contains the expanded illustrated guide and original result links.</p><a href="README.md">Open the complete guide ↗</a></details></section><footer>Finfet-NAND2Sync-Counter <span>Designed by XEMACS</span></footer></main><dialog id="viewer"><button id="close" aria-label="Close image">✕</button><img id="full-image" alt=""><p id="full-caption"></p></dialog><script src="website/website.js"></script></body></html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="FinFet NAND layout, physical verification and synchronous counter revision guide by XEMACS."><title>Finfet-NAND2Sync-Counter · XEMACS</title><link rel="stylesheet" href="website/website.css"></head>
+<body><a class="skip" href="#layout">Skip to content</a>
+<header><a class="brand" href="#layout">F<span>/</span>N2S</a><span class="sub">Finfet-NAND2Sync-Counter</span><button id="theme" aria-label="Switch color theme">◐</button></header>
+<aside><small>XEMACS · LAB NOTEBOOK</small>
+<nav>
+<a href="#layout">01&nbsp;&nbsp;Physical layout</a>
+<a href="#verification">02&nbsp;&nbsp;Verification</a>
+<a href="#stages">03&nbsp;&nbsp;Building blocks</a>
+<a href="#waveforms">04&nbsp;&nbsp;Waveforms</a>
+<a href="#lab">05&nbsp;&nbsp;Lab reference</a>
+</nav>
+<p class="meta">Cadence Virtuoso<br><strong>cds_ff_mpt</strong> · SVT FinFET<br>0.8 V supply</p>
+<a class="readme-link" href="README.md">Read the full documentation ↗</a>
+</aside>
+<main>
+<section id="layout">
+<div class="section-head"><div><small>01 / THE PHYSICAL DESIGN</small><h1>NAND, down to the layout.</h1></div><span class="pill">SVT FinFET</span></div>
+<p>The foundation of the counter: a two-input NAND, drawn, routed and checked in Virtuoso. Select any image to inspect it at full size.</p>
+<div class="layout-grid">
+<figure class="layout-image"><img src="layout/NAND_Layout.png" alt="NAND physical layout" data-zoom><figcaption>01.1 — Completed NAND layout</figcaption></figure>
+<div class="layout-notes">
+<h2>From geometry<br>to a verified gate.</h2>
+<p>Parallel PMOS devices pull the output high. Series NMOS devices pull it low when both inputs are high.</p>
+<div class="formula">Y = ¬(A · B)</div>
+<dl>
+<dt>Design rule checking</dt><dd><span class="green">0</span> <span class="muted">/ 379 checks</span></dd>
+<dt>Layout versus schematic</dt><dd>MATCH</dd>
+<dt>Parasitic extraction</dt><dd>91 R <span class="muted">/</span> 90 C</dd>
+</dl>
+<a class="button" href="#verification">Inspect the evidence ↓</a>
+</div>
+</div>
+<details><summary>See the extracted layout view</summary><figure><img src="layout/NAND_av_extracted.png" alt="NAND extracted view" loading="lazy" data-zoom><figcaption>Extracted view with parasitic R/C from Quantus</figcaption></figure><a class="button" href="assets/NAND_av_Extracted.webm">Open extraction recording ↗</a></details>
+</section>
+<section id="verification">
+<div class="section-head"><div><small>02 / CHECK THE FOUNDATION</small><h2>Three checks. Three jobs.</h2></div></div>
+<div class="cards">
+<article><b>DRC</b><h3>Geometry vs rules</h3><p>Checks widths, spacing and enclosure. The saved NAND report has zero violations across 379 checks.</p><a href="verification/NAND_DRC_summary.sum">Read DRC summary ↗</a></article>
+<article><b>LVS</b><h3>Layout vs schematic</h3><p>Compares devices and connectivity. The saved NAND comparison reports MATCH with zero parameter mismatches.</p><a href="Kamalin/lvs_runs/nand2.rep.cls">Read LVS report ↗</a></article>
+<article><b>PEX</b><h3>Wiring parasitics</h3><p>Quantus extracts parasitic resistance and capacitance, producing the av_extracted view for post-layout simulation.</p><a href="Kamalin/lvs_runs/svdb/qrc.nand2.log">Read extraction log ↗</a></article>
+</div>
+<p class="note" style="margin-top:20px">Physical verification covers the NAND cell only. Higher-level simulations can use its extracted view; a complete counter layout was outside this project's scope. These are saved lab results, not newly executed checks.</p>
+</section>
+<section id="stages">
+<div class="section-head"><div><small>03 / QUICK REVISION</small><h2>One gate becomes a counter.</h2></div></div>
+<div id="stage-buttons" class="tabs" aria-label="Choose a circuit stage"></div>
+<div class="stage-panel">
+<div><h3 id="stage-title"></h3><p id="stage-copy"></p><div id="stage-rule" class="stage-rule"></div><p id="stage-recall" class="stage-recall"></p></div>
+<figure><img id="stage-image" data-zoom alt=""><figcaption id="stage-caption"></figcaption></figure>
+</div>
+<details><summary>Recall the synchronous counter's toggle conditions</summary>
+<table><tr><th>Bit</th><th>Toggle input</th><th>Ideal frequency</th></tr>
+<tr><td>Q0</td><td>1</td><td>CLK / 2</td></tr>
+<tr><td>Q1</td><td>Q0</td><td>CLK / 4</td></tr>
+<tr><td>Q2</td><td>Q0 · Q1</td><td>CLK / 8</td></tr>
+<tr><td>Q3</td><td>Q0 · Q1 · Q2</td><td>CLK / 16</td></tr></table>
+<p class="note">All four flip-flops share the clock. Combinational toggle-enable logic determines which bits change.</p>
+</details>
+</section>
+<section id="waveforms">
+<div class="section-head"><div><small>04 / COMPARE THE RUNS</small><h2>Read the signals, side by side.</h2></div></div>
+<label for="wave-select" style="font-size:13px;color:var(--muted);font-weight:600">Circuit</label>&nbsp;<select id="wave-select"><option value="nand">NAND</option><option value="dlatch">D latch</option><option value="ms_dff">Master–slave DFF</option><option value="tff">T flip-flop</option><option value="synchronous_4bit_counter">Synchronous counter</option><option value="nand_cap">NAND CAP run</option></select>
+<div class="wave-grid"><figure><img id="wave-before" data-zoom alt="Schematic waveform"><figcaption>Schematic simulation</figcaption></figure><figure><img id="wave-after" data-zoom alt="Extracted-view waveform"><figcaption>AV / extracted-view simulation</figcaption></figure></div>
+<p class="note" style="margin-top:20px">Trace order and initialization differ between some saved runs. Compare named signals and settled transitions. These plots alone do not establish worst-case timing or a controlled measure of parasitic effects.</p>
+</section>
+<section id="lab">
+<div class="section-head"><div><small>05 / BACK TO THE BENCH</small><h2>The things worth remembering.</h2></div></div>
+<details><summary>What did DRC and LVS debugging involve?</summary>
+<p>LiAct width violations, supply-pin alignment, and unmatched labels were part of the lab work. The screenshots preserve that process.</p>
+<div class="wave-grid"><figure><img src="assets/Screenshots/DRC_Check_Success.png" alt="Saved DRC success panel" loading="lazy" data-zoom><figcaption>DRC: 0 results across 379 checks</figcaption></figure><figure><img src="assets/Screenshots/LVS_Check_Success.png" alt="Saved LVS match panel" loading="lazy" data-zoom><figcaption>LVS: MATCH</figcaption></figure></div>
+<p class="note">Tool and environment warnings remain in the archived logs; a passing geometry or comparison result does not clear every diagnostic.</p>
+</details>
+<details><summary>How do I reopen and simulate this?</summary>
+<ol>
+<li>Register the Kamalin library in your configured Virtuoso installation.</li>
+<li>Load the matching cds_ff_mpt PDK and transistor models.</li>
+<li>For extracted runs, select av_extracted before schematic in the switch-view list.</li>
+<li>Include one custom parasitic model file for cmodel and rmodel.</li>
+<li>Check stimulus, supply, model corner and initialization before comparing runs.</li>
+</ol>
+<a class="button" href="models/qrc_parasitic_models.scs">Parasitic model definitions ↗</a>
+<p class="note">The model aliases have not been rerun here in Cadence.</p>
+</details>
+<details><summary>Where are the complete schematics, PDFs and lab screenshots?</summary>
+<p>The repository README contains the expanded illustrated guide and original result links.</p>
+<a class="button" href="README.md">Open the complete guide ↗</a>
+</details>
+</section>
+<footer>Finfet-NAND2Sync-Counter <span>Designed by XEMACS</span></footer>
+</main>
+<dialog id="viewer"><button id="close" aria-label="Close image">✕</button><img id="full-image" alt=""><p id="full-caption"></p></dialog>
+<script src="website/website.js"></script>
+</body></html>
