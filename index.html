@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="FinFet NAND layout, physical verification and synchronous counter revision guide by XEMACS."><title>Finfet-NAND2Sync-Counter · XEMACS</title><link rel="stylesheet" href="website/website.css"></head>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="FinFet NAND layout, physical verification and synchronous counter revision guide by XEMACS."><title>Finfet-NAND2Sync-Counter · XEMACS</title><link rel="icon" type="image/svg+xml" href="favicon.svg"><link rel="stylesheet" href="website/website.css"><meta property="og:image" content="https://bolt.new/static/og_default.png"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:image" content="https://bolt.new/static/og_default.png"></head>
 <body><a class="skip" href="#layout">Skip to content</a>
 <header><a class="brand" href="#layout">F<span>/</span>N2S</a><span class="sub">Finfet-NAND2Sync-Counter</span><button id="theme" aria-label="Switch color theme">◐</button></header>
 <aside><small>XEMACS · LAB NOTEBOOK</small>
@@ -24,7 +24,7 @@
 <p>Parallel PMOS devices pull the output high. Series NMOS devices pull it low when both inputs are high.</p>
 <div class="formula">Y = ¬(A · B)</div>
 <dl>
-<dt>Design rule checking</dt><dd><span class="green">0</span> <span class="muted">/ 379 checks</span></dd>
+<dt>Design rule checking</dt><dd><span class="green">379 checks · 0 violations</span></dd>
 <dt>Layout versus schematic</dt><dd>MATCH</dd>
 <dt>Parasitic extraction</dt><dd>91 R <span class="muted">/</span> 90 C</dd>
 </dl>
@@ -68,7 +68,7 @@
 <div class="section-head"><div><small>05 / BACK TO THE BENCH</small><h2>The things worth remembering.</h2></div></div>
 <details><summary>What did DRC and LVS debugging involve?</summary>
 <p>LiAct width violations, supply-pin alignment, and unmatched labels were part of the lab work. The screenshots preserve that process.</p>
-<div class="wave-grid"><figure><img src="assets/Screenshots/DRC_Check_Success.png" alt="Saved DRC success panel" loading="lazy" data-zoom><figcaption>DRC: 0 results across 379 checks</figcaption></figure><figure><img src="assets/Screenshots/LVS_Check_Success.png" alt="Saved LVS match panel" loading="lazy" data-zoom><figcaption>LVS: MATCH</figcaption></figure></div>
+<div class="wave-grid"><figure><img src="assets/Screenshots/DRC_Check_Success.png" alt="Saved DRC success panel" loading="lazy" data-zoom><figcaption>DRC: 379 checks, 0 violations</figcaption></figure><figure><img src="assets/Screenshots/LVS_Check_Success.png" alt="Saved LVS match panel" loading="lazy" data-zoom><figcaption>LVS: MATCH</figcaption></figure></div>
 <p class="note">Tool and environment warnings remain in the archived logs; a passing geometry or comparison result does not clear every diagnostic.</p>
 </details>
 <details><summary>How do I reopen and simulate this?</summary>
