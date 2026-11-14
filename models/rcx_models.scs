@@ -1,0 +1,6 @@
+// Compatibility copy for ADE setups that reference rcx_models.scs.
+// Keep this file identical to qrc_parasitic_models.scs.
+simulator lang=spectre
+
+model cmodel capacitor
+model rmodel resistor

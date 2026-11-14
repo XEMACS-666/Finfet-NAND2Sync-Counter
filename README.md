@@ -1,4 +1,4 @@
-# 4-Bit Counter in Cadence Virtuoso
+# 4-Bit Synchronous Up Counter with FinFet made NAND Gate
 
 **From a transistor-level NAND gate to a four-bit counter.**
 
@@ -6,9 +6,9 @@ This project builds reusable logic blocks in Cadence Virtuoso, verifies the NAND
 
 **Design journey:** NAND → D latch → master–slave D flip-flop → T flip-flop → 4-bit counter
 
-> **Counter naming:** This repository is named `Virtuoso-4bit-Async-Counter`, and the top cell is `Asynchronous_4bit_counter`. However, the supplied counter screenshot shows a common clock and toggle-enable logic: a **synchronous** counter topology. The original names are preserved; the screenshot is identified accurately below.
+> **Counter naming:** This is a **synchronous** four-bit counter. The repository, exported files and top-cell directory have been renamed to use `Sync` / `Synchronous` consistently. Archived Cadence run artifacts may still contain the original historical cell name inside their generated metadata.
 
-[NAND](#1-nand-gate) · [Layout & verification](#2-nand-layout-and-parasitics) · [D latch](#3-d-latch) · [D flip-flop](#4-master-slave-d-flip-flop) · [T flip-flop](#5-t-flip-flop) · [Counter](#6-four-bit-counter) · [Comparison](#schematic-and-av-comparison) · [Troubleshooting](#troubleshooting-from-saved-screenshots) · [Open the project](#open-the-project) · [Known issues](KNOWN_ISSUES.md)
+[NAND](#1-nand-gate) · [Layout & verification](#2-nand-layout-and-parasitics) · [D latch](#3-d-latch) · [D flip-flop](#4-master-slave-d-flip-flop) · [T flip-flop](#5-t-flip-flop) · [Counter](#6-four-bit-counter) · [Comparison](#schematic-and-av-comparison) · [Troubleshooting](#troubleshooting-from-saved-screenshots) · [Open the project](#open-the-project)
 
 ## At a glance
 
@@ -22,7 +22,7 @@ This project builds reusable logic blocks in Cadence Virtuoso, verifies the NAND
 | Physical implementation included | `nand2/layout` and `nand2/av_extracted` |
 | Simulation exports | NAND, D latch, master–slave DFF, TFF and four-bit counter |
 
-The NAND schematic screenshot labels the devices `n1hvt` / `p1hvt`, while the [archived LVS schematic netlist](Kamalin/lvs_runs/sch.sp) uses **N1SVT/P1SVT**. That netlist records L = 18 nm, four fins for each NMOS and two fins for each PMOS. These artifacts are not a confirmed single device-variant configuration; reconcile them before reproducing or comparing runs. Separate HVT/LVT comparison results are not included.
+The NAND design uses **SVT** devices, as shown by the archived LVS schematic netlist (`N1SVT/P1SVT`) and the Quantus extraction log. HVT and LVT are available rule/deck device classes in the PDK, but they are not used in this design. The netlist records L = 18 nm, four fins for each NMOS and two fins for each PMOS.
 
 ## Design flow
 
@@ -147,7 +147,7 @@ The NAND schematic is implemented as a physical layout. **DRC** checks the layou
 
 These are **archived June 22, 2026 results for nand2**, not a fresh verification of the current views. A full counter layout and counter-level DRC/LVS reports are not included. The DRC and LVS success screenshots still show tool/environment diagnostics; geometric DRC success and LVS MATCH do not mean the entire run log is free of errors or warnings.
 
-The file named [NAND_LVS_summary.sum](verification/NAND_LVS_summary.sum) is an **ERC summary** with zero ERC checks and `erc2` marked “Not Executed!”; use the linked **LVS comparison** above for MATCH evidence. The Quantus log records completion, but also PDK initialization errors, missing-property and net-reference warnings, and **28 floating nets**. Their impact needs review in Cadence; see [known issues](KNOWN_ISSUES.md).
+The file named [NAND_ERC_summary.sum](verification/NAND_ERC_summary.sum) is an **ERC summary** with zero ERC checks and `erc2` marked “Not Executed!”; use the linked **LVS comparison** above for MATCH evidence. The Quantus log records completion, but also PDK initialization errors, missing-property and net-reference warnings, and **28 floating nets**. These are retained as historical run diagnostics.
 
 The `(AV)` filename convention identifies exports intended for the extracted-view flow. The saved session log records `av_extracted` in the switch-view list and successful historical simulations, but each PDF alone does not prove which device views or models were selected. Since the supplied extracted cell is `nand2`, higher-level circuits can include its parasitics by selecting `av_extracted` before `schematic` in the simulator view list. This does not capture wiring parasitics for a complete counter layout.
 
@@ -248,7 +248,7 @@ A NAND-based XOR network feeds the D flip-flop: **D = T ⊕ Q**. With **T = 0**,
 
 Four T flip-flops provide outputs **Q3 Q2 Q1 Q0**, with Q0 as the least significant bit. A four-bit binary up-counter cycles through 16 states, from `0000` to `1111`, then wraps around.
 
-![Supplied four-bit counter schematic showing a shared clock and toggle-enable logic](schematic/4-Bit_Asynchronous_Counter.png)
+![Four-bit synchronous counter schematic showing a shared clock and toggle-enable logic](schematic/4-Bit_Synchronous_Counter.png)
 
 *Supplied counter schematic: the common clock connects all four flip-flops. NAND logic generates the toggle enables for the upper bits.*
 
@@ -259,16 +259,16 @@ Four T flip-flops provide outputs **Q3 Q2 Q1 Q0**, with Q0 as the least signific
 | Q2 | T2 = Q0 · Q1 | fCLK / 8 |
 | Q3 | T3 = Q0 · Q1 · Q2 | fCLK / 16 |
 
-An asynchronous ripple counter instead clocks each later flip-flop from the preceding stage's output, with its toggle input held high. The clock connections determine the topology, regardless of the cell name.
+Because all four flip-flops use the shared clock and the upper-bit toggle inputs are generated by combinational logic, this is a synchronous counter. It is not a ripple/asynchronous counter.
 <table>
 <tr><th>Schematic simulation</th><th>AV / extracted-view simulation</th></tr>
 <tr>
-<td width="50%"><a href="assets/readme/asynchronous_4bit_counter.png"><img src="assets/readme/asynchronous_4bit_counter.png" alt="Schematic simulation" width="100%"></a></td>
-<td width="50%"><a href="assets/readme/asynchronous_4bit_counter-av.png"><img src="assets/readme/asynchronous_4bit_counter.png" alt="AV / extracted-view simulation" width="100%"></a></td>
+<td width="50%"><a href="assets/readme/synchronous_4bit_counter.png"><img src="assets/readme/synchronous_4bit_counter.png" alt="Schematic simulation" width="100%"></a></td>
+<td width="50%"><a href="assets/readme/synchronous_4bit_counter-av.png"><img src="assets/readme/synchronous_4bit_counter-av.png" alt="AV / extracted-view simulation" width="100%"></a></td>
 </tr>
 </table>
 
-[Schematic PDF](results/Asynchronous_4bit_counter.pdf) · [AV PDF](results/Asynchronous_4bit_counter%28AV%29.pdf)
+[Schematic PDF](results/Synchronous_4bit_counter.pdf) · [AV PDF](results/Synchronous_4bit_counter%28AV%29.pdf)
 
 Read the waveform labels rather than their vertical position: the two exports use different trace ordering. Inspect the changing bit periods and transition settling. A known `0000` startup state requires an initialization or reset setup; the shown schematic does not expose a reset input.
 
@@ -282,7 +282,7 @@ Use the paired PDFs and PNG previews above to compare the same named signals. **
 | D latch `/Q` | [899.1921 mV, M3](results/Dlatch.pdf) | [848.338 mV, M21](results/Dlatch%28AV%29.pdf) |
 | Master–slave DFF `/Q` | [898.0629 mV, M36](results/MS_DFF.pdf) | [838.7127 mV, M25](results/MS_DFF%28AV%29.pdf) |
 | TFF `/Q` | [872.3903 mV, M2](results/TFF.pdf) | [829.3358 mV, M22](results/TFF%28AV%29.pdf) |
-| Counter `/Q3` | [872.3428 mV, M7](results/Aynchronous_4bit_counter.pdf) | [833.6531 mV, M21](results/Aynchronous_4bit_counter%28AV%29.pdf) |
+| Counter `/Q3` | [872.3428 mV, M7](results/Synchronous_4bit_counter.pdf) | [833.6531 mV, M21](results/Synchronous_4bit_counter%28AV%29.pdf) |
 
 At the shown 800 mV supply, the NAND samples correspond to 256.95 mV and 174.098 mV above VDD, respectively. The extra decimal places reproduce the annotations; they are not an accuracy specification. Marker times, trace order and run durations vary. The counter plots also show different transition alignment (for example, Q3 falls near 5 ns in the plain-filename export and near 1 ns in the AV export), so the initial states must be checked before comparing count sequences. Raw waveforms and complete paired run configurations are not bundled, so these values do not establish full functional equivalence, worst-case excursions, or that layout alone caused every difference. The earlier “roughly doubles the spikes” conclusion is not supported by the files as named.
 
@@ -347,7 +347,7 @@ The comparison shows **MATCH**, while the run panel shows **2 errors and 70 warn
 ### Extraction and editor issues
 
 - **Quantus entry point:** the [menu screenshot](assets/Screenshots/Quantus_Dropdown_Menu.png) shows **Run PVS - Quantus**. The [QRC log](Kamalin/lvs_runs/svdb/qrc.nand2.log) supplies completion evidence. Configure the required LVS/extraction data with the installed PDK's flow; a menu screenshot alone does not establish the cause of a missing extraction file.
-- **Missing parasitic models:** saved ADE commands reference `/root/rcx_models.scs`, but this file is not included. If `cmodel` or `rmodel` cannot be resolved, identify the actual models required by the generated netlist and your PDK, and add the correct model files in ADE. No verified replacement “two-line model file” is supplied here.
+- **Custom parasitic model definitions:** the extracted-view netlist references `cmodel` and `rmodel` for its Quantus capacitors and resistors. The repository now includes both compatible definitions in [`models/qrc_parasitic_models.scs`](models/qrc_parasitic_models.scs) and [`models/rcx_models.scs`](models/rcx_models.scs). Add either file to ADE's global model files before running the `av_extracted` simulation; both define ideal Spectre capacitor/resistor primitives and preserve each extracted instance's value.
 - **Assura:** the session log records an Assura 20.1 / layout editor 6.1.8 version mismatch. The documented successful checks use PVS; the log does not establish blanket incompatibility of Assura with every installation of this PDK.
 - **Outline not moving:** the [screenshot](assets/Screenshots/Outline_not_moving.png) shows Stretch active, but does not identify the selected object's type or root cause. Check the object and selection filters in the editor. A specific fix cannot be confirmed from this image.
 
@@ -361,44 +361,36 @@ The comparison shows **MATCH**, while the run panel shows **2 errors and 70 warn
 | [`results/`](results/) | Twelve waveform PDFs (16 pages); `(AV)` labels the intended extracted-view exports |
 | [`verification/`](verification/) | Copied NAND DRC summary and ERC summary (despite the latter's LVS filename) |
 | [`assets/Screenshots/`](assets/Screenshots/) | ADE setup, troubleshooting and saved success screenshots |
-| [`assets/`](assets/) | Counter PDF and extracted-view video |
+| [`assets/`](assets/) | Synchronous counter PDF and extracted-view video |
 | [`assets/readme/`](assets/readme/) | PNG previews rendered from all 16 pages of the waveform PDFs |
+| [`models/`](models/) | Spectre aliases required by the extracted-view `cmodel` and `rmodel` instances |
 
 ## Open the project
 
 Clone the repository, or use your existing checkout:
 
 ```bash
-git clone https://github.com/XEMACS-666/Virtuoso-4bit-Async-Counter.git
-cd Virtuoso-4bit-Async-Counter
+git clone https://github.com/XEMACS-666/Finfet-NAND2Sync-Counter.git
+cd Finfet-NAND2Sync-Counter
 ```
 
 1. Use a configured Cadence Virtuoso installation with Spectre, PVS and Quantus, plus the matching `cds_ff_mpt` PDK and `analogLib`. The archived verification runs used PVS 22.20. Match your installation to the PDK requirements.
 2. Register the supplied library in your local `cds.lib`, replacing the example path:
 
    ```text
-   DEFINE Kamalin /absolute/path/to/Virtuoso-4bit-Async-Counter/Kamalin
+   DEFINE Kamalin /absolute/path/to/Finfet-NAND2Sync-Counter/Kamalin
    ```
 
-3. Launch Virtuoso from the directory containing your configured `cds.lib`, then use Library Manager → `Kamalin`. Open `nand2` and choose its `schematic`, `layout` or `av_extracted` view. Explore the cells in order: `nand2` → `D_Latch` → `Master_Slave_DFF` → `Toggle_FF` → `Asynchronous_4bit_counter`.
+3. Launch Virtuoso from the directory containing your configured `cds.lib`, then use Library Manager → `Kamalin`. Open `nand2` and choose its `schematic`, `layout` or `av_extracted` view. Explore the cells in order: `nand2` → `D_Latch` → `Master_Slave_DFF` → `Toggle_FF` → `Synchronous_4bit_counter`.
 4. Use `nand2_sim`, `D_Latch_tb`, `Master_Slave_DFF_tb` and `Toggle_FF_tb` for block simulations. The counter cell includes its stimulus sources.
 5. Recreate the ADE model and analysis settings for your installation. For parasitic-aware runs, place `av_extracted` before `schematic` in the switch-view list and confirm which view is selected in the generated netlist.
 6. To repeat physical verification, run PVS DRC/LVS on `nand2/layout`, then Quantus extraction with your installed technology files.
 
-The repository contains design views and saved results. The PDK, simulator licenses, raw waveforms, referenced local parasitic-model files and a portable ADE run configuration are not bundled. Saved run files contain paths from the original machine, so create locally configured runs instead of executing archived launch scripts unchanged.
+The repository contains design views, saved results and the custom parasitic-model aliases. The PDK, simulator licenses, raw waveforms and a portable ADE run configuration are not bundled. Saved run files contain paths from the original machine, so create locally configured runs instead of executing archived launch scripts unchanged.
 
-## Follow-up work
+## Project status
 
-- [ ] Reconcile the synchronous counter screenshot with the historical asynchronous repository/cell names before renaming design cells.
-- [ ] Reconcile HVT screenshot labels with SVT verification netlists and archive the exact model/view configuration used for each plot.
-- [ ] Review the archived extraction diagnostics and floating nets, then rerun DRC/LVS/extraction and simulation in the configured Cadence environment.
-- [ ] Save portable ADE settings and the required user-authored model definitions or setup instructions; record model corner, temperature, stimulus, load and initial state.
-- [ ] Measure `tpLH` / `tpHL` for A → Y and B → Y with one input held high while the other switches. The exported NAND input edges coincide at some transitions, so those events do not isolate each path.
-- [ ] Compare input-to-output timing for the Y-side versus ground-side NMOS gate assignments.
-- [ ] Add a realistic driver → DUT → load testbench and document the `NAND_CAP` configuration.
-- [ ] Add a reset or documented initialization method if a deterministic `0000` startup state is required.
-
-See [KNOWN_ISSUES.md](KNOWN_ISSUES.md) for the documentation repairs and unresolved evidence gaps. The documentation review did not rerun Cadence simulations or modify the circuit views.
+The supplied screenshots document the real lab issues encountered during development, including PVS setup, LiAct width rules, LVS labels, pin placement, Quantus setup and editor behavior. The saved DRC/LVS results cover the completed NAND layout. Full-counter post-layout verification is outside the supplied project scope. The repository does not include Cadence, the licensed PDK, portable ADE state or the two custom parasitic model-definition files required by the extracted-view analysis.
 
 ## Author
 

@@ -1,0 +1,8 @@
+// Quantus parasitic model aliases for Spectre extracted-view simulation.
+simulator lang=spectre
+
+// Quantus emits extracted capacitors using the cmodel model name.
+model cmodel capacitor
+
+// Quantus emits extracted resistors using the rmodel model name.
+model rmodel resistor
